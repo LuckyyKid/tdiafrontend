@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(tee /tmp/tsc.log)",
+      "Bash(echo \"---EXIT: $?\")",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(npx vite *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(xargs grep *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\)\\); console.log\\('OK'\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const fs=require\\('fs'\\),path=require\\('path'\\);const emojiRe=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;function walk\\(d\\){for\\(const f of fs.readdirSync\\(d,{withFileTypes:true}\\)\\){const p=path.join\\(d,f.name\\);if\\(f.isDirectory\\(\\)\\){if\\(!['node_modules','.git','dist','build','.next'].includes\\(f.name\\)\\)walk\\(p\\);}else if\\(/\\\\.\\(tsx?|jsx?|json|css|html|md\\)$/.test\\(f.name\\)\\){try{const c=fs.readFileSync\\(p,'utf8'\\);const matches=c.match\\(emojiRe\\);if\\(matches\\)console.log\\(p+' :: '+[...new Set\\(matches\\)].join\\(' '\\)\\);}catch\\(e\\){}}}}walk\\('src'\\);\")",
+      "Bash(node .emoji-strip.js)",
+      "Bash(node .emoji-strip.cjs)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\)\\); JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\)\\); console.log\\('valid'\\);\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('src/components/AntiFatigueCreativeEngineModalContent.tsx','utf8'\\);const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('src/components/CreativeFatigueModalContent.tsx','utf8'\\);const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(m.index,JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('src/components/CreativeModalContent.tsx','utf8'\\);const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(m.index,JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('src/components/EverythingButNothingModalContent.tsx','utf8'\\);const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(m.index,JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('src/components/InventoryManagementModalContent.tsx','utf8'\\);const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(m.index,JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const c=fs.readFileSync\\('src/components/MarketingSpendModalContent.tsx','utf8'\\);const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(m.index,JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}\")",
+      "Bash(node .strip-emojis.cjs \"src/components/OfferToAdSyncModalContent.tsx\" \"src/components/OmniFlowModalContent.tsx\" \"src/components/ScalingPlateauModalContent.tsx\" \"src/components/SoftwareSystemsSection.tsx\" \"src/components/StandOutModalContent.tsx\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const files=['src/components/OfferToAdSyncModalContent.tsx','src/components/OmniFlowModalContent.tsx','src/components/ScalingPlateauModalContent.tsx','src/components/SoftwareSystemsSection.tsx','src/components/StandOutModalContent.tsx'];const re=/[\\\\u{1F300}-\\\\u{1FAFF}]|[\\\\u{2600}-\\\\u{27BF}]|[\\\\u{2300}-\\\\u{23FF}]|[\\\\u{FE0F}]|[\\\\u{1F1E6}-\\\\u{1F1FF}]/gu;for\\(const f of files\\){const c=fs.readFileSync\\(f,'utf8'\\);let m;while\\(\\(m=re.exec\\(c\\)\\)!==null\\){const s=Math.max\\(0,m.index-30\\),e=Math.min\\(c.length,m.index+30\\);console.log\\(f,m.index,JSON.stringify\\(c.slice\\(s,e\\)\\)\\);}}\")",
+      "Bash(node .emoji-scan.cjs)",
+      "Bash(node -e \"const j=JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\)\\);console.log\\('Top-level keys:',Object.keys\\(j\\).join\\(', '\\)\\);\")",
+      "Bash(node -e \"const s=require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\);console.log\\('lines:',s.split\\('\\\\n'\\).length\\);\")",
+      "Bash(node -e \"const s=require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\);console.log\\('lines:',s.split\\('\\\\n'\\).length\\);\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\)\\);console.log\\('fr.json OK'\\);\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\)\\);console.log\\('en.json OK'\\);\")",
+      "Bash(curl -s http://localhost:5177/)"
+    ]
+  }
+}
