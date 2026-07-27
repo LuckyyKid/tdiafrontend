@@ -30,7 +30,21 @@
       "Bash(node -e \"const s=require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\);console.log\\('lines:',s.split\\('\\\\n'\\).length\\);\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\)\\);console.log\\('fr.json OK'\\);\")",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\)\\);console.log\\('en.json OK'\\);\")",
-      "Bash(curl -s http://localhost:5177/)"
+      "Bash(curl -s http://localhost:5177/)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/fr.json','utf8'\\)\\); console.log\\('OK'\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/i18n/locales/en.json','utf8'\\)\\); console.log\\('OK'\\)\")",
+      "Bash(python -c \"import json; d=json.load\\(open\\('src/i18n/locales/fr.json',encoding='utf-8'\\)\\); print\\('ok, keys:', len\\(d\\)\\)\")",
+      "Bash(python scripts/find_dashes.py src/i18n/locales/fr.json)",
+      "Bash(python -c ' *)",
+      "Bash(cp src/i18n/locales/fr.json /tmp/fr.json.bak)",
+      "Bash(cp src/i18n/locales/en.json /tmp/en.json.bak)",
+      "Bash(python scripts/fix_dashes.py src/i18n/locales/fr.json src/i18n/locales/en.json)",
+      "Bash(python scripts/find_dashes.py src/i18n/locales/en.json)",
+      "Bash(awk 'NR==166 || NR==234' src/components/OmniFlowModalContent.tsx)",
+      "Bash(awk 'NR==151 || NR==194' src/components/GrowthOSModalContent.tsx)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('src/i18n/locales/fr.json',encoding='utf-8'\\)\\); print\\(list\\(d.get\\('pages', {}\\).get\\('ecommerceProblems', {}\\).keys\\(\\)\\)[:20]\\)\")",
+      "Bash(python scripts/update_ecommerce_problems.py)",
+      "Bash(python scripts/update_portfolio.py)"
     ]
   }
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { trackCTAClick } from "@/lib/analytics";
 
 const HeroSection: React.FC = () => {
@@ -14,9 +15,12 @@ const HeroSection: React.FC = () => {
 
   if (!ready) return null;
 
-  const handleCTAClick = () => {
-    trackCTAClick('Book Your Strategy Call', 'hero');
-    window.open("https://calendly.com/tdiaagency/30min?month=2025-06", "_blank");
+  const handleAcquisitionClick = () => {
+    trackCTAClick('Acquisition Door', 'hero');
+  };
+
+  const handleOperationsClick = () => {
+    trackCTAClick('Operations Door', 'hero');
   };
 
   return (
@@ -50,7 +54,7 @@ const HeroSection: React.FC = () => {
       <div
         className={`container mx-auto px-4 md:px-6 relative z-10 w-full transition-opacity duration-500 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
-        <div className="max-w-[720px]">
+        <div className="max-w-[760px]">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 pill-tdia mb-8">
             <span className="inline-flex items-center gap-0.5 text-[#4d9fff]">
@@ -64,7 +68,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* H1 */}
-          <h1 className="tdia-h text-[40px] leading-[1.06] sm:text-[52px] md:text-[64px] lg:text-[68px]">
+          <h1 className="tdia-h text-[40px] leading-[1.06] sm:text-[52px] md:text-[62px] lg:text-[66px]">
             {t("hero.headline1")}{" "}
             <span className="serif">{t("hero.headline2")}</span>
           </h1>
@@ -74,23 +78,32 @@ const HeroSection: React.FC = () => {
             {t("hero.description")}
           </p>
 
-          {/* CTA */}
-          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <button onClick={handleCTAClick} className="btn-tdia">
-              {t("hero.cta")}
+          {/* Two-door CTAs */}
+          <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+            <Link
+              to="/acquisition"
+              onClick={handleAcquisitionClick}
+              className="btn-tdia justify-center"
+              aria-label={t("hero.ctaAcquisition")}
+            >
+              {t("hero.ctaAcquisition")}
               <ArrowRight className="h-4 w-4" />
-            </button>
-            <span className="text-xs text-[#e6ecf7]/70 font-mono-tdia tracking-widest uppercase">
-              {t("hero.proof")}
-            </span>
+            </Link>
+            <Link
+              to="/operations"
+              onClick={handleOperationsClick}
+              className="btn-tdia-ghost justify-center"
+              aria-label={t("hero.ctaOperations")}
+            >
+              {t("hero.ctaOperations")}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
 
-          {/* Stats row with hairline separators */}
-          <div className="mt-14 grid grid-cols-3 max-w-lg">
-            <StatItem value="+15M$" label={t("hero.statRevenue", "Revenus générés")} first />
-            <StatItem value="4×" label={t("hero.statRoas", "ROAS moyen")} />
-            <StatItem value="3M$+" label={t("hero.statAdSpend", "Budget publicitaire géré")} />
-          </div>
+          {/* Proof line */}
+          <p className="mt-6 text-xs text-[#e6ecf7]/70 font-mono-tdia tracking-widest uppercase">
+            {t("hero.proof")}
+          </p>
 
           {/* Glass pill */}
           <div className="mt-10 inline-flex items-center gap-3 rounded-full px-4 py-2.5 backdrop-blur-md bg-white/[0.06] hairline">
@@ -107,14 +120,5 @@ const HeroSection: React.FC = () => {
     </section>
   );
 };
-
-const StatItem: React.FC<{ value: string; label: string; first?: boolean }> = ({ value, label, first }) => (
-  <div className={`px-4 ${!first ? "hairline-v" : ""}`}>
-    <div className="font-mono-tdia text-[26px] md:text-[32px] text-white leading-none">
-      {value}
-    </div>
-    <div className="micro-label mt-2">{label}</div>
-  </div>
-);
 
 export default HeroSection;

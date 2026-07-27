@@ -148,7 +148,7 @@ const GrowthOSModalContent: React.FC<GrowthOSModalContentProps> = ({
 
                 <h3 className="mb-3 text-2xl font-bold">Insight Dashboard™</h3>
                 <p className="mb-4 text-lg font-medium text-blue-200">
-                  6 live KPIs that actually matter — profit clarity, no fluff.
+                  6 live KPIs that actually matter, profit clarity, no fluff.
                 </p>
                 <p className="mb-6 leading-relaxed text-white/70">
                   Real‑time MER, ROAS, LTV, margin, stock levels, and creative
@@ -191,7 +191,7 @@ const GrowthOSModalContent: React.FC<GrowthOSModalContentProps> = ({
                   Growth Command Center™
                 </h3>
                 <p className="mb-4 text-lg font-medium text-green-200">
-                  Margin, LTV, and cashflow in one view — decide like a CFO.
+                  Margin, LTV, and cashflow in one view, decide like a CFO.
                 </p>
                 <p className="mb-6 leading-relaxed text-white/70">
                   Unit economics, profit margins, and cash runway calculations.

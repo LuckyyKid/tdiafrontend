@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
+import { Link } from "react-router-dom";
 import { Check, ArrowRight } from "lucide-react";
 
 const TDIAGuaranteeSection: React.FC = () => {
@@ -40,20 +41,23 @@ const TDIAGuaranteeSection: React.FC = () => {
         </div>
 
         <div className="mt-14 text-center halo-cta py-10">
-          <p className="text-lg md:text-xl text-[#7c8aa5] font-serif-italic mb-8 max-w-2xl mx-auto">
-            <Trans
-              i18nKey="guarantee.closing"
-              components={{
-                0: <span className="text-white block my-2 not-italic tdia-h text-[24px] md:text-[28px]" />,
-              }}
-            />
+          <h3 className="tdia-h text-[28px] md:text-[36px] lg:text-[42px] mb-4 max-w-3xl mx-auto">
+            <span>{t("guarantee.finalCta.heading")} </span>
+            <br className="hidden md:block" />
+            <span className="serif">{t("guarantee.finalCta.headingSerif")}</span>
+          </h3>
+          <p className="text-base md:text-lg text-[#7c8aa5] max-w-2xl mx-auto mb-8 leading-relaxed">
+            {t("guarantee.finalCta.description")}
           </p>
-          <button onClick={handleCTAClick} className="btn-tdia">
-            {t("guarantee.cta")}
-            <ArrowRight className="w-4 h-4" />
-          </button>
-          <div className="mt-6 micro-label">
-            {t('guarantee.trustLine', 'Sans engagement · Réponse sous 24 h')}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <button onClick={handleCTAClick} className="btn-tdia">
+              {t("guarantee.finalCta.cta")}
+              <ArrowRight className="w-4 h-4" />
+            </button>
+            <Link to="/operations" className="btn-tdia-ghost">
+              {t("guarantee.finalCta.secondaryCta")}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </div>

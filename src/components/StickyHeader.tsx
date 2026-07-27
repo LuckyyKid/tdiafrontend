@@ -89,10 +89,17 @@ const StickyHeader: React.FC = () => {
                   {t('header.services')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="bg-[#0a0e18] p-2 w-56 hairline rounded-xl">
-                    <ListItem title={t('header.campaignManagement')} href="/services/gestion-campagnes" />
-                    <ListItem title={t('header.optimizedCreatives')} href="/services/creatives-optimisees" />
-                    <ListItem title={t('header.dataImplementation')} href="/services/implementation-data" />
+                  <ul className="bg-[#0a0e18] p-2 w-72 hairline rounded-xl">
+                    <ListItem
+                      title={t('header.servicesAcquisition')}
+                      subtitle={t('header.servicesAcquisitionSubtitle')}
+                      href="/acquisition"
+                    />
+                    <ListItem
+                      title={t('header.servicesOperations')}
+                      subtitle={t('header.servicesOperationsSubtitle')}
+                      href="/operations"
+                    />
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -186,15 +193,14 @@ const StickyHeader: React.FC = () => {
                   </Link>
                   <div className="py-3 hairline-b">
                     <div className="text-white text-sm mb-2">{t('header.services')}</div>
-                    <div className="pl-2 space-y-1">
-                      <Link to="/services/gestion-campagnes" onClick={handleMenuItemClick} className="block py-1.5 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
-                        {t('header.campaignManagement')}
+                    <div className="pl-2 space-y-2">
+                      <Link to="/acquisition" onClick={handleMenuItemClick} className="block py-1.5">
+                        <div className="text-sm text-[#e6ecf7] hover:text-white">{t('header.servicesAcquisition')}</div>
+                        <div className="text-xs text-[#7c8aa5]">{t('header.servicesAcquisitionSubtitle')}</div>
                       </Link>
-                      <Link to="/services/creatives-optimisees" onClick={handleMenuItemClick} className="block py-1.5 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
-                        {t('header.optimizedCreatives')}
-                      </Link>
-                      <Link to="/services/implementation-data" onClick={handleMenuItemClick} className="block py-1.5 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
-                        {t('header.dataImplementation')}
+                      <Link to="/operations" onClick={handleMenuItemClick} className="block py-1.5">
+                        <div className="text-sm text-[#e6ecf7] hover:text-white">{t('header.servicesOperations')}</div>
+                        <div className="text-xs text-[#7c8aa5]">{t('header.servicesOperationsSubtitle')}</div>
                       </Link>
                     </div>
                   </div>
@@ -234,7 +240,13 @@ const StickyHeader: React.FC = () => {
   );
 };
 
-const ListItem = ({ className, title, href, ...props }: React.ComponentPropsWithoutRef<"a"> & { title: string }) => (
+const ListItem = ({
+  className,
+  title,
+  subtitle,
+  href,
+  ...props
+}: React.ComponentPropsWithoutRef<"a"> & { title: string; subtitle?: string }) => (
   <li className="mb-1 last:mb-0">
     <NavigationMenuLink asChild>
       <Link
@@ -246,7 +258,10 @@ const ListItem = ({ className, title, href, ...props }: React.ComponentPropsWith
         )}
         {...props}
       >
-        {title}
+        <div>{title}</div>
+        {subtitle && (
+          <div className="text-xs text-[#7c8aa5] mt-0.5">{subtitle}</div>
+        )}
       </Link>
     </NavigationMenuLink>
   </li>

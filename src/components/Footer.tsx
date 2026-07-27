@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         {/* Divider + socials + legal */}
         <div className="mt-16 pt-8 hairline-t flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div className="text-xs text-[#7c8aa5] font-mono-tdia tracking-wider">
-            © {new Date().getFullYear()} TDIA — {t('footer.allRightsReserved')}
+            © {new Date().getFullYear()} TDIA · {t('footer.allRightsReserved')}
           </div>
 
           <div className="flex items-center gap-6 text-xs">

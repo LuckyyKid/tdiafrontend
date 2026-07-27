@@ -31,6 +31,8 @@ import ThankYou from "./pages/ThankYou";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Methodologie from "./pages/Methodologie";
+import Acquisition from "./pages/Acquisition";
+import Operations from "./pages/Operations";
 
 const queryClient = new QueryClient();
 
@@ -70,6 +72,8 @@ const App = () => {
             />
             <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/acquisition" element={<Acquisition />} />
+            <Route path="/operations" element={<Operations />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/case-studies/:caseId" element={<CaseStudyDetail />} />
             <Route path="/services" element={<Services />} />

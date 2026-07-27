@@ -1,139 +1,224 @@
-import React from 'react';
-import { ArrowRight, Store, Globe, Component, Rocket, Layers, Award, ShoppingCart, TrendingUp, Target, LineChart } from 'lucide-react';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import {
+  ArrowRight,
+  Store,
+  Globe,
+  Component,
+  Rocket,
+  Layers,
+  Award,
+  ShoppingCart,
+  TrendingUp,
+  Target,
+  LineChart,
+  type LucideIcon,
+} from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import StickyHeader from "@/components/StickyHeader";
-import Footer from "@/components/Footer";
-import SolutionModal from "@/components/SolutionModal";
+} from '@/components/ui/accordion';
+import SEOHead from '@/components/SEOHead';
+import StickyHeader from '@/components/StickyHeader';
+import Footer from '@/components/Footer';
+import SolutionModal from '@/components/SolutionModal';
 import { useSolutionModals } from '@/hooks/useSolutionModals';
+import { trackCTAClick } from '@/lib/analytics';
 
-const EcommerceProblems = () => {
+const CALENDLY_URL = 'https://calendly.com/tdiaagency/30min?month=2025-06';
+
+const openCalendly = (label: string, location: string) => {
+  trackCTAClick(label, location);
+  window.open(CALENDLY_URL, '_blank');
+};
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Store,
+  Globe,
+  Component,
+  Rocket,
+  Layers,
+  Award,
+  ShoppingCart,
+  TrendingUp,
+  Target,
+  LineChart,
+};
+
+type ProblemItem = {
+  icon: string;
+  title: string;
+  description: string;
+};
+
+type FaqItem = {
+  question: string;
+  answer: string;
+};
+
+const EcommerceProblems: React.FC = () => {
+  const { t, ready } = useTranslation();
   const { openModalId, openModal, closeModal, solutionModalsData } = useSolutionModals();
 
-  const problems = [
-    { id: 1, icon: <Store className="h-5 w-5 text-[#9ec8ff]" />, title: "Struggling to stand out from competition", description: "Your e-commerce site looks like hundreds of others in your niche. Customers have no clear reason to choose you over your competitors. Without a unique and compelling value proposition, you end up competing solely on price." },
-    { id: 2, icon: <Globe className="h-5 w-5 text-[#9ec8ff]" />, title: "\"We're trying everything… but nothing really works\"", description: "Your marketing feels like guesswork. You're testing random tactics, switching directions every week, and chasing trends without understanding what actually drives results." },
-    { id: 3, icon: <Component className="h-5 w-5 text-[#9ec8ff]" />, title: "\"If Meta goes down, so does my business\"", description: "You're overly reliant on a single platform—so when Meta's performance drops, your entire growth stalls. No backup channels, no fallback strategy—just panic and wasted spend." },
-    { id: 4, icon: <Rocket className="h-5 w-5 text-[#9ec8ff]" />, title: "\"I'm scaling, but I don't know if I'm actually making money\"", description: "You've validated your offer. You're running ads. But growth has stalled. Scaling isn't just about increasing budget — it's about building a system that supports performance at volume." },
-    { id: 5, icon: <Layers className="h-5 w-5 text-[#9ec8ff]" />, title: "\"Every time I scale, my margins vanish\"", description: "You're finally growing—but your profits aren't. Scaling should boost your bottom line, not bleed it dry. If every push for growth leads to higher CAC and vanishing margins, rethink your model." },
-    { id: 6, icon: <Award className="h-5 w-5 text-[#9ec8ff]" />, title: "\"The ad looks great — but my page kills the vibe\"", description: "When your landing page doesn't match your ad's tone, story, or energy, it breaks the conversion flow. Customers expect consistency, and anything less feels off-brand." },
-    { id: 7, icon: <ShoppingCart className="h-5 w-5 text-[#9ec8ff]" />, title: "\"I throw creatives out randomly\"", description: "You're constantly launching new ads without a clear method. You post what feels right in the moment, hoping something will work — but there's no process behind it." },
-    { id: 8, icon: <TrendingUp className="h-5 w-5 text-[#9ec8ff]" />, title: "\"I'm spending money but have no idea where it's going\"", description: "You're putting money into ads, but you're flying blind. You see ROAS, CPMs, CTRs... but you don't really know what they mean, or how to act on them." },
-    { id: 9, icon: <Target className="h-5 w-5 text-[#9ec8ff]" />, title: "\"My creatives die after 10 days\"", description: "You launch an ad, it works for a few days, and then performance drops off a cliff. So you rush to make new ones, repeat the cycle, and end up in a constant state of creative panic." },
-    { id: 10, icon: <LineChart className="h-5 w-5 text-[#9ec8ff]" />, title: "\"I'm doing everything, but nothing's working\"", description: "You're on all platforms — Meta, TikTok, Google — running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat." },
-  ];
+  if (!ready) return null;
 
-  const faqs = [
-    { question: "How do I know which e-commerce problem is affecting my business the most?", answer: "Analyze your performance data (conversion rate, traffic, bounce rate, average order value) and gather customer feedback. Identify gaps between your objectives and current results. We also offer a free audit to precisely identify your main barriers to growth." },
-    { question: "How long does it take to solve these e-commerce problems?", answer: "The timeframe varies depending on the complexity of the problem and the size of your business. Some optimizations can bring results within a few weeks, while deeper transformations may take 3 to 6 months to generate significant and lasting impact." },
-    { question: "Does solving these problems require a big investment?", answer: "Not necessarily. Our approach is to identify high-impact actions that can be implemented within your current budget. We prioritize solutions that offer the best return on investment." },
-    { question: "How does your agency approach these problems differently from others?", answer: "Unlike other agencies that offer standardized solutions, we take a systemic approach that addresses the root cause of your e-commerce challenges, not just the symptoms." },
-    { question: "Where should I start to improve my e-commerce performance?", answer: "Start by evaluating the customer experience on your site and the purchase journey. Identify points of friction and bottlenecks. Then, analyze your data to understand user behavior." },
-  ];
+  const problems = t('pages.ecommerceProblems.problems', {
+    returnObjects: true,
+  }) as ProblemItem[];
 
-  const handleCTAClick = () => {
-    window.open('https://calendly.com/tdiaagency/30min?month=2025-06', '_blank');
-  };
+  const faqs = t('pages.ecommerceProblems.faqItems', {
+    returnObjects: true,
+  }) as FaqItem[];
 
   return (
-    <div className="min-h-screen w-full text-white relative z-10">
+    <div className="min-h-screen w-full overflow-x-hidden text-white relative z-10">
+      <SEOHead
+        title={t('pages.ecommerceProblems.title')}
+        description={t('pages.ecommerceProblems.description')}
+      />
       <StickyHeader />
 
-      <div className="pt-32 md:pt-40 pb-14 relative halo-top">
-        <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <div className="micro-label mb-6">E-commerce diagnostic</div>
-          <h1 className="tdia-h text-[38px] md:text-[56px] lg:text-[64px]">
-            <span>10 e-commerce problems </span>
-            <span className="serif">blocking</span>
-            <span> your growth</span>
+      {/* HERO */}
+      <section className="relative w-full halo-top overflow-hidden pt-32 md:pt-40 pb-14 md:pb-20">
+        <div className="container mx-auto px-4 md:px-6 text-center max-w-3xl relative z-10">
+          <div className="pill-tdia mx-auto mb-6">
+            {t('pages.ecommerceProblems.heroEyebrow')}
+          </div>
+          <h1 className="tdia-h text-[38px] leading-[1.06] md:text-[56px] lg:text-[64px]">
+            <span>{t('pages.ecommerceProblems.heroTitle')} </span>
+            <span className="serif">{t('pages.ecommerceProblems.heroTitleHighlight')}</span>
+            <span> {t('pages.ecommerceProblems.heroTitleEnd')}</span>
           </h1>
-          <p className="mt-6 text-base md:text-lg text-[#7c8aa5]">
-            Discover the most common obstacles preventing your online store from reaching its full potential.
+          <p className="mt-6 text-base md:text-lg text-[#7c8aa5] leading-relaxed">
+            {t('pages.ecommerceProblems.heroDescription')}
           </p>
           <div className="flex justify-center mt-8">
-            <button onClick={handleCTAClick} className="btn-tdia">
-              Talk to an expert <ArrowRight className="h-4 w-4" />
+            <button
+              onClick={() => openCalendly('Talk to expert — Ecom Problems', 'hero')}
+              className="btn-tdia"
+            >
+              {t('pages.ecommerceProblems.talkToExpert')}
+              <ArrowRight className="h-4 w-4" />
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="tdia-h text-[28px] md:text-[40px]">
-              <span>Problems that </span>
-              <span className="serif">limit</span>
-              <span> your growth</span>
+      {/* PROBLEMS */}
+      <section className="relative py-20 md:py-28 halo-center">
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <div className="pill-tdia mb-6 mx-auto">
+              {t('pages.ecommerceProblems.problemsEyebrow')}
+            </div>
+            <h2 className="tdia-h text-[32px] md:text-[46px] lg:text-[52px]">
+              <span>{t('pages.ecommerceProblems.problemsHeading')} </span>
+              <span className="serif">{t('pages.ecommerceProblems.problemsHeadingSerif')}</span>
             </h2>
-            <p className="mt-4 text-[#7c8aa5] max-w-2xl mx-auto">
-              Identify the obstacles preventing you from reaching your growth goals.
+            <p className="mt-6 text-base md:text-lg text-[#7c8aa5] leading-relaxed">
+              {t('pages.ecommerceProblems.problemsDescription')}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {problems.map((p) => (
-              <div key={p.id} className="tdia-card p-8 flex flex-col">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="tdia-tile flex-shrink-0">{p.icon}</div>
-                  <h3 className="tdia-h text-[20px] md:text-[22px] text-white">{p.title}</h3>
-                </div>
-                <p className="text-[#7c8aa5] leading-relaxed mb-6 flex-grow">{p.description}</p>
-                <button onClick={() => openModal(p.id)} className="btn-tdia-ghost self-start text-sm">
-                  How to solve this
-                  <ArrowRight className="h-3.5 w-3.5" />
-                </button>
-              </div>
-            ))}
+            {problems.map((p, index) => {
+              const Icon = ICON_MAP[p.icon] ?? Store;
+              const modalId = index + 1;
+              return (
+                <ProblemCard key={modalId} index={index}>
+                  <div className="flex items-start gap-4 mb-5">
+                    <div className="tdia-tile flex-shrink-0">
+                      <Icon className="h-5 w-5 text-[#9ec8ff]" strokeWidth={1.6} />
+                    </div>
+                    <div className="flex-1">
+                      <div className="micro-label !text-[10px] mb-2">
+                        {String(modalId).padStart(2, '0')}
+                      </div>
+                      <h3 className="tdia-h text-[20px] md:text-[22px] text-white leading-tight">
+                        {p.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-[#7c8aa5] leading-relaxed mb-6 flex-grow text-sm md:text-base">
+                    {p.description}
+                  </p>
+                  <button
+                    onClick={() => openModal(modalId)}
+                    className="mt-auto self-start inline-flex items-center gap-2 text-sm text-[#9ec8ff] hover:text-white transition-colors group"
+                  >
+                    {t('pages.ecommerceProblems.howToSolve')}
+                    <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
+                  </button>
+                </ProblemCard>
+              );
+            })}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-16 tdia-card p-10 md:p-14 text-center halo-cta">
-            <h3 className="tdia-h text-[26px] md:text-[36px] mb-4">
-              <span>Ready to </span>
-              <span className="serif">solve</span>
-              <span> these problems?</span>
+      {/* MID CTA */}
+      <section className="relative py-20 md:py-28 halo-cta">
+        <div className="container mx-auto max-w-4xl px-4 md:px-6 relative z-10">
+          <div className="tdia-card p-10 md:p-14 text-center">
+            <h3 className="tdia-h text-[28px] md:text-[38px] mb-4">
+              <span>{t('pages.ecommerceProblems.readyToSolve')} </span>
+              <span className="serif">{t('pages.ecommerceProblems.readyToSolveSerif')}</span>
             </h3>
-            <p className="text-[#7c8aa5] max-w-2xl mx-auto mb-8">
-              Our experts can help you identify and solve the obstacles blocking your growth.
+            <p className="text-[#7c8aa5] max-w-2xl mx-auto mb-8 leading-relaxed">
+              {t('pages.ecommerceProblems.readyToSolveDescription')}
             </p>
             <div className="flex justify-center">
-              <button onClick={handleCTAClick} className="btn-tdia">
-                Book a free discovery call
+              <button
+                onClick={() => openCalendly('Book Discovery Call — Ecom Problems', 'mid_cta')}
+                className="btn-tdia"
+              >
+                {t('pages.ecommerceProblems.bookDiscoveryCall')}
+                <ArrowRight className="h-4 w-4" />
               </button>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-20">
-            <div className="text-center mb-10">
-              <div className="micro-label mb-4">FAQ</div>
-              <h2 className="tdia-h text-[28px] md:text-[40px]">
-                <span>Frequently asked </span>
-                <span className="serif">questions</span>
-              </h2>
+      {/* FAQ */}
+      <section className="relative py-20 md:py-28 halo-top">
+        <div className="container mx-auto max-w-4xl px-4 md:px-6 relative z-10">
+          <div className="text-center mb-10">
+            <div className="pill-tdia mb-6 mx-auto">
+              {t('pages.ecommerceProblems.faqEyebrow')}
             </div>
-            <div className="max-w-3xl mx-auto tdia-card p-2 md:p-4">
-              <Accordion type="single" collapsible className="w-full">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border-b border-[color:var(--tdia-hairline)] last:border-b-0">
-                    <AccordionTrigger className="text-white text-left py-5 px-4 md:px-6 hover:no-underline">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-[#7c8aa5] pb-5 px-4 md:px-6 leading-relaxed">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
+            <h2 className="tdia-h text-[32px] md:text-[42px] lg:text-[46px]">
+              <span>{t('pages.ecommerceProblems.faqTitle')} </span>
+              <span className="serif">{t('pages.ecommerceProblems.faqTitleSerif')}</span>
+            </h2>
           </div>
+          <Accordion type="single" collapsible className="w-full space-y-3">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="tdia-card px-6 md:px-8 border-none"
+              >
+                <AccordionTrigger className="text-left tdia-h text-[18px] md:text-[20px] py-6 hover:no-underline">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-[#7c8aa5] text-base leading-relaxed pb-6">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
 
-          <div className="text-center mt-16">
-            <button onClick={handleCTAClick} className="btn-tdia">
-              See how we can help you <ArrowRight className="h-4 w-4" />
+          <div className="text-center mt-14">
+            <button
+              onClick={() => openCalendly('See how we can help — Ecom Problems', 'faq_cta')}
+              className="btn-tdia"
+            >
+              {t('pages.ecommerceProblems.seeHowWeCanHelp')}
+              <ArrowRight className="h-4 w-4" />
             </button>
           </div>
         </div>
@@ -152,6 +237,25 @@ const EcommerceProblems = () => {
 
       <Footer />
     </div>
+  );
+};
+
+const ProblemCard: React.FC<{
+  index: number;
+  children: React.ReactNode;
+}> = ({ index, children }) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref, { once: true, margin: '-80px' });
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.6, delay: (index % 2) * 0.1 + Math.floor(index / 2) * 0.05 }}
+      className="tdia-card p-7 md:p-8 flex flex-col"
+    >
+      {children}
+    </motion.div>
   );
 };
 

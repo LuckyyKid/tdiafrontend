@@ -42,7 +42,7 @@ const EverythingButNothingModalContent: React.FC<EverythingButNothingModalConten
             </h3>
             
             <p className="text-xl font-semibold text-gray-200 italic">
-              You're launching ads, tweaking settings, posting content — yet nothing sticks. You're in all the dashboards, chasing performance, but it feels like chaos. There's no space to think, no system to rely on.
+              You're launching ads, tweaking settings, posting content, yet nothing sticks. You're in all the dashboards, chasing performance, but it feels like chaos. There's no space to think, no system to rely on.
             </p>
             
             <div className="space-y-2 text-gray-300">

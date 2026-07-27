@@ -136,25 +136,25 @@ const CreativeScoringModalContent: React.FC<CreativeScoringModalContentProps> = 
                     icon: Target,
                     title: 'How to make it worth it',
                     body:
-                      'Every ad gets a weighted score based on funnel-relevant metrics (Hook Rate, Hold Rate, CTR, CR). You see the real value of each tested creative — not just surface impressions.',
+                      'Every ad gets a weighted score based on funnel-relevant metrics (Hook Rate, Hold Rate, CTR, CR). You see the real value of each tested creative, not just surface impressions.',
                   },
                   {
                     icon: Zap,
                     title: 'How to make it faster',
                     body:
-                      'Connect your campaign to a Google Sheet, Looker Studio, or API — the score is calculated automatically within 48h.',
+                      'Connect your campaign to a Google Sheet, Looker Studio, or API, the score is calculated automatically within 48h.',
                   },
                   {
                     icon: Sparkles,
                     title: 'How to make it easier',
                     body:
-                      'A monochrome scoring system tells you exactly what to cut, scale, or improve — even non-technical CEOs get it.',
+                      'A monochrome scoring system tells you exactly what to cut, scale, or improve, even non-technical CEOs get it.',
                   },
                   {
                     icon: ShieldCheck,
                     title: 'How to make it believable',
                     body:
-                      'Show your top 5 performing creatives for the month with results — the method sells itself.',
+                      'Show your top 5 performing creatives for the month with results, the method sells itself.',
                   },
                 ].map((b, i) => (
                   <div key={i} className="hairline rounded-xl bg-white/[0.02] p-4">
@@ -359,7 +359,7 @@ const CreativeScoringModalContent: React.FC<CreativeScoringModalContentProps> = 
                   <ul className="space-y-2.5">
                     {[
                       "It's visual, actionable, and connects creatives to real business performance.",
-                      'Clients can instantly tell what converts — not just what looks nice.',
+                      'Clients can instantly tell what converts, not just what looks nice.',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-[#e6ecf7]/85">
                         <CheckDot />
@@ -510,7 +510,7 @@ const CreativeScoringModalContent: React.FC<CreativeScoringModalContentProps> = 
             <div className="flex items-baseline gap-3 mb-6">
               <span className="font-mono-tdia text-sm text-[#9ec8ff]">03</span>
               <h2 className="tdia-h text-2xl md:text-3xl">
-                Hook Rate First™ — Prioritization <span className="serif">Logic</span>
+                Hook Rate First™: Prioritization <span className="serif">Logic</span>
               </h2>
             </div>
 
@@ -543,7 +543,7 @@ const CreativeScoringModalContent: React.FC<CreativeScoringModalContentProps> = 
                     <h3 className="text-white font-semibold">Outcome</h3>
                   </div>
                   <p className="text-sm text-[#7c8aa5] mb-4">
-                    You're no longer scaling the "prettiest" creatives — you're scaling the most
+                    You're no longer scaling the "prettiest" creatives, you're scaling the most
                     effective from second one.
                   </p>
                   <div className="hairline rounded-lg bg-white/[0.02] p-4 flex items-center justify-between gap-4 mb-4">
@@ -739,7 +739,7 @@ const CreativeScoringModalContent: React.FC<CreativeScoringModalContentProps> = 
                 ))}
               </ul>
               <p className="text-[#9ec8ff] font-mono-tdia text-sm mb-6">
-                The backlog isn't random — it's a learning engine.
+                The backlog isn't random, it's a learning engine.
               </p>
 
               {/* Backlog visual */}
@@ -753,26 +753,26 @@ const CreativeScoringModalContent: React.FC<CreativeScoringModalContentProps> = 
                     {
                       status: 'To Test',
                       count: 5,
-                      body: 'UGC · Story — Problem-agitation hook w/ quick solution reveal',
+                      body: 'UGC · Story: Problem-agitation hook w/ quick solution reveal',
                       avatar: 'Avatar 1',
                     },
                     {
                       status: 'In Progress',
                       count: 3,
-                      body: 'Animation · Feature — Before/After transformation sequence',
+                      body: 'Animation · Feature: Before/After transformation sequence',
                       avatar: 'Avatar 2',
                       winner: true,
                     },
                     {
                       status: 'Testimonial',
                       count: 3,
-                      body: 'Social Proof — Client success story with ROI callout',
+                      body: 'Social Proof: Client success story with ROI callout',
                       avatar: 'Avatar 3',
                     },
                     {
                       status: 'Approved',
                       count: 2,
-                      body: 'Product Demo · Features — Quick-win benefit sequence',
+                      body: 'Product Demo · Features: Quick-win benefit sequence',
                       avatar: 'Avatar 1',
                       winner: true,
                     },

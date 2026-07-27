@@ -13,7 +13,7 @@ const WhatYouGetSection: React.FC = () => {
     { label: "Access to TDIA's testing framework, refined across 30+ eCommerce & B2B brands" },
     { label: 'Creative testing & scaling system' },
     { label: 'Live performance dashboards + weekly reports' },
-    { label: 'Monthly strategy calls — we act as your fractional CMO', free: true },
+    { label: 'Monthly strategy calls, we act as your fractional CMO', free: true },
     { label: '100% money-back guaranteed' },
   ];
 

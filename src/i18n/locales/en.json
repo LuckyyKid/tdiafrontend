@@ -10,6 +10,10 @@
   },
   "header": {
     "services": "Services",
+    "servicesAcquisition": "Acquisition",
+    "servicesAcquisitionSubtitle": "Fill your pipeline",
+    "servicesOperations": "Operations",
+    "servicesOperationsSubtitle": "Modernize your operations",
     "campaignManagement": "Campaign Management",
     "optimizedCreatives": "Optimized Creatives",
     "dataImplementation": "Data Implementation",
@@ -26,16 +30,391 @@
     "getStartedTooltip": "This could change your life"
   },
   "hero": {
-    "headline1": "We Turn DTC Brands",
-    "headline2": "Into Profit Machines in 90 Days.",
-    "trustedBy": "Trusted by 30+ Brands",
-    "title": "We Turn DTC Brands Into Profit Machines in 90 Days.",
+    "headline1": "We build the two systems",
+    "headline2": "your business depends on.",
+    "trustedBy": "Trusted by 30+ businesses",
+    "title": "Quebec growth firm : acquisition and operations",
     "subtitle": "",
-    "description": "Powered by AI Predictive Models, Creative Scoring OS™, and Performance-Engineered Media Buying. For founders doing $30k–$300k/month ready to scale predictably.",
+    "description": "The one that brings customers in, and the one that keeps your operations running. Quebec-based agency, we measure on profit, not clicks.",
     "cta": "Chat with a Scaling Strategist",
-    "proof": "$15M+ generated. 4× return on average. 75% of brands scale within 90 days.",
+    "ctaAcquisition": "I want to fill my pipeline",
+    "ctaOperations": "I want to modernize my operations",
+    "proof": "Two systems. One partner. Zero guesswork.",
     "selectedBy": "Selected by",
-    "highGrowthBrands": "High-Growth Ecom Brands"
+    "highGrowthBrands": "businesses that want to grow",
+    "statRevenue": "Revenue generated",
+    "statRoas": "Average ROAS",
+    "statAdSpend": "Ad spend managed"
+  },
+  "twoDoors": {
+    "eyebrow": "Two doors : pick yours",
+    "heading": "What's blocking you right now?",
+    "subheading": "We build two halves of the same system. You may need both, or just one. Tell us which.",
+    "acquisition": {
+      "kicker": "Door 1 : Acquisition",
+      "title": "Fill your pipeline",
+      "subtitle": "Campaigns that bring back profitable customers, not just clicks.",
+      "forWhoLabel": "For",
+      "audiences": [
+        "E-commerce brands",
+        "Local service businesses",
+        "Companies that are hiring"
+      ],
+      "proofLabel": "Recent result",
+      "proof": "Atlas Énergie: $20/lead instead of $150.",
+      "cta": "See how we do it"
+    },
+    "operations": {
+      "kicker": "Door 2 : Operations",
+      "title": "Modernize your operations",
+      "subtitle": "Replace spreadsheets and manual processes with a system that works for you.",
+      "forWhoLabel": "For",
+      "audiences": [
+        "SMBs still running on Excel",
+        "Businesses with repetitive manual processes",
+        "Fleets, inventory, field tracking"
+      ],
+      "proofLabel": "Recent result",
+      "proof": "Transport company: real-time fleet tracking, zero manual checks.",
+      "cta": "See how we do it"
+    },
+    "unsureLabel": "Not sure?",
+    "unsureText": "20-minute call and we tell you straight what would unblock you most, even if it's not us."
+  },
+  "acquisitionPage": {
+    "seo": {
+      "title": "Acquisition : Fill your pipeline | TDIA",
+      "description": "Campaigns that bring back profitable customers. Media buying, UGC and tracking measured on margin, not clicks."
+    },
+    "hero": {
+      "eyebrow": "Acquisition",
+      "headline1": "Campaigns that bring back",
+      "headline2": "profitable customers.",
+      "description": "We don't sell you impressions or 'leads.' We build an acquisition system and pilot it on your margin.",
+      "cta": "Book a diagnostic",
+      "stats": [
+        {
+          "value": "+$15M",
+          "label": "Revenue generated"
+        },
+        {
+          "value": "4×",
+          "label": "Average ROAS"
+        },
+        {
+          "value": "$3M+",
+          "label": "Ad spend managed"
+        }
+      ]
+    },
+    "audiences": {
+      "eyebrow": "Who we speak to",
+      "heading": "Three types of business, one method",
+      "subheading": "Our approach adapts to who you sell to. What never changes: we measure on profit.",
+      "cards": [
+        {
+          "tag": "E-COMMERCE",
+          "title": "E-commerce brands",
+          "problem": "You're spending on ads but you don't know which creatives are actually making you money.",
+          "action": "Meta media buying + UGC content production. We test angles, keep what converts, cut the rest.",
+          "outcome": "A cost of acquisition that holds up at scale."
+        },
+        {
+          "tag": "LOCAL SERVICES",
+          "title": "Local service businesses",
+          "problem": "You get calls, but not necessarily the ones that fill your calendar with profitable jobs.",
+          "action": "We look at your numbers to identify which project types actually pay your margin, then build acquisition to attract those first.",
+          "outcome": "A calendar full of profitable jobs, not just quote requests."
+        },
+        {
+          "tag": "HIRING",
+          "title": "Companies that are hiring",
+          "problem": "Traditional job ads no longer bring in qualified candidates.",
+          "action": "Recruitment campaigns run like acquisition campaigns, targeting, creative, applicant filtering.",
+          "outcome": "Candidates who actually show up to interviews."
+        }
+      ],
+      "labels": {
+        "problem": "The problem",
+        "action": "What we do",
+        "outcome": "Outcome"
+      },
+      "cardCta": "See cases like yours"
+    },
+    "difference": {
+      "eyebrow": "Our difference",
+      "heading": "We pilot on profit,",
+      "headingSerif": "not on clicks.",
+      "columnThem": "Typical agencies",
+      "columnUs": "Us",
+      "rows": [
+        {
+          "them": "Launch your ads and \"let's see what happens.\"",
+          "us": "Before the first dollar: a 3-scenario forecast. From the moment you sign, you know what your first 30 days look like, spend, orders, target cost per customer."
+        },
+        {
+          "them": "Spend with no clear limit, the budget balloons, the margin melts.",
+          "us": "Two thresholds computed on your margins: the recommended cost per customer to protect profit, the maximum to cap the loss."
+        },
+        {
+          "them": "Send you a monthly report of clicks and impressions.",
+          "us": "Every week: actual compared to forecast, and a correction when it drifts, not a report that observes after the fact."
+        },
+        {
+          "them": "Apply the same recipe to every client.",
+          "us": "Diagnostic first: we identify your main bottleneck — creative, offer, funnel or capacity — and the plan attacks that one before anything else."
+        },
+        {
+          "them": "Produce creative on gut feel, or recycled from another account.",
+          "us": "Creative is ordered by the plan: every angle answers an identified need, gets tested, and lives or dies on its numbers."
+        },
+        {
+          "them": "Push budget on whatever \"performs\", even a stocked-out product or one with zero margin.",
+          "us": "Budget follows your stock and your margins: never a dollar on a product that can't deliver or that doesn't earn."
+        },
+        {
+          "them": "An unreachable account manager who replies in jargon four days later.",
+          "us": "A direct channel to the team that actually runs your account, and updates in plain language: the problem, the decision, the next step."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "How we do it",
+      "heading": "The process, in 6 steps",
+      "subheading": "The same chain for every client. Each step prevents a specific mistake that would cost you margin.",
+      "steps": [
+        {
+          "n": "01",
+          "title": "Diagnostic",
+          "description": "We unify your data, then isolate the real bottleneck: volume, constraint or tracking. No budget decision before that."
+        },
+        {
+          "n": "02",
+          "title": "Allocation & risk",
+          "description": "Two thresholds computed on your margins before the first dollar: recommended CAC to protect margin, max CAC to cap the loss."
+        },
+        {
+          "n": "03",
+          "title": "Budgets & seasonality",
+          "description": "Daily budget adjusts to the CAC actually observed. Seasonal peaks are anticipated, not endured."
+        },
+        {
+          "n": "04",
+          "title": "Creative",
+          "description": "Creative count computed weekly, every ad scored on Hook / Hold / CTR / CR. Budget migrates to the winners, no debate."
+        },
+        {
+          "n": "05",
+          "title": "Conversion",
+          "description": "Hypothesis-driven tests on your site, mapped friction, roadmap prioritized by impact. The same spend earns more, without opening another cent."
+        },
+        {
+          "n": "06",
+          "title": "Live optimization",
+          "description": "Every week, we re-read your real cohorts: LTV, return rate, net margin per channel. Budget migrates toward what actually compounds profit."
+        }
+      ]
+    },
+    "cases": {
+      "eyebrow": "Case studies",
+      "heading": "Two concrete examples",
+      "items": [
+        {
+          "client": "Atlas Énergie",
+          "industry": "Residential insulation · Quebec",
+          "context": "Residential insulation company paying up to $150 per lead through inconsistent channels.",
+          "problem": "Cost of acquisition too high to hold the margin of an average project, and inconsistent volume.",
+          "action": "Complete rebuild of Meta acquisition, targeting by project type, creative filtered by angle, tracking tied to signed quotes.",
+          "result": "158 leads generated. Cost per lead down from $150 to $20."
+        },
+        {
+          "client": "O'Splash",
+          "industry": "Window cleaning · Sherbrooke, QC",
+          "context": "Local service with no acquisition system, dependent on word-of-mouth with an unstable calendar.",
+          "problem": "Zero inbound leads from the site, no ads in place, unpredictable revenue.",
+          "action": "Built a local acquisition system in 45 days: targeted campaigns, clear offer, conversion tracking.",
+          "result": "116 conversions in 45 days, CPA of $21.25."
+        }
+      ],
+      "labels": {
+        "context": "Context",
+        "problem": "Problem",
+        "action": "What we did",
+        "result": "Result"
+      }
+    },
+    "notForYou": {
+      "eyebrow": "Who we're not for",
+      "heading": "We'd rather tell you now",
+      "items": [
+        "You're looking for the cheapest provider.",
+        "You don't yet have an ad budget of at least $3,000/month.",
+        "You want results without sharing your real numbers."
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "heading": "The questions we get asked",
+      "items": [
+        {
+          "question": "How much does it cost?",
+          "answer": "It depends on your ad budget, the creative production needed and the complexity of your tracking. We give you a precise number after the diagnostic, not before."
+        },
+        {
+          "question": "How long before we see results?",
+          "answer": "First data comes in 2 to 3 weeks. Solid optimization decisions are made after 4 to 6 weeks. Stability, from the second month onward."
+        },
+        {
+          "question": "Do you work with competitors in my area?",
+          "answer": "No. For local services, we only take one client per service and geographic zone."
+        },
+        {
+          "question": "Who produces the creative?",
+          "answer": "Our in-house team for UGC and static visuals. For heavier video work, we work with selected creators."
+        },
+        {
+          "question": "What if it doesn't work?",
+          "answer": "We know by the second or third week if the direction won't work. We change it or we tell you, we don't let budget bleed into the void."
+        },
+        {
+          "question": "Do I keep access to my accounts and data?",
+          "answer": "Yes, always. Your ad accounts, tracking and data belong to you, even after the engagement ends."
+        }
+      ]
+    },
+    "finalCta": {
+      "heading": "Take 20 minutes.",
+      "headingSerif": "We look at your numbers and tell you straight.",
+      "description": "Even if it's not us who should help you, you'll leave with a clear read on what would unblock you most.",
+      "cta": "Book a 20-min call"
+    }
+  },
+  "operationsPage": {
+    "seo": {
+      "title": "Operations : Modernize your operations | TDIA",
+      "description": "We build the software that replaces your spreadsheets and manual checks. Custom CRM, IoT, automations."
+    },
+    "hero": {
+      "eyebrow": "Operations",
+      "headline1": "Is your business still running",
+      "headline2": "on spreadsheets and manual checks?",
+      "description": "We build the software that replaces all that, designed for how you actually work, not the other way around.",
+      "cta": "Book an operations diagnostic"
+    },
+    "story": {
+      "eyebrow": "Real case",
+      "heading": "How a transport company",
+      "headingSerif": "stopped managing its fleet on Excel",
+      "beforeLabel": "BEFORE",
+      "afterLabel": "AFTER",
+      "before": [
+        "The fleet was tracked on Excel files and an outdated CRM.",
+        "Impossible to know which driver had driven which vehicle without a manual check.",
+        "Vehicle state (fuel, maintenance, engine alerts) was discovered late, often too late."
+      ],
+      "after": [
+        "A real-time map of all vehicles, accessible from any screen.",
+        "Fuel level, check engine alerts and vehicle state visible continuously.",
+        "Each driver scans their card before starting: driver/vehicle pairing is automatic, with zero manual checks.",
+        "CRM and fleet data in one place, no more parallel Excel files."
+      ]
+    },
+    "build": {
+      "eyebrow": "What we build",
+      "heading": "We start from the problem, not the tech",
+      "subheading": "Every block below answers a real business owner frustration. Tech comes last, not first.",
+      "items": [
+        {
+          "problem": "You lose time re-entering information from one system to another.",
+          "solution": "Automations and integrations between your existing tools."
+        },
+        {
+          "problem": "Your current tool doesn't match how you work.",
+          "solution": "Custom CRM or internal software built around your real flow."
+        },
+        {
+          "problem": "You don't know what's happening in the field in real time.",
+          "solution": "Sensors, fleet tracking, dashboards (IoT)."
+        },
+        {
+          "problem": "Your data is scattered and you can't get anything out of it.",
+          "solution": "Centralization and decision dashboards."
+        }
+      ],
+      "labels": {
+        "problem": "The problem",
+        "solution": "What we do"
+      }
+    },
+    "process": {
+      "eyebrow": "How we do it",
+      "heading": "The process, in 4 steps",
+      "steps": [
+        {
+          "n": "01",
+          "title": "Mapping",
+          "description": "We spend a day understanding how the work actually gets done today, including the workarounds."
+        },
+        {
+          "n": "02",
+          "title": "Mockup",
+          "description": "You see the interface before a single line of code is written."
+        },
+        {
+          "n": "03",
+          "title": "Staged build",
+          "description": "We deliver a first usable version quickly, then add to it."
+        },
+        {
+          "n": "04",
+          "title": "Training & handoff",
+          "description": "Your team uses it, and the documentation stays with you."
+        }
+      ]
+    },
+    "impact": {
+      "eyebrow": "What it actually changes",
+      "heading": "Hours recovered.",
+      "headingSerif": "Decisions made on fresh data.",
+      "items": [
+        "Admin hours recovered every week.",
+        "Manual entry errors eliminated.",
+        "Information available immediately, no more searching.",
+        "Decisions made on fresh data, not on a stale snapshot."
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "heading": "The questions we get asked",
+      "items": [
+        {
+          "question": "How long does it take?",
+          "answer": "A first usable version in 6 to 10 weeks. The full system rolls out in stages afterward, based on the priorities we set together."
+        },
+        {
+          "question": "Do I own the code and the data?",
+          "answer": "Yes. The code, database and access belong to you, hosted at your place or with a provider you choose."
+        },
+        {
+          "question": "What happens if I need changes after delivery?",
+          "answer": "You can keep a maintenance/evolution agreement with us, or hand it off to your internal team. The documentation supports both."
+        },
+        {
+          "question": "Does it integrate with my current tools?",
+          "answer": "In most cases, yes. We check available integrations during the diagnostic, it shapes part of the plan."
+        },
+        {
+          "question": "How is it billed?",
+          "answer": "Fixed price per phase, established after the diagnostic. No surprise hourly billing, no hidden overruns."
+        }
+      ]
+    },
+    "finalCta": {
+      "heading": "We look at your operations",
+      "headingSerif": "before proposing anything.",
+      "description": "20 minutes to understand where you're losing time. We then tell you whether a system is worth it, or if a simple adjustment is enough.",
+      "cta": "Book a call"
+    }
   },
   "stats": {
     "heading": "We Turn Brands Into",
@@ -54,7 +433,7 @@
       },
       {
         "question": "What makes you different from other agencies?",
-        "answer": "No autopilot, no guesswork. You get structured testing, real‑time reporting, and creatives that are scored and optimized — not just launched and prayed for."
+        "answer": "No autopilot, no guesswork. You get structured testing, real‑time reporting, and creatives that are scored and optimized, not just launched and prayed for."
       },
       {
         "question": "Do you handle both creatives and media buying?",
@@ -62,15 +441,15 @@
       },
       {
         "question": "Will this create more work for me?",
-        "answer": "Quite the opposite. We operate autonomously with a client platform for live updates — no endless calls or chasing reports."
+        "answer": "Quite the opposite. We operate autonomously with a client platform for live updates, no endless calls or chasing reports."
       },
       {
         "question": "Is there a long‑term commitment?",
-        "answer": "No. We work month‑to‑month because we believe in earning trust — not forcing contracts."
+        "answer": "No. We work month‑to‑month because we believe in earning trust, not forcing contracts."
       },
       {
         "question": "Do I need to provide content?",
-        "answer": "We handle everything — strategy, ad creatives, copywriting and testing. No freelancers, no extra hires."
+        "answer": "We handle everything, strategy, ad creatives, copywriting and testing. No freelancers, no extra hires."
       }
     ]
   },
@@ -78,14 +457,14 @@
     "badge": "THE TDIA PROFIT OS",
     "title": "The 3 Levers of the",
     "titleHighlight": "TDIA Profit OS",
-    "description": "Scaling doesn't happen by running ads — it happens when Media, Creatives, and CRO run on the same AI-native operating system.",
+    "description": "Scaling doesn't happen by running ads, it happens when Media, Creatives, and CRO run on the same AI-native operating system.",
     "cta": "Start Your 90-Day Profit Sprint",
     "blocks": [
       {
         "title": "Profit-First Media Buying",
         "subtitle": "Spend Based on Profit, Not Guesswork",
         "description": "Our media buyers don't optimize for vanity ROAS. We optimize for real profit, using a simplified structure, unified data, and daily signals.",
-        "goal": "Make more money than you spend — every single week.",
+        "goal": "Make more money than you spend, every single week.",
         "features": [
           "21% average CPA reduction in the first 30 days",
           "AI predictive bidding across Meta, Google & TikTok",
@@ -154,7 +533,7 @@
         "number": "04",
         "title": "We adjust every week",
         "line1": "Every week, we read your real cohorts: LTV, returns, net margin per channel.",
-        "line2": "Budget moves on facts — not on ghost dashboards."
+        "line2": "Budget moves on facts, not on ghost dashboards."
       }
     ],
     "seeMore": "See the full system"
@@ -164,7 +543,7 @@
       "part1": "Everything You Get to",
       "part2": "Scale Without Luck"
     },
-    "subheading": "10 proprietary growth systems + $12,000 worth of scaling tools — engineered to eliminate guesswork and make your growth predictable.",
+    "subheading": "10 proprietary growth systems + $12,000 worth of scaling tools, engineered to eliminate guesswork and make your growth predictable.",
     "coreBadge": "Core",
     "coreTitle": "The 10 Proprietary Growth Systems",
     "bonusBadge": "Bonus",
@@ -327,7 +706,7 @@
       },
       {
         "question": "What makes you different from other agencies?",
-        "answer": "No autopilot, no guesswork. You get structured testing, real‑time reporting, and creatives that are scored and optimized — not just launched and prayed for."
+        "answer": "No autopilot, no guesswork. You get structured testing, real‑time reporting, and creatives that are scored and optimized, not just launched and prayed for."
       },
       {
         "question": "Do you handle both creatives and media buying?",
@@ -335,15 +714,15 @@
       },
       {
         "question": "Will this create more work for me?",
-        "answer": "Quite the opposite. We operate autonomously with a client platform for live updates — no endless calls or chasing reports."
+        "answer": "Quite the opposite. We operate autonomously with a client platform for live updates, no endless calls or chasing reports."
       },
       {
         "question": "Is there a long‑term commitment?",
-        "answer": "No. We work month‑to‑month because we believe in earning trust — not forcing contracts."
+        "answer": "No. We work month‑to‑month because we believe in earning trust, not forcing contracts."
       },
       {
         "question": "Do I need to provide content?",
-        "answer": "We handle everything — strategy, ad creatives, copywriting and testing. No freelancers, no extra hires."
+        "answer": "We handle everything, strategy, ad creatives, copywriting and testing. No freelancers, no extra hires."
       }
     ]
   },
@@ -372,8 +751,13 @@
       "b3": "Or you win and scale",
       "outro": "You're never in a net‑loss situation"
     },
-    "closing": "Want a partner who believes in your success more than you do?<br/><0>Bet on us.</0>You only pay if you win — and if not… you still win.",
-    "cta": "Get Your Risk‑Free Strategy"
+    "finalCta": {
+      "heading": "Take 20 minutes.",
+      "headingSerif": "We look at your numbers and tell you straight.",
+      "description": "Even if it's not us who should help you, you'll leave with a clear read on what would unblock you most.",
+      "cta": "Book a 20-min call",
+      "secondaryCta": "Modernize your operations"
+    }
   },
   "roi": {
     "heading": "Estimate Your Growth <0>Potential</0>",
@@ -558,14 +942,14 @@
       "label": "/01",
       "title": "What We Do",
       "description1": "We create strategic, performance-driven ad creatives tailored to your acquisition goals.",
-      "description2": "From UGC to premium video, static ads to TikTok hooks that stop the scroll — every asset is designed to serve one goal: turn attention into measurable results.",
+      "description2": "From UGC to premium video, static ads to TikTok hooks that stop the scroll, every asset is designed to serve one goal: turn attention into measurable results.",
       "description3": "Our creatives are aligned with your acquisition strategy, target audiences, and the lifecycle of your campaigns.",
       "description4": "No guesswork. Just performance."
     },
     "section02": {
       "label": "/02",
       "title": "Why This Service Is Essential",
-      "intro": "Your campaigns don't lack visibility — they lack impact.",
+      "intro": "Your campaigns don't lack visibility, they lack impact.",
       "soundFamiliar": "Sound familiar?",
       "problems": [
         "Your creatives fatigue after a few days",
@@ -580,7 +964,7 @@
     "section03": {
       "label": "/03",
       "title": "What We Deliver",
-      "intro": "We provide a full ecosystem of creatives designed to perform — using a rigorous production framework backed by data and built to scale.",
+      "intro": "We provide a full ecosystem of creatives designed to perform, using a rigorous production framework backed by data and built to scale.",
       "deliverables": [
         {
           "icon": "",
@@ -639,7 +1023,7 @@
       "label": "/01",
       "title": "What we do",
       "description1": "We implement a full-funnel data infrastructure and conversion rate optimization (CRO) system designed to measure, interpret, and improve your advertising performance in real-time.",
-      "description2": "But most importantly — we make this data accessible and actionable.",
+      "description2": "But most importantly, we make this data accessible and actionable.",
       "description3": "Through our proprietary TDIA portal, you access all your campaign activity in real-time, hosted in a centralized dashboard designed for busy decision-makers.",
       "description4": "No need to chase updates. No need to schedule calls. Your entire acquisition pipeline is at your fingertips."
     },
@@ -667,7 +1051,7 @@
           "text": "A clean, jargon-free dashboard that anyone on your team can use"
         },
         {
-          "text": "A live feed of decisions, updates, and campaign changes — no surprises"
+          "text": "A live feed of decisions, updates, and campaign changes : no surprises"
         },
         {
           "text": "Real-time insights into user behavior and conversions"
@@ -676,7 +1060,7 @@
           "text": "Actionable recommendations driven by data, not gut feeling"
         },
         {
-          "text": "A live market intel feed — including trends, benchmarks, and new opportunities"
+          "text": "A live market intel feed : including trends, benchmarks, and new opportunities"
         }
       ],
       "conclusion": "No more waiting. No more confusion. You'll always know exactly where things stand."
@@ -689,7 +1073,7 @@
         "Your cost per lead or sale",
         "Your user journey, from first impression to final payment",
         "Your performance data, collected, cleaned, and interpreted",
-        "And your mental bandwidth — by eliminating micromanagement"
+        "And your mental bandwidth : by eliminating micromanagement"
       ]
     },
     "cta": {
@@ -732,7 +1116,117 @@
   "pages": {
     "ourWork": {
       "title": "Our Work",
-      "description": "Discover our client success stories and the creative excellence behind our campaigns."
+      "description": "Discover our client success stories and the creative excellence behind our campaigns.",
+      "portfolio": {
+        "eyebrow": "Portfolio",
+        "heading": "A portfolio of",
+        "headingSerif": "performance",
+        "subtitle": "A data-powered selection of ads that delivered growth, not just impressions.",
+        "filters": {
+          "all": "All",
+          "ugc": "UGC",
+          "professional": "Professional",
+          "demo": "Demo"
+        },
+        "emptyState": "No creatives found.",
+        "viewAll": "View all",
+        "metrics": {
+          "hookRate": "Hook Rate",
+          "roas": "ROAS",
+          "ctr": "CTR"
+        },
+        "modal": {
+          "performanceMetrics": "Performance Metrics",
+          "campaignOverview": "Campaign Overview",
+          "campaignDescription": "This {{format}} creative was designed to maximize engagement and conversion through authentic storytelling and data-driven optimization. The campaign achieved exceptional performance metrics across all key indicators, demonstrating the effectiveness of our creative strategy and execution."
+        },
+        "creatives": [
+          {
+            "title": "UGC that educates and converts",
+            "description": "A clear, authentic breakdown of Onyx's SaaS services, delivered by a creator users can trust."
+          },
+          {
+            "title": "Annick Levesque creative photoshoot",
+            "description": "Professional photoshoot creative with strong visual storytelling and brand positioning."
+          },
+          {
+            "title": "1001 Noix UGC campaign",
+            "description": "Product-focused UGC showcasing natural ingredients and health benefits."
+          },
+          {
+            "title": "A creator story that sells without selling",
+            "description": "An authentic testimonial from a real user, highlighting Ika's freshness, confidence boost, and everyday impact, all in under 30 seconds."
+          },
+          {
+            "title": "Showing the product. Selling the benefits.",
+            "description": "A clean, minimal demo that highlights Ika's key benefits to convert fast in a crowded market."
+          },
+          {
+            "title": "Animated elegance that drives attention",
+            "description": "A high-end animated visual designed to elevate product perception and increase thumb-stopping power in-feed."
+          },
+          {
+            "title": "From mug to message: UGC that feels like home",
+            "description": "A cozy, relatable UGC showing how Thé du Nord becomes part of a winter self-care ritual, built to inspire and convert."
+          },
+          {
+            "title": "When clean eating meets scroll-stopping UGC",
+            "description": "A smooth, sensory UGC experience showcasing the natural texture and wellness benefits of 1001 Noix."
+          },
+          {
+            "title": "Who's GoCoconut? Let this UGC show you.",
+            "description": "A warm, relatable UGC that introduces GoCoconut and its multifunctional play furniture."
+          },
+          {
+            "title": "GSTHST campaign video",
+            "description": "Strategic brand campaign focusing on market positioning and audience engagement."
+          },
+          {
+            "title": "Designed to spark thirst & foot traffic",
+            "description": "A bold, flavor-forward creative crafted to drive in-store visits and spotlight the cocktail of the month with irresistible visual appeal."
+          },
+          {
+            "title": "When AI meets herbal calm",
+            "description": "A visually striking AI-generated visual for DASSA's herbal tea, caffeine-free, theine-free, and tech-forward."
+          },
+          {
+            "title": "Looks new. Costs less.",
+            "description": "This static creative highlights GoCoconut's reconditioned products, identical in quality and playfulness, but lighter on your wallet."
+          },
+          {
+            "title": "The North's warmest gift",
+            "description": "This festive visual celebrates Thés du Nord's Fireweed Black Tea, organic, caffeine-free, and crafted to warm both hands and hearts this holiday season."
+          },
+          {
+            "title": "Pause. Sip. Reconnect.",
+            "description": "Set against a backdrop of forest serenity, this creative highlights the purity and grounding effect of Thés du Nord's fireweed tea, a natural break in every sip."
+          },
+          {
+            "title": "One brand. Four bold infusions.",
+            "description": "A festive showcase of four signature blends from Thés du Nord: playful, aromatic, and grounded in nature. Delivered to your door with exclusive holiday perks."
+          },
+          {
+            "title": "Obstacle course to cozy couch: all in one",
+            "description": "A playful and practical promo highlighting the multifunctional GoCoconut sofa, from fort to couch, now 30% off when reloved."
+          },
+          {
+            "title": "The secret weapon of Sunday brunch",
+            "description": "A delicious spotlight on 1001 Noix's Chai Maple pecan butter, the perfect finishing touch to elevate any weekend brunch."
+          },
+          {
+            "title": "The deodorant that does more with less",
+            "description": "A bold, minimalist visual that positions this natural deodorant as a clean yet powerful alternative: no compromises, just confidence."
+          },
+          {
+            "title": "Designed to stand out. Formulated to fit in.",
+            "description": "This bold static creative highlights the product's eco-design and skin-safe formula, using vibrant packaging to reinforce the brand's identity and values in one scroll-stopping visual."
+          },
+          {
+            "title": "Pure performance. Minimal design.",
+            "description": "This clean, minimalist static creative conveys trust and purity through clinical design, emphasizing the product's medical-grade, natural, and economical benefits, all in one scroll-stopping visual."
+          }
+        ]
+      }
     },
     "industryTrends": {
       "title": "Industry Trends",
@@ -860,59 +1354,69 @@
     "ecommerceProblems": {
       "title": "10 E-Commerce Problems Blocking Your Growth",
       "description": "Discover the most common obstacles preventing your online store from reaching its full potential.",
-      "heroTitle": "10",
-      "heroTitleHighlight": "E-Commerce",
-      "heroTitleEnd": "Problems Blocking Your Growth",
+      "heroTitle": "10 e-commerce problems",
+      "heroTitleHighlight": "blocking",
+      "heroTitleEnd": "your growth",
       "heroDescription": "Discover the most common obstacles preventing your online store from reaching its full potential.",
       "talkToExpert": "Talk to an expert",
       "problemsTitle": "Problems That Limit Your Growth",
-      "problemsDescription": "Identify the obstacles preventing you from reaching your growth goals and discover how to overcome them.",
-      "howToSolve": "How to solve this problem",
-      "readyToSolve": "Ready to solve these problems?",
-      "readyToSolveDescription": "Our experts can help you identify and solve the obstacles blocking your growth.",
-      "bookDiscoveryCall": "Book a free discovery call",
-      "faqTitle": "Frequently Asked Questions",
+      "problemsDescription": "Identify what's really blocking your growth, and pick the one that hurts the most right now.",
+      "howToSolve": "How we fix this",
+      "readyToSolve": "Ready to fix",
+      "readyToSolveDescription": "20 minutes on a call. We look at your numbers and tell you straight what to fix first.",
+      "bookDiscoveryCall": "Book a free 20-min call",
+      "faqTitle": "Frequently asked",
       "seeHowWeCanHelp": "See how we can help you",
       "problems": [
         {
-          "title": "Struggling to Stand Out from Competition",
-          "description": "Your e-commerce site looks like hundreds of others in your niche. Customers have no clear reason to choose you over your competitors. Without a unique and compelling value proposition, you end up competing solely on price, which quickly erodes your margins and doesn't encourage customer loyalty."
+          "icon": "Store",
+          "title": "Struggling to stand out from competition",
+          "description": "Your e-commerce site looks like hundreds of others in your niche. Customers have no clear reason to choose you over your competitors. Without a unique, compelling value proposition, you end up competing on price and watching your margins shrink."
         },
         {
-          "title": "Marketing Without a Clear Strategy",
-          "description": "You're posting content on different platforms but without a coherent vision. Your marketing efforts are fragmented and you don't have a clear plan to convert engagement into sales. You're spending time and money on random tactics that don't create a smooth customer journey toward conversion."
+          "icon": "Globe",
+          "title": "\"We're trying everything, but nothing really works\"",
+          "description": "Your marketing feels like guesswork. You test random tactics, switch directions every week, and chase trends without understanding what actually drives results. Effort keeps going up, revenue doesn't follow."
         },
         {
-          "title": "Poor User Experience",
-          "description": "Your site is difficult to navigate, slow to load, or not intuitive on mobile. Customers abandon their cart because the checkout process is too complicated or they don't trust your site. Every friction in the user experience directly translates to lost sales and customers who won't return."
+          "icon": "Component",
+          "title": "\"If Meta goes down, so does my business\"",
+          "description": "You're overly reliant on a single platform, so when Meta's performance drops, your entire growth stalls. No backup channels, no fallback strategy, just panic and wasted spend."
         },
         {
-          "title": "Difficulty Scaling",
-          "description": "You've experienced some initial growth, but you've reached a plateau. The strategies that worked initially no longer generate the same results. You don't have the systems in place to effectively increase sales volume without proportionally increasing your costs and workload."
+          "icon": "Rocket",
+          "title": "\"I'm scaling, but I don't know if I'm actually making money\"",
+          "description": "You've validated your offer. You're running ads. But growth has stalled. Scaling isn't just about increasing budget, it's about building a system that supports performance at volume."
         },
         {
-          "title": "Inefficient Inventory Management",
-          "description": "You regularly have problems with overstocking or stockouts. These inefficiencies cost you money - either in capital tied up in excess inventory or in lost sales due to stockouts. Without accurate, real-time visibility into your inventory, you're constantly making decisions based on incomplete information."
+          "icon": "Layers",
+          "title": "\"Every time I scale, my margins vanish\"",
+          "description": "You're finally growing, but your profits aren't. Scaling should boost your bottom line, not bleed it dry. If every push for growth leads to higher CAC and vanishing margins, the model needs a rethink."
         },
         {
-          "title": "Lack of Customer Retention",
-          "description": "You attract new customers, but they only buy once and never return. Without an effective retention strategy, you're constantly spending to acquire new customers rather than maximizing the lifetime value of existing ones. It's like filling a leaky bucket - expensive and inefficient."
+          "icon": "Award",
+          "title": "\"The ad looks great, but my page kills the vibe\"",
+          "description": "When your landing page doesn't match your ad's tone, story, or energy, it breaks the conversion flow. Customers expect consistency, and anything less feels off-brand."
         },
         {
+          "icon": "ShoppingCart",
           "title": "\"I throw creatives out randomly\"",
-          "description": "You're constantly launching new ads without a clear method. You post what feels right in the moment, hoping something will work — but there's no process behind it. You're not really testing, you're guessing. Some ads perform okay, others flop, and you can't explain why. This random approach creates stress, wastes budget, and gives you no real learning to build on. You feel stuck in a loop where nothing sticks long enough to scale."
+          "description": "You're constantly launching new ads without a clear method. You post what feels right in the moment, hoping something will work, but there's no process behind it. You're not really testing, you're guessing."
         },
         {
+          "icon": "TrendingUp",
           "title": "\"I'm spending money but have no idea where it's going\"",
-          "description": "You're putting money into ads, but you're flying blind. You see ROAS, CPMs, CTRs... but you don't really know what they mean, or how to act on them. You're spending without understanding, and it feels like your budget disappears into thin air. Without a clear view on what works and what doesn't, making decisions feels risky — and you constantly second-guess yourself."
+          "description": "You're putting money into ads, but you're flying blind. You see ROAS, CPMs, CTRs, but you don't really know what they mean or how to act on them. It feels like your budget disappears into thin air."
         },
         {
+          "icon": "Target",
           "title": "\"My creatives die after 10 days\"",
-          "description": "You launch an ad, it works for a few days, and then performance drops off a cliff. So you rush to make new ones, repeat the cycle, and end up in a constant state of creative panic. There's no system, no pipeline, no predictability — just short bursts followed by stress. You know you can't scale like that, but you don't know how to create content that actually lasts or fits your strategy. And you're tired of feeling like you're always behind."
+          "description": "You launch an ad, it works for a few days, and then performance drops off a cliff. You rush to make new ones, repeat the cycle, and end up in a constant state of creative panic. There's no pipeline, no predictability."
         },
         {
+          "icon": "LineChart",
           "title": "\"I'm doing everything, but nothing's working\"",
-          "description": "You're on all platforms — Meta, TikTok, Google — running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat. Nothing is consistent. You don't know where the real problem is, and every day feels like firefighting instead of growing. You're spread too thin, trying to do everything, but none of it is really moving the needle. It's exhausting — and you're starting to lose confidence in the whole thing."
+          "description": "You're on all platforms (Meta, TikTok, Google), running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat. Every day feels like firefighting instead of growing."
         }
       ],
       "faqItems": [
@@ -922,11 +1426,11 @@
         },
         {
           "question": "How long does it take to solve these e-commerce problems?",
-          "answer": "The timeframe varies depending on the complexity of the problem and the size of your business. Some optimizations can bring results within a few weeks, while deeper transformations may take 3 to 6 months to generate significant and lasting impact."
+          "answer": "The timeframe varies depending on the complexity of the problem and the size of your business. Some optimizations bring results within a few weeks, while deeper transformations may take 3 to 6 months to generate significant and lasting impact."
         },
         {
           "question": "Does solving these problems require a big investment?",
-          "answer": "Not necessarily. Our approach is to identify high-impact actions that can be implemented within your current budget. We prioritize solutions that offer the best return on investment and can self-finance through performance improvements."
+          "answer": "Not necessarily. Our approach is to identify high-impact actions that can be implemented within your current budget. We prioritize solutions that offer the best return on investment."
         },
         {
           "question": "How does your agency approach these problems differently from others?",
@@ -934,9 +1438,16 @@
         },
         {
           "question": "Where should I start to improve my e-commerce performance?",
-          "answer": "Start by evaluating the customer experience on your site and the purchase journey. Identify points of friction and bottlenecks. Then, analyze your data to understand user behavior. These two steps will often reveal the most urgent problems to solve."
+          "answer": "Start by evaluating the customer experience on your site and the purchase journey. Identify points of friction and bottlenecks. Then, analyze your data to understand user behavior. These two steps often reveal the most urgent problems to solve."
         }
-      ]
+      ],
+      "problemsEyebrow": "The blockers",
+      "problemsHeading": "Problems that limit",
+      "problemsHeadingSerif": "your growth",
+      "readyToSolveSerif": "these problems?",
+      "faqEyebrow": "FAQ",
+      "faqTitleSerif": "questions",
+      "heroEyebrow": "E-commerce diagnostic"
     },
     "caseStudiesPage": {
       "title": "Our",
@@ -950,11 +1461,11 @@
       "ctaDescriptionEnd": "and discover how we can accelerate your growth.",
       "ctaButton": "Unlock",
       "ctaButtonEnd": "Your Growth Strategy",
-      "testimonialQuote1": "I was genuinely impressed by how smart the strategies were. It wasn't just generic marketing — every move had purpose.",
+      "testimonialQuote1": "I was genuinely impressed by how smart the strategies were. It wasn't just generic marketing, every move had purpose.",
       "testimonialAuthor1": "Maria",
       "testimonialRole1": "CEO, RUNAK",
       "testimonialVerified1": "Verified LinkedIn Client",
-      "testimonialQuote2": "Isaac, we need to pause the campaign — we sold out everything! ",
+      "testimonialQuote2": "Isaac, we need to pause the campaign, we sold out everything! ",
       "testimonialAuthor2": "Diana",
       "testimonialRole2": "Co-Founder, Gococonut",
       "testimonialVerified2": "Verified Google Review",
@@ -1196,10 +1707,10 @@
     "p2": "\"I'm spending money but have no idea where it's going\"",
     "p3": "\"My creatives die after 10 days\"",
     "p4": "\"I'm doing everything, but nothing's working\"",
-    "d1": "You're constantly launching new ads without a clear method. You post what feels right in the moment, hoping something will work — but there's no process behind it. You're not really testing, you're guessing. Some ads perform okay, others flop, and you can't explain why. This random approach creates stress, wastes budget, and gives you no real learning to build on. You feel stuck in a loop where nothing sticks long enough to scale.",
-    "d2": "You're putting money into ads, but you're flying blind. You see ROAS, CPMs, CTRs... but you don't really know what they mean, or how to act on them. You're spending without understanding, and it feels like your budget disappears into thin air. Without a clear view on what works and what doesn't, making decisions feels risky — and you constantly second-guess yourself.",
-    "d3": "You launch an ad, it works for a few days, and then performance drops off a cliff. So you rush to make new ones, repeat the cycle, and end up in a constant state of creative panic. There's no system, no pipeline, no predictability — just short bursts followed by stress. You know you can't scale like that, but you don't know how to create content that actually lasts or fits your strategy. And you're tired of feeling like you're always behind.",
-    "d4": "You're on all platforms — Meta, TikTok, Google — running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat. Nothing is consistent. You don't know where the real problem is, and every day feels like firefighting instead of growing. You're spread too thin, trying to do everything, but none of it is really moving the needle. It's exhausting — and you're starting to lose confidence in the whole thing."
+    "d1": "You're constantly launching new ads without a clear method. You post what feels right in the moment, hoping something will work, but there's no process behind it. You're not really testing, you're guessing. Some ads perform okay, others flop, and you can't explain why. This random approach creates stress, wastes budget, and gives you no real learning to build on. You feel stuck in a loop where nothing sticks long enough to scale.",
+    "d2": "You're putting money into ads, but you're flying blind. You see ROAS, CPMs, CTRs... but you don't really know what they mean, or how to act on them. You're spending without understanding, and it feels like your budget disappears into thin air. Without a clear view on what works and what doesn't, making decisions feels risky, and you constantly second-guess yourself.",
+    "d3": "You launch an ad, it works for a few days, and then performance drops off a cliff. So you rush to make new ones, repeat the cycle, and end up in a constant state of creative panic. There's no system, no pipeline, no predictability, just short bursts followed by stress. You know you can't scale like that, but you don't know how to create content that actually lasts or fits your strategy. And you're tired of feeling like you're always behind.",
+    "d4": "You're on all platforms — Meta, TikTok, Google — running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat. Nothing is consistent. You don't know where the real problem is, and every day feels like firefighting instead of growing. You're spread too thin, trying to do everything, but none of it is really moving the needle. It's exhausting, and you're starting to lose confidence in the whole thing."
   },
   "caseCarousel": {
     "headingPrefix": "Our Client",
@@ -1225,7 +1736,7 @@
         "id": 1,
         "name": "Marc O. Therrien - CEO at ONYX TECHNOLOGIES",
         "title": "Marco Loved It, and So Will You",
-        "text": "Working with TDIA has been a game-changer. We switched from a large U.S. agency that cost twice as much and delivered zero leads. TDIA took the time to understand our niche market and found creative ways to keep lead costs low. Now we're generating ~20 qualified leads monthly. Great team, smart strategy — highly recommend"
+        "text": "Working with TDIA has been a game-changer. We switched from a large U.S. agency that cost twice as much and delivered zero leads. TDIA took the time to understand our niche market and found creative ways to keep lead costs low. Now we're generating ~20 qualified leads monthly. Great team, smart strategy, highly recommend"
       },
       {
         "id": 2,
@@ -1238,7 +1749,7 @@
   "ugc": {
     "badge": "Creative Showcase",
     "title": "Creatives + AI =",
-    "titleHighlight": "The Ultimate Growth vector for DTC",
+    "titleHighlight": "The Ultimate Growth vector",
     "description": "While others gamble on random creatives, smart brands partner with TDIA the only agency that combines performance data, creative scoring systems, and AI to engineer predictable ROAS, not hope for it.",
     "feature1Title": "AI-Powered Systems",
     "feature1Desc": "that surface the best-performing formats, angles, and hooks before they saturate",
@@ -1813,7 +2324,7 @@
   },
   "profitFirstModal": {
     "intro": {
-      "heading": "At TDIA, we don't \"run ads\" — we operate a system built for predictable profit.",
+      "heading": "At TDIA, we don't \"run ads\", we operate a system built for predictable profit.",
       "paragraph1": "Media buying isn't a bag of tricks. It's a chain where every link has to hold: diagnosis, budget, creative, funnel, adjustment. Break one piece, and the whole budget pays for it.",
       "paragraph2": "Here, in 5 clear steps, is how the Profit-First system turns your ad budget into profit you can forecast."
     },
@@ -1821,7 +2332,7 @@
       {
         "number": "1",
         "title": "We find the real problem before spending",
-        "intro": "Before touching a budget, we plug into your stack: Meta, Google, TikTok, Shopify, Klaviyo. Everything lands in one dashboard so we can answer the only question that matters — where is it actually stuck?",
+        "intro": "Before touching a budget, we plug into your stack: Meta, Google, TikTok, Shopify, Klaviyo. Everything lands in one dashboard so we can answer the only question that matters, where is it actually stuck?",
         "subtitle": "Three possible diagnoses:",
         "items": [
           "VOLUME: demand is there, we just need more fuel.",
@@ -1833,14 +2344,14 @@
       {
         "number": "2",
         "title": "We set what you can pay, and how far you can push",
-        "intro": "Every product has a recommended CAC — the one that keeps margin — and a max CAC — the one we never cross without losing money. We calculate both thresholds before the first dollar goes out.",
+        "intro": "Every product has a recommended CAC — the one that keeps margin — and a max CAC, the one we never cross without losing money. We calculate both thresholds before the first dollar goes out.",
         "subtitle": "The budget planner then does three things:",
         "items": [
           "Recommend the daily spend that stays in the green.",
           "Block automatic scaling that would break the max CAC.",
           "Adjust the full week based on the CAC we actually observe."
         ],
-        "conclusion": "You always know how much you can inject — and when it starts to hurt."
+        "conclusion": "You always know how much you can inject, and when it starts to hurt."
       },
       {
         "number": "3",
@@ -1852,12 +2363,12 @@
           "How fast your winning formats burn out.",
           "The testing capacity available per platform."
         ],
-        "conclusion": "The creative studio gets a briefed number — not a vague \"we need more videos\"."
+        "conclusion": "The creative studio gets a briefed number, not a vague \"we need more videos\"."
       },
       {
         "number": "4",
         "title": "We filter creatives and fix the leaks",
-        "intro": "Every creative runs through our Creative Scoring OS™: hook, retention, angle, resonance. Winners get scaled, losers get killed — before they burn your budget.",
+        "intro": "Every creative runs through our Creative Scoring OS™: hook, retention, angle, resonance. Winners get scaled, losers get killed, before they burn your budget.",
         "subtitle": "In parallel, we walk the funnel with the CRO Pipeline Engine:",
         "items": [
           "Product page and checkout analysis to find friction.",
@@ -1885,12 +2396,12 @@
       "items": [
         "How much can I pay to acquire a customer without losing money?",
         "Is my real problem today volume, offer, or tracking?",
-        "How many creatives do I need to ship per week — and for which angle?",
+        "How many creatives do I need to ship per week, and for which angle?",
         "Which channel actually deserves more budget next week?",
         "Where is my funnel leaking money while paid traffic still runs?",
         "Do I scale, hold, or cut?"
       ],
-      "tagline": "We don't sell \"pretty stats\" — we answer the decisions you have to make.",
+      "tagline": "We don't sell \"pretty stats\", we answer the decisions you have to make.",
       "results": {
         "intro": "Across the brands we've worked with:",
         "items": [
@@ -2105,7 +2616,7 @@
   },
   "methodologiePage": {
     "seo": {
-      "title": "Our methodology — The Profit-First system | TDIA",
+      "title": "Our methodology : The Profit-First system | TDIA",
       "description": "TDIA's Profit-First system in 9 steps: ingestion, diagnostic, allocation & risk, budgets, scored creative, CRO and live optimization. Each step prevents a specific mistake that costs you margin."
     },
     "sidebar": {
@@ -2124,7 +2635,7 @@
       "micro": "OUR METHODOLOGY",
       "headingBefore": "The 9-step system that makes every dollar ",
       "headingSerif": "profitable",
-      "headingAfter": " — fast.",
+      "headingAfter": ", fast.",
       "body": "No \"scale first, profits later\". The Profit-First system is a chain: each step prevents a specific mistake that would cost you margin. We plug in your data, qualify the bottleneck, cap the risk, pace the creative, fix the funnel, and re-read your real cohorts every week.",
       "pills": [
         "9 STEPS · ONE CHAIN",
@@ -2148,14 +2659,14 @@
       },
       {
         "n": "03",
-        "title": "Risk management — recommended CAC + max CAC",
-        "body": "Each product gets two thresholds computed on your margins: the recommended CAC that protects margin, and the max CAC beyond which you lose money. The bounds are set before the first dollar is spent — never after.",
+        "title": "Risk management : recommended CAC + max CAC",
+        "body": "Each product gets two thresholds computed on your margins: the recommended CAC that protects margin, and the max CAC beyond which you lose money. The bounds are set before the first dollar is spent, never after.",
         "prevents": "an automation algorithm from pushing you past break-even without asking."
       },
       {
         "n": "04",
         "title": "Daily & Weekly Budget Planner",
-        "body": "The planner computes each day the budget that stays under recommended CAC and blocks any drift toward max CAC. At week's end, it rebalances against the actual CAC observed — not the forecast.",
+        "body": "The planner computes each day the budget that stays under recommended CAC and blocks any drift toward max CAC. At week's end, it rebalances against the actual CAC observed, not the forecast.",
         "prevents": "discovering on Friday that a badly-scoped Thursday ate the whole week's margin."
       },
       {
@@ -2166,14 +2677,14 @@
       },
       {
         "n": "06",
-        "title": "Creative Demand — creatives per week",
+        "title": "Creative Demand : creatives per week",
         "body": "The system calculates the exact number of creatives to produce each week to stay ahead of the algorithm, based on the burn rate of your winning formats and per-platform test capacity. The studio gets a quantified brief, not a vague order.",
         "prevents": "the creative drought that lets a single video run until fatigue blows CAC up."
       },
       {
         "n": "07",
         "title": "Creative Scoring OS™",
-        "body": "Every ad is scored on Hook / Hold / CTR / CR — a cumulative score that says what deserves budget, what needs to iterate, what dies. Budget migrates to the winners every week, no debate.",
+        "body": "Every ad is scored on Hook / Hold / CTR / CR, a cumulative score that says what deserves budget, what needs to iterate, what dies. Budget migrates to the winners every week, no debate.",
         "prevents": "\"gut feel\" or the founder's favorite from deciding where dollars go."
       },
       {
@@ -2211,7 +2722,7 @@
         "label": "BUDGETS & SEASONALITY",
         "headingBefore": "The budget ",
         "headingSerif": "moves",
-        "headingAfter": " with reality — not with hope.",
+        "headingAfter": " with reality, not with hope.",
         "body": "The planner adjusts daily budget against observed CAC and anticipates seasonal peaks before they hit. Margin is never the last-minute adjustment."
       },
       "creatif": {
@@ -2220,7 +2731,7 @@
         "headingBefore": "Creative is ",
         "headingSerif": "judged",
         "headingAfter": " on its metrics, not on taste.",
-        "body": "Creative count computed weekly, every ad scored on Hook / Hold / CTR / CR. Budget migrates to the winners — no debate."
+        "body": "Creative count computed weekly, every ad scored on Hook / Hold / CTR / CR. Budget migrates to the winners, no debate."
       },
       "conversion": {
         "letter": "E",
@@ -2228,7 +2739,7 @@
         "headingBefore": "Paid traffic deserves a site that ",
         "headingSerif": "converts",
         "headingAfter": ".",
-        "body": "Hypothesis-driven tests, mapped friction, roadmap prioritized by net impact. The same spend earns more — week after week, without opening another cent."
+        "body": "Hypothesis-driven tests, mapped friction, roadmap prioritized by net impact. The same spend earns more, week after week, without opening another cent."
       },
       "live": {
         "letter": "F",
@@ -2236,7 +2747,7 @@
         "headingBefore": "We ",
         "headingSerif": "re-read",
         "headingAfter": " your real cohorts every week.",
-        "body": "LTV, return rate, net margin per channel. Budget migrates toward what actually compounds profit — not what looks bright on Friday night."
+        "body": "LTV, return rate, net margin per channel. Budget migrates toward what actually compounds profit, not what looks bright on Friday night."
       }
     },
     "showcases": {
@@ -2249,15 +2760,15 @@
           },
           {
             "title": "Daily predictive adjustments",
-            "body": "Every morning: a \"where will profit be maximized today?\" simulation — real CAC trends, 24-48h predicted CAC, expected blended MER. The loss is prevented before it's spent."
+            "body": "Every morning: a \"where will profit be maximized today?\" simulation, real CAC trends, 24-48h predicted CAC, expected blended MER. The loss is prevented before it's spent."
           },
           {
             "title": "Audited Budget Change Gate",
-            "body": "Every budget change passes a gate: justification, capacity, expected impact. No silent raises, no blind cuts — every decision leaves a trace."
+            "body": "Every budget change passes a gate: justification, capacity, expected impact. No silent raises, no blind cuts, every decision leaves a trace."
           },
           {
             "title": "Unified first-party attribution",
-            "body": "Unified External ID across Meta CAPI, Google Enhanced Conversions, TikTok CAPI, Shopify, Klaviyo. CFO-grade attribution — not platform guesses."
+            "body": "Unified External ID across Meta CAPI, Google Enhanced Conversions, TikTok CAPI, Shopify, Klaviyo. CFO-grade attribution, not platform guesses."
           }
         ]
       },
@@ -2266,7 +2777,7 @@
         "modules": [
           {
             "title": "Creative IQ™ Scoring",
-            "body": "Every creative scored on Hook Rate, Hold Rate, CTR and CR — a cumulative score that tells what deserves budget, what needs to iterate, what dies."
+            "body": "Every creative scored on Hook Rate, Hold Rate, CTR and CR, a cumulative score that tells what deserves budget, what needs to iterate, what dies."
           },
           {
             "title": "Hook Rating System™",
@@ -2274,11 +2785,11 @@
           },
           {
             "title": "Hook Rate First™",
-            "body": "Ruthless filtering at the hook level — fixed thresholds: <25% = kill, 25–40% = iterate, >40% = scale. We don't move past a hook that loses 3 of 4 viewers."
+            "body": "Ruthless filtering at the hook level, fixed thresholds: <25% = kill, 25–40% = iterate, >40% = scale. We don't move past a hook that loses 3 of 4 viewers."
           },
           {
             "title": "Cadence Machine™ + Creative Vault™",
-            "body": "15–30 concepts per cycle, angle/hook/format bank always ready, replacement before fatigue — never after the drop in performance."
+            "body": "15–30 concepts per cycle, angle/hook/format bank always ready, replacement before fatigue, never after the drop in performance."
           }
         ]
       },
@@ -2314,8 +2825,8 @@
           "Ad Spend"
         ],
         "subItems": [
-          "Google — spend",
-          "Meta — spend"
+          "Google : spend",
+          "Meta : spend"
         ]
       },
       "walkdown": {
@@ -2333,7 +2844,7 @@
         "title": "Generated action",
         "priority": "P0",
         "headline": "Open Google cost caps",
-        "body": "Efficiency ahead, spend 48% under plan — capacity to open without risking target CAC.",
+        "body": "Efficiency ahead, spend 48% under plan, capacity to open without risking target CAC.",
         "gate": "GATE APPROVED",
         "gateSub": "audited trace",
         "cta": "Apply"
@@ -2349,7 +2860,7 @@
         "colScore": "SCORE"
       },
       "hookRate": {
-        "title": "Hook Rate — decision logic"
+        "title": "Hook Rate : decision logic"
       },
       "statusPills": {
         "title": "Decisions this week",
@@ -2367,12 +2878,12 @@
       "funnelDrop": {
         "title": "FunnelDrop™",
         "alertPrefix": "Alert:",
-        "alertSuffix": " — friction detected on mobile iOS."
+        "alertSuffix": ", friction detected on mobile iOS."
       },
       "smartHeat": {
         "title": "SmartHeat™ · friction summary",
         "insights": [
-          "Main CTA ignored — 32% ghost clicks around it",
+          "Main CTA ignored : 32% ghost clicks around it",
           "Scroll drop after the reviews block (68% stop)"
         ]
       }

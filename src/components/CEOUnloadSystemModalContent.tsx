@@ -115,7 +115,7 @@ const CEOUnloadSystemModalContent: React.FC<
                   Real‑Time Alerts. Only When It Matters.
                 </h3>
                 <p className="mb-4 sm:mb-6 text-base sm:text-lg text-gray-300 leading-relaxed">
-                  Get instant anomaly alerts — smart Slack notifications with
+                  Get instant anomaly alerts, smart Slack notifications with
                   zero noise.
                 </p>
 
@@ -158,7 +158,7 @@ const CEOUnloadSystemModalContent: React.FC<
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="mb-2 sm:mb-3 text-xl sm:text-2xl font-bold text-white">
-                  Weekly Recap — No Meetings Required
+                  Weekly Recap: No Meetings Required
                 </h3>
                 <p className="mb-4 sm:mb-6 text-base sm:text-lg text-gray-300 leading-relaxed">
                   A Friday Loom video covering results, creative performance,
@@ -210,7 +210,7 @@ const CEOUnloadSystemModalContent: React.FC<
                 </h3>
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
                   A 15‑minute Loom explaining our analysis framework so you
-                  trust the system — no marketing degree required.
+                  trust the system, no marketing degree required.
                 </p>
               </div>
             </div>

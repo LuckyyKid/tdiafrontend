@@ -163,7 +163,7 @@ const handleCTAClick = () => {
                   </p>
                   <p className="leading-relaxed text-gray-300">
                     Trigger YouTube, email, and TikTok retargeting based on real
-                    user actions — like video views, scroll depth, or PDP
+                    user actions, like video views, scroll depth, or PDP
                     behavior.
                   </p>
                 </div>
@@ -231,7 +231,7 @@ const handleCTAClick = () => {
                   </p>
                   <p className="leading-relaxed text-gray-300">
                     Pre‑loaded YouTube scripts, search campaigns, and email
-                    flows launch within 48 h. Stay live — no panic.
+                    flows launch within 48 h. Stay live, no panic.
                   </p>
                 </div>
 
@@ -280,7 +280,7 @@ const handleCTAClick = () => {
                     Visually simulate the revenue impact of every new channel.
                   </p>
                   <p className="leading-relaxed text-gray-300">
-                    See projected ROI by dragging in TikTok, email or Google —
+                    See projected ROI by dragging in TikTok, email or Google,
                     then deploy only what works.
                   </p>
                 </div>

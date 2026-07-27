@@ -63,7 +63,7 @@ const CROPipelineEngineModalContent: React.FC<CROPipelineEngineModalContentProps
         "A visual report showing what's blocking users (ghost clicks, ignored zones, scroll drops).",
       benefits: [
         { icon: Target, title: "Make it worth it", description: "You see exactly where users drop off or get frustrated." },
-        { icon: Check, title: "Make it easier", description: "Auto‑connects to Shopify or GA — auto‑maps pages." },
+        { icon: Check, title: "Make it easier", description: "Auto‑connects to Shopify or GA, auto‑maps pages." },
         { icon: Zap, title: "Make it faster", description: 'Weekly visual synthesis + test suggestions (e.g. "CTA too low → move 200 px up and retest mobile version")' },
         { icon: Users, title: "Make it enjoyable", description: 'Instant "aha" moments: "we\'re leaking money here!"' },
       ],
@@ -74,7 +74,7 @@ const CROPipelineEngineModalContent: React.FC<CROPipelineEngineModalContentProps
       title: "FunnelDrop™",
       subtitle: "Visual Conversion Map",
       description:
-        "A dynamic funnel visual that shows where people drop off — from landing → PDP → cart → checkout → purchase.",
+        "A dynamic funnel visual that shows where people drop off, from landing → PDP → cart → checkout → purchase.",
       benefits: [
         { icon: Target, title: "Make it worth it", description: "ROAS doesn't tell the full story. This shows the internal friction points." },
         { icon: Check, title: "Make it easier", description: "Auto‑connects with Shopify, GA4, Meta. No dev work required." },
@@ -197,7 +197,7 @@ const CROPipelineEngineModalContent: React.FC<CROPipelineEngineModalContentProps
               CRO roadmap prioritized by <span className="serif">net impact</span> on profit
             </h3>
             <p className="text-[#7c8aa5] text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-              No more guessing — just systematic conversion optimization.
+              No more guessing, just systematic conversion optimization.
             </p>
           </motion.section>
         </main>

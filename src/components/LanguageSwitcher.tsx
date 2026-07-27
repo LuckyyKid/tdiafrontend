@@ -40,13 +40,13 @@ const LanguageSwitcher: React.FC = () => {
           onClick={() => changeLanguage('en')}
           className={`cursor-pointer text-sm ${currentLang === 'en' ? 'text-white bg-white/[0.03]' : 'text-[#7c8aa5] hover:text-white hover:bg-white/[0.03]'}`}
         >
-          EN — English
+          EN · English
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => changeLanguage('fr')}
           className={`cursor-pointer text-sm ${currentLang === 'fr' ? 'text-white bg-white/[0.03]' : 'text-[#7c8aa5] hover:text-white hover:bg-white/[0.03]'}`}
         >
-          FR — Français
+          FR · Français
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

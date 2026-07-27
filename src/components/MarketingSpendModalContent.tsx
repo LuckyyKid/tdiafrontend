@@ -55,7 +55,7 @@ const MarketingSpendModalContent: React.FC<MarketingSpendModalContentProps> = ({
             <div className="space-y-2 text-gray-300">
               <p>You're launching ads, seeing metrics like ROAS or CTR… but you're operating blind.</p>
               <p>You don't know what's really working, why a campaign fails, or where to allocate your budget.</p>
-              <p>Without a structured and segmented system, scaling feels like gambling — not growth.</p>
+              <p>Without a structured and segmented system, scaling feels like gambling, not growth.</p>
               
               <div className="pt-3">
                 <p className="font-medium">Common issues:</p>
@@ -294,7 +294,7 @@ const MarketingSpendModalContent: React.FC<MarketingSpendModalContentProps> = ({
             
             <div className="text-right">
               <p>We define a consistent decision-making model (CBO vs ABO, cold vs warm).</p>
-              <p className="mt-2">You get a visual map of your ad ecosystem, so you know where every dollar goes — and why.</p>
+              <p className="mt-2">You get a visual map of your ad ecosystem, so you know where every dollar goes, and why.</p>
             </div>
             
             <div className="pt-2">
@@ -321,7 +321,7 @@ const MarketingSpendModalContent: React.FC<MarketingSpendModalContentProps> = ({
                 Rules over Reactions
               </p>
               <p className="pt-2">
-                You know what to do when a campaign drops or spikes in performance — without the panic or confusion.
+                You know what to do when a campaign drops or spikes in performance, without the panic or confusion.
               </p>
             </div>
           </div>

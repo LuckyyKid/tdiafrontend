@@ -1,15 +1,10 @@
 import React from 'react';
 import SEOHead from '../components/SEOHead';
 import HeroSection from '../components/HeroSection';
-import StatsGlimpseSection from '../components/StatsGlimpseSection';
+import TwoDoorsSection from '../components/TwoDoorsSection';
 import VideoSection from '../components/VideoSection';
-import GrowthDrivingSection from '../components/GrowthDrivingSection';
+import TeamSection from '../components/TeamSection';
 import CaseStudySection from '../components/CaseStudySection';
-import SectionTransition from '../components/SectionTransition';
-import UGCGallerySection from '../components/UGCGallerySection';
-import ROICalculatorSection from '../components/ROICalculatorSection';
-import TestimonialsSection from '../components/TestimonialsSection';
-import TDIAGuaranteeSection from '../components/TDIAGuaranteeSection';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import StickyHeader from '../components/StickyHeader';
@@ -20,15 +15,10 @@ const Index = () => {
       <SEOHead />
       <StickyHeader />
       <HeroSection />
-      <StatsGlimpseSection />
+      <TwoDoorsSection />
       <VideoSection />
-      <GrowthDrivingSection />
       <CaseStudySection />
-      <SectionTransition />
-      <UGCGallerySection />
-      <ROICalculatorSection />
-      <TestimonialsSection />
-      <TDIAGuaranteeSection />
+      <TeamSection />
       <FAQSection />
       <Footer />
     </div>

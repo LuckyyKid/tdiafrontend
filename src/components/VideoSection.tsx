@@ -80,7 +80,7 @@ const VideoSection: React.FC = () => {
       </div>
 
       {isPlaying && (
-        <div className="fixed inset-0/95 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+        <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
           <div className="relative w-full max-w-5xl">
             <button
               className="absolute -top-12 right-0 text-white hover:text-[#9ec8ff] transition-colors"

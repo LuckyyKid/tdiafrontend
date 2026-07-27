@@ -53,7 +53,7 @@ const CreativeModalContent: React.FC<CreativeModalContentProps> = ({ onClose }) 
             
             <div className="space-y-2 text-gray-300">
               <p>You're posting ads without a clear testing methodology.</p>
-              <p>You launch what feels right in the moment — no process, no hypothesis, no structured approach.</p>
+              <p>You launch what feels right in the moment, no process, no hypothesis, no structured approach.</p>
               <p>Some ads work, others flop, and you can't explain why.</p>
               
               <div className="pt-3">

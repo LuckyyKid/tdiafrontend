@@ -54,7 +54,7 @@ const InventoryManagementModalContent: React.FC<InventoryManagementModalContentP
             <div className="space-y-2 text-gray-300">
               <p>You increase ad spend, but instead of more profit, you get more headaches. ROAS stays flat. Logistics spiral. Creative fatigue hits harder.</p>
               
-              <p className="font-medium">Your funnel wasn't built for scale — it was built to survive, not grow.</p>
+              <p className="font-medium">Your funnel wasn't built for scale, it was built to survive, not grow.</p>
               
               <div className="pt-3">
                 <p className="font-medium text-orange-300 mb-2">Symptoms:</p>
@@ -68,7 +68,7 @@ const InventoryManagementModalContent: React.FC<InventoryManagementModalContentP
               
               <div className="pt-4 bg-red-900/20 p-4 rounded-md border border-red-500/20">
                 <p className="font-medium text-red-200">
-                  Welcome to the scaling margin trap — where every growth push kills your profitability.
+                  Welcome to the scaling margin trap, where every growth push kills your profitability.
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ const InventoryManagementModalContent: React.FC<InventoryManagementModalContentP
               <BarChart3 className="h-8 w-8 text-blue-400 mr-3" />
               <h4 className="text-lg font-semibold text-white">Clear Forecasts</h4>
             </div>
-            <p className="text-gray-300">Profitability forecasts before pushing spend — no surprises, just clarity.</p>
+            <p className="text-gray-300">Profitability forecasts before pushing spend, no surprises, just clarity.</p>
           </div>
           
           <div className="bg-blue-900/20 p-6 rounded-lg border border-blue-500/20">
@@ -214,7 +214,7 @@ const InventoryManagementModalContent: React.FC<InventoryManagementModalContentP
               Scale with confidence <span className="text-green-400">and</span> protected margins.
             </p>
             <p className="text-gray-300 mt-2">
-              No more growth that kills profitability — just strategic scaling that compounds your success.
+              No more growth that kills profitability, just strategic scaling that compounds your success.
             </p>
           </div>
         </div>

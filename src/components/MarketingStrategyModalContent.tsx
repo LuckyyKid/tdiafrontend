@@ -67,7 +67,7 @@ const MarketingStrategyModalContent: React.FC<MarketingStrategyModalContentProps
             <li>• Target avatar</li>
           </ul>
           <p className="text-gray-300 font-semibold mb-6">
-            The backlog isn't random — it's a learning engine.
+            The backlog isn't random, it's a learning engine.
           </p>
 
           {/* Creative Backlog Visual */}

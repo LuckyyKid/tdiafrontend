@@ -55,7 +55,7 @@ const CreativeFatigueModalContent: React.FC<CreativeFatigueModalContentProps> = 
             <div className="space-y-2 text-gray-300">
               <p>You launch an ad, it works for a few days, then performance drops off a cliff.</p>
               <p>So you rush to make new ones, repeat the cycle, and end up in a constant state of creative panic.</p>
-              <p>There's no system, no pipeline, no predictability — just short bursts followed by stress.</p>
+              <p>There's no system, no pipeline, no predictability, just short bursts followed by stress.</p>
               
               <div className="pt-3">
                 <p className="font-medium">The cycle:</p>
@@ -231,7 +231,7 @@ const CreativeFatigueModalContent: React.FC<CreativeFatigueModalContentProps> = 
             </ul>
             
             <div className="pt-2 text-lg">
-              <p>You always have content ready to deploy — no more panic.</p>
+              <p>You always have content ready to deploy, no more panic.</p>
             </div>
           </div>
           

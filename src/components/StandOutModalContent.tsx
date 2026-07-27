@@ -42,7 +42,7 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
             </h3>
             
             <p className="text-xl font-semibold text-gray-200 italic">
-              Your site looks great — but it doesn't convert.
+              Your site looks great, but it doesn't convert.
             </p>
             
             <div className="space-y-2 text-gray-300">
@@ -50,8 +50,8 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
               
               <div className="pt-3">
                 <ul className="space-y-2 list-none pt-2">
-                  <li>• Visual hierarchy is off — CTAs aren't getting clicked.</li>
-                  <li>• Visitors scroll without taking action — and you don't know why.</li>
+                  <li>• Visual hierarchy is off, CTAs aren't getting clicked.</li>
+                  <li>• Visitors scroll without taking action, and you don't know why.</li>
                   <li>• Your pages aren't persuasive. They look "nice", but they don't sell.</li>
                   <li>• You lack visible social proof to reassure new visitors.</li>
                   <li>• You have no system to test and optimize what really works.</li>
@@ -60,7 +60,7 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
               
               <div className="pt-4 bg-orange-900/20 p-4 rounded-md border border-orange-500/20">
                 <p className="font-medium text-orange-200">
-                  Welcome to the aesthetic trap — where branding is polished, but performance is painful.
+                  Welcome to the aesthetic trap, where branding is polished, but performance is painful.
                 </p>
               </div>
             </div>
@@ -159,7 +159,7 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
                 <li>• A full UX audit with InstantUX™ + LightningPack™ to identify friction points and deliver fixes within 72h</li>
                 <li>• HeatSmart™ Replay Engine to reposition CTAs based on real user behavior</li>
                 <li>• SocialProof Overlay System™ to automatically inject UGC, reviews, and trust badges</li>
-                <li>• Design2Convert™ Framework — every block is scored by impact</li>
+                <li>• Design2Convert™ Framework: every block is scored by impact</li>
                 <li>• A roadmap focused on ROI-first design, not vague aesthetics</li>
               </ul>
             </div>
@@ -180,7 +180,7 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
               <Eye className="h-8 w-8 text-blue-400 mr-3" />
               <h4 className="text-lg font-semibold text-white">Stop Guessing</h4>
             </div>
-            <p className="text-gray-300">You see exactly what's hurting conversion — and how to fix it.</p>
+            <p className="text-gray-300">You see exactly what's hurting conversion, and how to fix it.</p>
           </div>
           
           <div className="bg-blue-900/20 p-6 rounded-lg border border-blue-500/20">
@@ -196,7 +196,7 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
               <Target className="h-8 w-8 text-blue-400 mr-3" />
               <h4 className="text-lg font-semibold text-white">Data-Driven Design</h4>
             </div>
-            <p className="text-gray-300">You reclaim your creative direction — now rooted in performance data, not opinions.</p>
+            <p className="text-gray-300">You reclaim your creative direction, now rooted in performance data, not opinions.</p>
           </div>
         </div>
         
@@ -211,7 +211,7 @@ const StandOutModalContent: React.FC<StandOutModalContentProps> = ({ onClose }) 
               Your site becomes both beautiful <span className="text-green-400">and</span> profitable.
             </p>
             <p className="text-gray-300 mt-2">
-              No more design for design's sake — just strategic UX that drives revenue.
+              No more design for design's sake, just strategic UX that drives revenue.
             </p>
           </div>
         </div>

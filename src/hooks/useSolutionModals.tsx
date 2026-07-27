@@ -40,7 +40,7 @@ export const useSolutionModals = () => {
       steps: []
     },
     4: {
-      title: "We've hit a plateau — and nothing we try seems to move the needle",
+      title: "We've hit a plateau, and nothing we try seems to move the needle",
       description: "Special modal for scaling plateau and Growth OS™",
       steps: []
     },
@@ -50,7 +50,7 @@ export const useSolutionModals = () => {
       steps: []
     },
     6: {
-      title: "The ad looks great — but my page kills the vibe",
+      title: "The ad looks great, but my page kills the vibe",
       description: "Special modal for offer-to-ad sync framework",
       steps: []
     },

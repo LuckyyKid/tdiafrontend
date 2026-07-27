@@ -20,7 +20,7 @@ const ScalingPlateauModalContent: React.FC<ScalingPlateauModalContentProps> = ({
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            "We've hit a plateau — and nothing we try seems to move the needle"
+            "We've hit a plateau, and nothing we try seems to move the needle"
           </h2>
         </div>
         
@@ -176,7 +176,7 @@ const ScalingPlateauModalContent: React.FC<ScalingPlateauModalContentProps> = ({
             </p>
             
             <p className="text-gray-300">
-              With our Growth OS™, we sync marketing, operations, and finance in one unified dashboard — live.
+              With our Growth OS™, we sync marketing, operations, and finance in one unified dashboard, live.
             </p>
             
             <p className="text-gray-300">
@@ -230,11 +230,11 @@ const ScalingPlateauModalContent: React.FC<ScalingPlateauModalContentProps> = ({
             </p>
             
             <div className="space-y-3 text-gray-300">
-              <p className="font-medium">A single, real-time source of truth — for both performance and profitability.</p>
+              <p className="font-medium">A single, real-time source of truth, for both performance and profitability.</p>
               
               <p>You don't need to check 5 tools or request reports. You see the margin impact of every dollar spent.</p>
               
-              <p>Your team understands the "why" behind scaling decisions. Your growth is no longer reactive — it's predictable.</p>
+              <p>Your team understands the "why" behind scaling decisions. Your growth is no longer reactive, it's predictable.</p>
             </div>
           </div>
         </div>
@@ -247,7 +247,7 @@ const ScalingPlateauModalContent: React.FC<ScalingPlateauModalContentProps> = ({
           
           <div className="bg-gradient-to-r from-blue-900/30 to-green-900/20 p-6 rounded-lg border border-blue-500/20 max-w-3xl mx-auto">
             <p className="text-xl font-semibold text-white mb-4">
-              You scale profitably — without the chaos.
+              You scale profitably, without the chaos.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-300">
               <div className="flex items-center gap-2">
@@ -260,7 +260,7 @@ const ScalingPlateauModalContent: React.FC<ScalingPlateauModalContentProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <span></span>
-                <span>You feel in control — because your marketing is synced with reality</span>
+                <span>You feel in control, because your marketing is synced with reality</span>
               </div>
             </div>
           </div>
