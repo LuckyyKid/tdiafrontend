@@ -53,20 +53,14 @@ const InfiniteLogoBanner: React.FC = () => {
   const allLogos = [...logos, ...logos]; // duplication pour la boucle infinie
 
   return (
-    <div className="w-full bg-gradient-to-r from-[#1e3a8a] via-[#3b82f6] to-transparent pt-10 pb-8 overflow-hidden">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center gap-8 mb-8">
-          {/* ---------- Titre à gauche ---------- */}
-          <h2 className="text-2xl md:text-3xl font-bold text-white whitespace-nowrap">
-            Selected by High-Growth Ecom Brands
-          </h2>
-          
-          {/* ---------- Barre verticale blanche ---------- */}
-          <div className="hidden md:block w-[2px] h-20 bg-white"></div>
-        </div>
+    <div className="w-full bg-[#060910] hairline-t hairline-b py-8 md:py-10 overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6 mb-6">
+        <p className="text-[10px] md:text-xs text-[#9ec8ff]/80 font-mono-tdia tracking-[0.22em] uppercase text-center">
+          {t("hero.selectedBy")} <span className="text-[#e6ecf7]/90">{t("hero.highGrowthBrands")}</span>
+        </p>
       </div>
 
-      {/* ---------- Bandeaux + logos ---------- */}
+      {/* ---------- Bandeau logos ---------- */}
       <div className="relative w-full overflow-hidden">
         <div
           ref={scrollRef}
@@ -74,16 +68,19 @@ const InfiniteLogoBanner: React.FC = () => {
           style={{ width: "fit-content" }}
         >
           {allLogos.map((logo, index) => (
-            <div key={index} className="mx-16 inline-flex items-center justify-center">
+            <div key={index} className="mx-10 md:mx-14 inline-flex items-center justify-center">
               <img
                 src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
-                className="h-40 md:h-52 w-auto max-w-[280px] object-contain opacity-95 hover:opacity-100 transition-all duration-300 hover:scale-110 brightness-110"
+                className="h-10 md:h-12 w-auto max-w-[160px] object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
               />
             </div>
           ))}
         </div>
+        {/* fades latérales */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-24 bg-gradient-to-r from-[#060910] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-24 bg-gradient-to-l from-[#060910] to-transparent" />
       </div>
     </div>
   );
