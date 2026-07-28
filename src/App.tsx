@@ -33,6 +33,7 @@ import TermsOfService from "./pages/TermsOfService";
 import Methodologie from "./pages/Methodologie";
 import Acquisition from "./pages/Acquisition";
 import Operations from "./pages/Operations";
+import OperationsCaseStudies from "./pages/OperationsCaseStudies";
 
 const queryClient = new QueryClient();
 
@@ -74,6 +75,7 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/acquisition" element={<Acquisition />} />
             <Route path="/operations" element={<Operations />} />
+            <Route path="/operations/case-studies" element={<OperationsCaseStudies />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/case-studies/:caseId" element={<CaseStudyDetail />} />
             <Route path="/services" element={<Services />} />

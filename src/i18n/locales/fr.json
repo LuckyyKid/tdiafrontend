@@ -301,24 +301,6 @@
       "description": "On construit le logiciel qui remplace tout ça, conçu pour ta façon de travailler, pas l'inverse.",
       "cta": "Réserver un diagnostic d'opérations"
     },
-    "story": {
-      "eyebrow": "Cas concret",
-      "heading": "Comment une compagnie de transport",
-      "headingSerif": "a arrêté de gérer sa flotte sur Excel",
-      "beforeLabel": "AVANT",
-      "afterLabel": "APRÈS",
-      "before": [
-        "La flotte était suivie sur des fichiers Excel et un CRM désuet.",
-        "Impossible de savoir quel chauffeur avait conduit quel véhicule sans vérification manuelle.",
-        "L'état des véhicules (essence, entretien, alertes moteur) se découvrait en retard, souvent trop tard."
-      ],
-      "after": [
-        "Une carte en temps réel de tous les véhicules, accessible depuis n'importe quel écran.",
-        "Niveau d'essence, alertes check engine et état de chaque véhicule visibles en continu.",
-        "Chaque chauffeur scanne sa carte avant de démarrer : l'association chauffeur/véhicule est automatique, sans une seule vérification manuelle.",
-        "Le CRM et les données de flotte au même endroit, plus aucun fichier Excel parallèle."
-      ]
-    },
     "build": {
       "eyebrow": "Ce qu'on construit",
       "heading": "On part du problème, pas de la techno",
@@ -339,6 +321,14 @@
         {
           "problem": "Tes données sont éparpillées et tu ne peux rien en tirer.",
           "solution": "Centralisation et tableaux de bord de décision."
+        },
+        {
+          "problem": "Des vérifications sur le terrain t'occupent une personne à temps plein et se contournent quand même.",
+          "solution": "Vision par ordinateur reliée à tes systèmes d'accès : les règles s'appliquent automatiquement, sans surveillance humaine constante."
+        },
+        {
+          "problem": "Ton équipe passe ses journées sur des tâches répétitives : relances, rapports, saisies, traitement de documents.",
+          "solution": "Automatisation des tâches internes : agents et workflows qui exécutent ces opérations en continu, sans erreur, sans supervision."
         }
       ],
       "labels": {
@@ -414,6 +404,84 @@
       "headingSerif": "avant de proposer quoi que ce soit.",
       "description": "20 minutes pour comprendre où tu perds du temps. On te dit ensuite si un système vaut la peine, ou si un simple ajustement suffit.",
       "cta": "Réserver un appel"
+    },
+    "caseStudiesCta": "Voir nos études de cas"
+  },
+  "operationsCaseStudies": {
+    "seo": {
+      "title": "Études de cas Opérations | TDIA",
+      "description": "Cinq entreprises, cinq problèmes concrets réglés par un système sur mesure — inspections de flotte, plateforme éducative, sécurité chantier, CRM, réceptionniste IA."
+    },
+    "backToOperations": "Retour à Opérations",
+    "hero": {
+      "eyebrow": "Études de cas · Opérations",
+      "headline1": "Cinq entreprises,",
+      "headline2": "cinq problèmes qui ne se réglaient pas avec un outil du commerce.",
+      "description": "Chaque projet ci-dessous est parti d'une frustration concrète de dirigeant : trop d'Excel, trop d'oubli, trop de choses gérées de tête. On raconte ici ce qui coinçait, ce qu'on a construit, et ce que ça a changé une fois livré."
+    },
+    "labels": {
+      "problem": "Le point de départ.",
+      "solution": "Ce qu'on a construit.",
+      "impact": "Ce que ça a changé."
+    },
+    "cases": {
+      "klara": {
+        "company": "Opérateur de stationnements",
+        "title": "L'opération redevient visible depuis le bureau",
+        "storyProblem": "Les rapports d'inspection pré-départ étaient remplis sur un fichier Excel envoyé au gestionnaire. En pratique, les inspections manquées passaient inaperçues jusqu'à ce qu'un problème survienne, et rien ne rendait visible les employés qui laissaient traîner.",
+        "storySolution": "On a remplacé l'Excel par une plateforme où chaque véhicule reçoit trois inspections par jour, sur des créneaux fixes. Chaque retard remonte automatiquement au gestionnaire avec les minutes de retard, l'employé responsable et le contexte. Un score employé cumule les retards et oublis pour rendre les comportements problématiques visibles avant qu'ils deviennent un vrai problème.",
+        "storyImpact": "Le gestionnaire ne court plus après les rapports — il voit en direct l'état de la flotte et de son équipe. Les anomalies (dommages, alertes moteur, propreté) sont tracées avec photos et persistent jusqu'à résolution, ce qui a mis fin aux problèmes qui \"disparaissent\" entre deux quarts. Les inspections en retard passent d'un angle mort à un signal opérationnel exploitable.",
+        "metricValue": "15 / jour",
+        "metricLabel": "inspections attendues, rappelées, tracées",
+        "tags": ["logiciel sur mesure", "mobile-first", "scoring employé", "alertes automatiques"]
+      },
+      "manara": {
+        "company": "Manara",
+        "title": "Un centre d'activités jeunesse dans un seul écosystème",
+        "storyProblem": "La communication d'un centre d'activités jeunesse se faisait à travers courriels, papier, appels et groupes de discussion parallèles. Les activités étaient assignées à la main, chaque rôle avait son canal, et personne n'avait la vue complète sur un enfant.",
+        "storySolution": "On a construit une plateforme qui rassemble parents, enfants, instructeurs et administrateurs dans un même écosystème. Les activités sont recommandées automatiquement selon l'âge, le profil et les points faibles de l'enfant. Quiz et plans de pratique sont générés à la volée, avec des garde-fous pour rester dans le cadre pédagogique. Messagerie en temps réel entre tous les rôles, paiements récurrents intégrés, authentification Google.",
+        "storyImpact": "Le personnel du centre passe moins de temps à coordonner et plus de temps sur son cœur de métier — l'accompagnement des enfants. Les parents ont enfin une vue complète sur les activités et progrès de leur enfant. Les recommandations personnalisées augmentent l'engagement, et les abonnements se gèrent sans jonglage manuel entre outils.",
+        "metricValue": "4 rôles",
+        "metricLabel": "réunis dans une seule plateforme",
+        "tags": ["plateforme sur mesure", "temps réel", "paiements", "IA encadrée"]
+      },
+      "safeaccess": {
+        "company": "Chantier industriel",
+        "title": "Les règles de sécurité s'appliquent d'elles-mêmes",
+        "storyProblem": "Les règles d'équipement (casque, lunettes) reposaient sur des vérifications humaines à l'entrée. Résultat prévisible : les règles se contournent quand le contrôleur regarde ailleurs, ou coûtent une personne à temps plein postée au portique.",
+        "storySolution": "On a mis en place un contrôle d'accès conditionné aux équipements portés. Avant que le badge ne débloque le portique, une caméra vérifie par vision par ordinateur que l'employé est correctement équipé. Après trois tentatives non conformes du même employé, le superviseur reçoit automatiquement une notification par courriel et texto avec l'identifiant de l'employé et le nombre d'essais.",
+        "storyImpact": "Les règles ne dépendent plus de la vigilance d'un humain. Fini le poste de contrôleur permanent à l'entrée. Chaque accès (heure, employé, résultat) est journalisé — utile en inspection, indispensable en cas d'incident. Les comportements problématiques sont détectés au troisième essai, pas au premier accident.",
+        "metricValue": "0",
+        "metricLabel": "accès non conforme sans alerte remontée",
+        "tags": ["vision par ordinateur", "IoT", "contrôle d'accès", "sécurité chantier"]
+      },
+      "terrasso": {
+        "company": "Terrasso",
+        "title": "L'entreprise sort du cellulaire du dirigeant",
+        "storyProblem": "Toute l'entreprise — prospects Messenger, soumissions, rappels, suivi client — tenait dans la tête et le téléphone du dirigeant. Chaque nouveau lead devenait une charge mentale, chaque soumission un fichier envoyé à la volée, chaque rappel un post-it.",
+        "storySolution": "On a construit un logiciel sur mesure qui centralise le tout : CRM classant les prospects (Messenger, courriel, téléphone au même endroit), funnel de vente, gestion des soumissions avec intégration comptable, suivi automatique des communications et rappels. Livré en desktop, le dirigeant en est propriétaire.",
+        "storyImpact": "Le dirigeant n'est plus la tour de contrôle. Les leads ne se perdent plus dans un fil Messenger oublié. Les soumissions sont suivies jusqu'à la fermeture, la comptabilité se synchronise sans double saisie, et les rappels arrivent au bon moment sans qu'il ait à y penser. La tête se libère pour le terrain.",
+        "metricValue": "1 outil",
+        "metricLabel": "à la place d'un cellulaire saturé",
+        "tags": ["CRM sur mesure", "funnel de vente", "intégration comptable"]
+      },
+      "plombier": {
+        "company": "Plombier indépendant",
+        "title": "5 secondes de sa journée par lead — le reste tourne tout seul",
+        "storyProblem": "Trop de demandes entrantes, pas assez de temps entre deux chantiers pour y répondre. Chaque lead ignoré était un client perdu, chaque soirée passait à rattraper le retard administratif.",
+        "storySolution": "On a branché une réceptionniste IA directement sur son WhatsApp. Elle répond aux nouveaux contacts en secondes, qualifie la demande, confirme les disponibilités, puis envoie au client un formulaire par texto pour recueillir photos, vidéos et détails du problème. Le plombier reçoit un dossier complet sur son WhatsApp — contexte, médias, plage horaire confirmée — et n'a qu'à répondre oui ou non. Un message automatique de confirmation ou de refus part au client selon sa réponse.",
+        "storyImpact": "Sa disponibilité passe de \"quand il a le temps\" à 24 h / 24 sans embaucher personne. Les leads ne se perdent plus parce qu'il est en haut d'une échelle. Les jobs qui arrivent sont pré-qualifiés avec les visuels — plus besoin d'aller sur place pour comprendre. Sa journée reste centrée sur la plomberie, pas sur la gestion.",
+        "metricValue": "5 sec",
+        "metricLabel": "de sa journée par lead traité",
+        "tags": ["IA conversationnelle", "WhatsApp", "qualification de leads", "automatisation client"]
+      }
+    },
+    "finalCta": {
+      "heading": "Ton opération ressemble",
+      "headingSerif": "à un de ces cas ?",
+      "description": "20 minutes suffisent pour voir si ton problème mérite un système sur mesure — ou juste un ajustement.",
+      "cta": "Réserver un diagnostic",
+      "ghostCta": "Retour à Opérations"
     }
   },
   "stats": {

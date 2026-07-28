@@ -3,11 +3,12 @@ import { motion, useInView } from "framer-motion";
 import {
   ArrowRight,
   Check,
-  X,
   RefreshCw,
   Wrench,
   Radio,
   Database,
+  ScanEye,
+  Bot,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -29,18 +30,11 @@ const openCalendly = (label: string, location: string) => {
   window.open(CALENDLY_URL, "_blank");
 };
 
-const BuildIcons = [RefreshCw, Wrench, Radio, Database];
+const BuildIcons = [RefreshCw, Wrench, Radio, Database, ScanEye, Bot];
 
 const Operations: React.FC = () => {
   const { t, ready } = useTranslation();
   if (!ready) return null;
-
-  const beforeItems = t("operationsPage.story.before", {
-    returnObjects: true,
-  }) as string[];
-  const afterItems = t("operationsPage.story.after", {
-    returnObjects: true,
-  }) as string[];
 
   const buildItems = t("operationsPage.build.items", {
     returnObjects: true,
@@ -96,39 +90,6 @@ const Operations: React.FC = () => {
                 <ArrowRight className="h-4 w-4" />
               </button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* STORY (Avant / Après) */}
-      <section className="relative py-24 md:py-32 halo-center">
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="pill-tdia mb-6 mx-auto">
-              {t("operationsPage.story.eyebrow")}
-            </div>
-            <h2 className="tdia-h text-[30px] md:text-[42px] lg:text-[48px]">
-              <span>{t("operationsPage.story.heading")} </span>
-              <br className="hidden md:block" />
-              <span className="serif">
-                {t("operationsPage.story.headingSerif")}
-              </span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
-            <BeforeAfterCard
-              label={t("operationsPage.story.beforeLabel")}
-              items={beforeItems}
-              variant="before"
-              index={0}
-            />
-            <BeforeAfterCard
-              label={t("operationsPage.story.afterLabel")}
-              items={afterItems}
-              variant="after"
-              index={1}
-            />
           </div>
         </div>
       </section>
@@ -273,6 +234,22 @@ const Operations: React.FC = () => {
         </div>
       </section>
 
+      {/* CASE STUDIES LINK */}
+      <section className="relative py-10 md:py-14">
+        <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
+          <Link
+            to="/operations/case-studies"
+            onClick={() =>
+              trackCTAClick("View Operations Case Studies", "operations_bottom")
+            }
+            className="btn-tdia"
+          >
+            {t("operationsPage.caseStudiesCta")}
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="relative py-24 md:py-32 halo-cta">
         <div className="container mx-auto max-w-4xl px-4 md:px-6 relative z-10">
@@ -330,46 +307,6 @@ const AnimatedCard: React.FC<{
       className={`tdia-card p-7 md:p-8 flex flex-col ${className}`}
     >
       {children}
-    </motion.div>
-  );
-};
-
-const BeforeAfterCard: React.FC<{
-  label: string;
-  items: string[];
-  variant: "before" | "after";
-  index: number;
-}> = ({ label, items, variant, index }) => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-  const Icon = variant === "before" ? X : Check;
-  const iconColor = variant === "before" ? "text-red-400/80" : "text-[#4d9fff]";
-  const kickerColor =
-    variant === "before" ? "text-red-300/80" : "text-[#9ec8ff]";
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-      transition={{ duration: 0.6, delay: index * 0.12 }}
-      className="tdia-card p-7 md:p-9"
-    >
-      <div className={`micro-label mb-6 ${kickerColor}`}>{label}</div>
-      <ul className="space-y-4">
-        {items.map((item, i) => (
-          <li
-            key={i}
-            className="flex items-start gap-3 text-[#e6ecf7]/85 text-base leading-relaxed"
-          >
-            <Icon
-              className={`w-5 h-5 mt-0.5 flex-shrink-0 ${iconColor}`}
-              strokeWidth={2}
-            />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
     </motion.div>
   );
 };
