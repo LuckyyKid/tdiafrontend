@@ -1,9 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import { useTranslation } from "react-i18next";
 
 const InfiniteLogoBanner: React.FC = () => {
-  const { t } = useTranslation();
-
   const scrollRef = useRef<HTMLDivElement>(null);
 
   /* ----------- défilement horizontal optimisé ----------- */
@@ -54,12 +51,6 @@ const InfiniteLogoBanner: React.FC = () => {
 
   return (
     <div className="w-full bg-[#060910] hairline-t hairline-b py-8 md:py-10 overflow-hidden">
-      <div className="container mx-auto px-4 md:px-6 mb-6">
-        <p className="text-[10px] md:text-xs text-[#9ec8ff]/80 font-mono-tdia tracking-[0.22em] uppercase text-center">
-          {t("hero.selectedBy")} <span className="text-[#e6ecf7]/90">{t("hero.highGrowthBrands")}</span>
-        </p>
-      </div>
-
       {/* ---------- Bandeau logos ---------- */}
       <div className="relative w-full overflow-hidden">
         <div
