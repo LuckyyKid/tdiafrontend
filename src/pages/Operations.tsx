@@ -139,6 +139,19 @@ const Operations: React.FC = () => {
               );
             })}
           </div>
+
+          <div className="mt-14 flex justify-center">
+            <Link
+              to="/operations/case-studies"
+              onClick={() =>
+                trackCTAClick("View Operations Case Studies", "operations_build")
+              }
+              className="btn-tdia"
+            >
+              {t("operationsPage.caseStudiesCta")}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -231,22 +244,6 @@ const Operations: React.FC = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
-      </section>
-
-      {/* CASE STUDIES LINK */}
-      <section className="relative py-10 md:py-14">
-        <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
-          <Link
-            to="/operations/case-studies"
-            onClick={() =>
-              trackCTAClick("View Operations Case Studies", "operations_bottom")
-            }
-            className="btn-tdia"
-          >
-            {t("operationsPage.caseStudiesCta")}
-            <ArrowRight className="w-4 h-4" />
-          </Link>
         </div>
       </section>
 
