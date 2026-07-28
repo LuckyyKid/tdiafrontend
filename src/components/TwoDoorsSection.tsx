@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import { ArrowRight, Target, Cog, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -12,8 +12,48 @@ type DoorContent = {
   forWhoLabel: string;
   audiences: string[];
   proofLabel: string;
-  proof: string;
+  proofs: string[];
   cta: string;
+};
+
+const PROOF_INTERVAL_MS = 3800;
+
+const ProofCarousel: React.FC<{ proofs: string[]; startDelayMs?: number }> = ({
+  proofs,
+  startDelayMs = 0,
+}) => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (proofs.length <= 1) return;
+    const start = window.setTimeout(() => {
+      setIndex((i) => (i + 1) % proofs.length);
+    }, startDelayMs);
+    const id = window.setInterval(() => {
+      setIndex((i) => (i + 1) % proofs.length);
+    }, PROOF_INTERVAL_MS);
+    return () => {
+      window.clearTimeout(start);
+      window.clearInterval(id);
+    };
+  }, [proofs.length, startDelayMs]);
+
+  return (
+    <div className="relative min-h-[3.25rem] md:min-h-[3.5rem]">
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.p
+          key={index}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          className="text-[#e6ecf7]/90 text-sm md:text-base leading-snug"
+        >
+          {proofs[index]}
+        </motion.p>
+      </AnimatePresence>
+    </div>
+  );
 };
 
 const TwoDoorsSection: React.FC = () => {
@@ -114,9 +154,12 @@ const TwoDoorsSection: React.FC = () => {
                 {/* Proof strip */}
                 <div className="mt-auto pt-6 hairline-t">
                   <div className="micro-label mb-2">{c.proofLabel}</div>
-                  <p className="text-[#e6ecf7]/90 text-sm md:text-base leading-snug mb-6">
-                    {c.proof}
-                  </p>
+                  <div className="mb-6">
+                    <ProofCarousel
+                      proofs={c.proofs}
+                      startDelayMs={index * (PROOF_INTERVAL_MS / 2)}
+                    />
+                  </div>
 
                   <Link
                     to={door.to}

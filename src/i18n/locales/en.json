@@ -60,8 +60,14 @@
         "Local service businesses",
         "Companies that are hiring"
       ],
-      "proofLabel": "Recent result",
-      "proof": "Atlas Énergie: $20/lead instead of $150.",
+      "proofLabel": "Recent results",
+      "proofs": [
+        "Onyx: 1,050+ qualified leads in 6 months.",
+        "Runak: ~8× average ROAS in cosmetics.",
+        "Lockfeet: $27K → $85K monthly sales in 3 months.",
+        "GoCoconut: +215% sales in 60 days.",
+        "O'Splash: 0 → 116 qualified requests at $21.25 CPA."
+      ],
       "cta": "See how we do it"
     },
     "operations": {
@@ -74,8 +80,14 @@
         "Businesses with repetitive manual processes",
         "Fleets, inventory, field tracking"
       ],
-      "proofLabel": "Recent result",
-      "proof": "Transport company: real-time fleet tracking, zero manual checks.",
+      "proofLabel": "Recent results",
+      "proofs": [
+        "Klara: 15 inspections a day reminded and tracked.",
+        "Manara: 4 roles united in one platform.",
+        "Industrial job site: 0 non-compliant entries without an alert.",
+        "Terrasso: 1 tool replacing an overloaded phone.",
+        "Solo plumber: 5 seconds per lead, the rest runs itself."
+      ],
       "cta": "See how we do it"
     },
     "unsureLabel": "Not sure?",

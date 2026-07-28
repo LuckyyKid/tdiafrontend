@@ -60,8 +60,14 @@
         "Entreprises de services locaux",
         "Entreprises qui recrutent"
       ],
-      "proofLabel": "Résultat récent",
-      "proof": "Atlas Énergie : 20 $/lead au lieu de 150 $.",
+      "proofLabel": "Résultats récents",
+      "proofs": [
+        "Onyx : 1 050+ leads qualifiés en 6 mois.",
+        "Runak : ROAS moyen ~8× en cosmétique.",
+        "Lockfeet : 27 000 $ → 85 000 $ de ventes mensuelles en 3 mois.",
+        "GoCoconut : +215 % de ventes en 60 jours.",
+        "O'Splash : 0 → 116 demandes qualifiées à 21,25 $ de CPA."
+      ],
       "cta": "Voir comment on procède"
     },
     "operations": {
@@ -74,8 +80,14 @@
         "Entreprises avec des processus manuels répétitifs",
         "Flottes, inventaires, suivis terrain"
       ],
-      "proofLabel": "Résultat récent",
-      "proof": "Compagnie de transport : suivi de flotte en temps réel, zéro vérification manuelle.",
+      "proofLabel": "Résultats récents",
+      "proofs": [
+        "Klara : 15 inspections par jour rappelées et trackées.",
+        "Manara : 4 rôles unis dans une seule plateforme.",
+        "Chantier industriel : 0 entrée non-conforme sans alerte.",
+        "Terrasso : 1 outil qui remplace un téléphone surchargé.",
+        "Plombier indépendant : 5 secondes par lead, le reste tourne seul."
+      ],
       "cta": "Voir comment on procède"
     },
     "unsureLabel": "Pas sûr ?",
