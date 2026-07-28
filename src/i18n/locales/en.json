@@ -410,7 +410,7 @@
   "operationsCaseStudies": {
     "seo": {
       "title": "Operations Case Studies | TDIA",
-      "description": "Five businesses, five concrete problems solved by a custom system — fleet inspections, education platform, site safety, CRM, AI receptionist."
+      "description": "Five businesses, five concrete problems solved by a custom system: fleet inspections, education platform, site safety, CRM, AI receptionist."
     },
     "backToOperations": "Back to Operations",
     "hero": {
@@ -430,7 +430,7 @@
         "title": "The operation becomes visible from the office again",
         "storyProblem": "Pre-departure inspection reports were filled out on an Excel file sent to the manager. In practice, missed inspections went unnoticed until a real problem surfaced, and nothing made visible which employees were letting things slip.",
         "storySolution": "We replaced Excel with a platform where every vehicle gets three inspections per day, on fixed time slots. Every late one automatically escalates to the manager with the minutes late, the responsible employee, and the context. A per-employee score adds up delays and misses so problem behavior surfaces before it becomes a real problem.",
-        "storyImpact": "The manager no longer chases reports — fleet state and team behavior are live on screen. Anomalies (damage, engine alerts, cleanliness) are logged with photos and persist until closed, ending the \"disappearing\" problems between shifts. Late inspections went from a blind spot to a usable operational signal.",
+        "storyImpact": "The manager no longer chases reports: fleet state and team behavior are live on screen. Anomalies (damage, engine alerts, cleanliness) are logged with photos and persist until closed, ending the \"disappearing\" problems between shifts. Late inspections went from a blind spot to a usable operational signal.",
         "metricValue": "15 / day",
         "metricLabel": "inspections expected, reminded, tracked",
         "tags": ["custom software", "mobile-first", "employee scoring", "auto alerts"]
@@ -440,7 +440,7 @@
         "title": "A youth activity center in one ecosystem",
         "storyProblem": "Communication in a youth activity center flowed through emails, paper, phone calls and parallel chat groups. Activities were assigned by hand, each role had its own channel, and nobody had a full view of a single child.",
         "storySolution": "We built a platform that brings parents, kids, instructors and admins into a single ecosystem. Activities are recommended automatically based on the child's age, profile and weak spots. Quizzes and practice plans are generated on the fly, with guardrails to stay pedagogically sound. Real-time messaging across all roles, recurring payments, Google authentication.",
-        "storyImpact": "Center staff spend less time coordinating and more time on the core job — supporting the kids. Parents finally have a full view of their child's activities and progress. Personalized recommendations lift engagement, and subscriptions are handled without juggling separate tools.",
+        "storyImpact": "Center staff spend less time coordinating and more time on the core job: supporting the kids. Parents finally have a full view of their child's activities and progress. Personalized recommendations lift engagement, and subscriptions are handled without juggling separate tools.",
         "metricValue": "4 roles",
         "metricLabel": "united in one platform",
         "tags": ["custom platform", "real-time", "payments", "guarded AI"]
@@ -450,7 +450,7 @@
         "title": "Safety rules enforce themselves",
         "storyProblem": "PPE rules (hard hat, safety glasses) relied on human checks at the entrance. The predictable outcome: rules get bypassed when the checker looks away, or cost a full-time person posted at the gate.",
         "storySolution": "We put in place an access control tied to the equipment worn. Before the badge unlocks the gate, a camera uses computer vision to verify the worker is properly equipped. After three non-compliant attempts by the same worker, the supervisor automatically receives an email and text notification with the employee ID and attempt count.",
-        "storyImpact": "Rules no longer depend on a human's vigilance. No more full-time gate keeper. Every entry (time, worker, result) is logged — useful for inspections, essential in case of incident. Problem behavior is caught on the third attempt, not after the first accident.",
+        "storyImpact": "Rules no longer depend on a human's vigilance. No more full-time gate keeper. Every entry (time, worker, result) is logged: useful for inspections, essential in case of incident. Problem behavior is caught on the third attempt, not after the first accident.",
         "metricValue": "0",
         "metricLabel": "non-compliant entries without an alert",
         "tags": ["computer vision", "IoT", "access control", "site safety"]
@@ -458,7 +458,7 @@
       "terrasso": {
         "company": "Terrasso",
         "title": "The business comes out of the owner's phone",
-        "storyProblem": "The entire business — Messenger leads, quotes, reminders, client follow-ups — lived in the owner's head and phone. Every new lead was a mental load, every quote a file sent on the fly, every reminder a sticky note.",
+        "storyProblem": "The entire business (Messenger leads, quotes, reminders, client follow-ups) lived in the owner's head and phone. Every new lead was a mental load, every quote a file sent on the fly, every reminder a sticky note.",
         "storySolution": "We built a custom desktop tool that centralizes everything: a CRM that sorts prospects (Messenger, email, phone all in one place), a sales funnel, quote management with accounting integration, and automatic follow-ups on communications and reminders. The owner owns the software.",
         "storyImpact": "The owner is no longer the control tower. Leads no longer get lost in a forgotten Messenger thread. Quotes are tracked to close, accounting reconciles without double entry, and reminders fire at the right time without him having to think about it. His head is free for the field.",
         "metricValue": "1 tool",
@@ -467,10 +467,10 @@
       },
       "plombier": {
         "company": "Solo plumber",
-        "title": "5 seconds of his day per lead — the rest runs itself",
+        "title": "5 seconds of his day per lead, the rest runs itself",
         "storyProblem": "Too many inbound requests, not enough time between jobs to answer them. Every ignored lead was a lost customer, and every evening was spent catching up on admin.",
-        "storySolution": "We wired an AI receptionist directly into his WhatsApp. It responds to new contacts in seconds, qualifies the request, confirms availability, then sends the client a text form to collect photos, videos and details of the problem. The plumber gets a complete dossier on his WhatsApp — context, media, confirmed time slot — and just has to reply yes or no. An automatic confirmation or refusal message is sent to the client based on his answer.",
-        "storyImpact": "Availability went from \"when he has time\" to 24/7 without hiring anyone. Leads don't get lost because he's up a ladder. Incoming jobs come pre-qualified with visuals — no more site visits just to understand the problem. His day stays focused on plumbing, not on managing.",
+        "storySolution": "We wired an AI receptionist directly into his WhatsApp. It responds to new contacts in seconds, qualifies the request, confirms availability, then sends the client a text form to collect photos, videos and details of the problem. The plumber gets a complete dossier on his WhatsApp (context, media, confirmed time slot) and just has to reply yes or no. An automatic confirmation or refusal message is sent to the client based on his answer.",
+        "storyImpact": "Availability went from \"when he has time\" to 24/7 without hiring anyone. Leads don't get lost because he's up a ladder. Incoming jobs come pre-qualified with visuals: no more site visits just to understand the problem. His day stays focused on plumbing, not on managing.",
         "metricValue": "5 sec",
         "metricLabel": "of his day per lead handled",
         "tags": ["conversational AI", "WhatsApp", "lead qualification", "client automation"]
@@ -479,7 +479,7 @@
     "finalCta": {
       "heading": "Does your operation look",
       "headingSerif": "like one of these?",
-      "description": "20 minutes is enough to tell whether your problem deserves a custom system — or just a tweak.",
+      "description": "20 minutes is enough to tell whether your problem deserves a custom system, or just a tweak.",
       "cta": "Book a diagnostic",
       "ghostCta": "Back to Operations"
     }
