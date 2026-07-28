@@ -1,6 +1,7 @@
 import React from 'react';
 import SEOHead from '../components/SEOHead';
 import HeroSection from '../components/HeroSection';
+import InfiniteLogoBanner from '../components/InfiniteLogoBanner';
 import TwoDoorsSection from '../components/TwoDoorsSection';
 import VideoSection from '../components/VideoSection';
 import TeamSection from '../components/TeamSection';
@@ -15,6 +16,7 @@ const Index = () => {
       <SEOHead />
       <StickyHeader />
       <HeroSection />
+      <InfiniteLogoBanner />
       <TwoDoorsSection />
       <VideoSection />
       <CaseStudySection />
