@@ -2761,8 +2761,7 @@
   },
   "teamModal": {
     "style": "- Style",
-    "chooseStrategist": "Choisir",
-    "chooseStrategistEnd": "comme Mon Stratège",
+    "bookAppointment": "Prendre un rendez-vous",
     "meet": "Rencontrer",
     "previous": "Précédent",
     "next": "Suivant"

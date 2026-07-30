@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useTranslation } from 'react-i18next';
@@ -54,21 +54,12 @@ const TeamMemberModal: React.FC<TeamMemberModalProps> = ({
 
   return (
     <Dialog open={!!member} onOpenChange={() => onClose()}>
-      <DialogContent className="max-w-4xl p-0 rounded-2xl bg-[#0b1220] hairline overflow-hidden">
+      <DialogContent className="max-w-4xl w-[calc(100%-1rem)] sm:w-full p-0 rounded-2xl bg-[#0b1220] hairline overflow-hidden max-h-[92svh] overflow-y-auto">
         <div className="relative">
-          {/* Close button */}
-          <button 
-            onClick={onClose}
-            className="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-[#060910]/80 hairline flex items-center justify-center text-white hover:bg-[#060910] transition-colors"
-            aria-label="Close modal"
-          >
-            <X className="w-4 h-4" />
-          </button>
-          
           {/* Content layout - flex for desktop, column for mobile */}
-          <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} min-h-[60vh]`}>
+          <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} md:min-h-[60vh]`}>
             {/* Left side - Video section */}
-            <div className={`${isMobile ? 'w-full' : 'w-1/2'} relative bg-[#060910] overflow-hidden`}>
+            <div className={`${isMobile ? 'w-full aspect-video' : 'w-1/2'} relative bg-[#060910] overflow-hidden`}>
               {member.videoFull ? (
                 <video
                   ref={videoRef}
@@ -79,8 +70,8 @@ const TeamMemberModal: React.FC<TeamMemberModalProps> = ({
                   playsInline
                 />
               ) : (
-                <div className="w-full h-full min-h-[300px] flex items-center justify-center bg-[#060910]">
-                  <img 
+                <div className="w-full h-full min-h-[240px] flex items-center justify-center bg-[#060910]">
+                  <img
                     src={member.photo}
                     alt={member.name}
                     className="w-full h-full object-cover"
@@ -88,9 +79,9 @@ const TeamMemberModal: React.FC<TeamMemberModalProps> = ({
                 </div>
               )}
             </div>
-            
+
             {/* Right side - Bio section */}
-            <div className={`${isMobile ? 'w-full' : 'w-1/2'} p-6 md:p-8`}>
+            <div className={`${isMobile ? 'w-full' : 'w-1/2'} p-5 md:p-8`}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -130,7 +121,7 @@ const TeamMemberModal: React.FC<TeamMemberModalProps> = ({
                     className="btn-tdia w-full justify-center"
                     onClick={handleCTAClick}
                   >
-                    {t('teamModal.chooseStrategist')} {member.name.split(' ')[0]} {t('teamModal.chooseStrategistEnd')}
+                    {t('teamModal.bookAppointment')}
                   </button>
 
                   <div className="flex justify-between gap-2">

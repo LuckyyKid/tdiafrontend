@@ -2527,8 +2527,7 @@
   },
   "teamModal": {
     "style": "'s style",
-    "chooseStrategist": "Choose",
-    "chooseStrategistEnd": "as My Strategist",
+    "bookAppointment": "Book an appointment",
     "meet": "Meet",
     "previous": "Previous",
     "next": "Next"
