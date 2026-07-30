@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 import TeamMemberModal from './TeamMemberModal';
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTranslation } from 'react-i18next';
@@ -83,40 +83,15 @@ const TeamSection: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {teamMembers.map((member) => (
-            <motion.div
+            <TeamCard
               key={member.id}
-              className="tdia-card relative aspect-[3/4] overflow-hidden cursor-pointer"
+              member={member}
+              isDesktopActive={!isMobile && hoveredMember === member.id && isPreviewPlaying}
+              isMobile={isMobile}
               onMouseEnter={() => handleMouseEnter(member.id)}
               onMouseLeave={handleMouseLeave}
               onClick={() => setSelectedMember(member)}
-              whileHover={{ y: -4 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                src={member.photo}
-                alt={member.name}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-                  hoveredMember === member.id && isPreviewPlaying ? 'opacity-0' : 'opacity-100'
-                }`}
-              />
-              {member.videoPreview && (
-                <video
-                  src={member.videoPreview}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
-                    hoveredMember === member.id && isPreviewPlaying ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  muted loop playsInline
-                  autoPlay={hoveredMember === member.id}
-                />
-              )}
-
-              <div className="absolute inset-0 bg-gradient-to-t from-[#060910] via-transparent to-transparent" />
-
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="tdia-h text-[22px] text-white">{member.name}</h3>
-                <p className="text-[#9ec8ff] text-sm">{member.role}</p>
-              </div>
-            </motion.div>
+            />
           ))}
         </div>
       </div>
@@ -131,6 +106,80 @@ const TeamSection: React.FC = () => {
         />
       )}
     </section>
+  );
+};
+
+interface TeamCardProps {
+  member: TeamMember;
+  isDesktopActive: boolean;
+  isMobile: boolean;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+  onClick: () => void;
+}
+
+const TeamCard: React.FC<TeamCardProps> = ({
+  member,
+  isDesktopActive,
+  isMobile,
+  onMouseEnter,
+  onMouseLeave,
+  onClick,
+}) => {
+  const cardRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const inView = useInView(cardRef, { amount: 0.6 });
+  const isActive = isMobile ? inView : isDesktopActive;
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (isActive) {
+      v.play().catch(() => {});
+    } else {
+      v.pause();
+      v.currentTime = 0;
+    }
+  }, [isActive]);
+
+  return (
+    <motion.div
+      ref={cardRef}
+      className="tdia-card relative aspect-[3/4] overflow-hidden cursor-pointer"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.3 }}
+    >
+      <img
+        src={member.photo}
+        alt={member.name}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+          isActive ? 'opacity-0' : 'opacity-100'
+        }`}
+      />
+      {member.videoPreview && (
+        <video
+          ref={videoRef}
+          src={member.videoPreview}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+            isActive ? 'opacity-100' : 'opacity-0'
+          }`}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
+      )}
+
+      <div className="absolute inset-0 bg-gradient-to-t from-[#060910] via-transparent to-transparent" />
+
+      <div className="absolute bottom-0 left-0 right-0 p-6">
+        <h3 className="tdia-h text-[22px] text-white">{member.name}</h3>
+        <p className="text-[#9ec8ff] text-sm">{member.role}</p>
+      </div>
+    </motion.div>
   );
 };
 
