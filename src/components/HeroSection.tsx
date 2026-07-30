@@ -19,9 +19,9 @@ const CLIENT_LOGOS: Record<string, string> = {
 };
 
 const LOGO_SIZE_CLASS: Record<string, string> = {
-  gococonut: "h-20 md:h-24 max-w-[220px]",
-  onyx: "h-20 md:h-24 max-w-[220px]",
-  osplash: "h-14 md:h-16 max-w-[180px]",
+  gococonut: "max-h-16 md:max-h-20 max-w-[160px] md:max-w-[180px]",
+  onyx: "max-h-16 md:max-h-20 max-w-[160px] md:max-w-[180px]",
+  osplash: "max-h-12 md:max-h-14 max-w-[140px] md:max-w-[160px]",
 };
 
 const HeroSection: React.FC = () => {
@@ -159,16 +159,18 @@ const HeroSection: React.FC = () => {
                         {row.label}
                       </span>
                     </div>
-                    <div className="flex items-center gap-3 whitespace-nowrap">
-                      {logoSrc && (
-                        <img
-                          src={logoSrc}
-                          alt={`${row.client} logo`}
-                          loading="lazy"
-                          className={`${LOGO_SIZE_CLASS[row.logoKey] ?? "h-14 md:h-16 max-w-[180px]"} w-auto object-contain drop-shadow-[0_0_14px_rgba(255,255,255,0.35)]`}
-                        />
-                      )}
-                      <span className="text-[12px] md:text-[13px] text-white/85 font-mono-tdia uppercase tracking-[0.14em]">
+                    <div className="flex items-center gap-4 whitespace-nowrap">
+                      <div className="flex items-center justify-end h-16 md:h-20 w-[160px] md:w-[180px] flex-shrink-0">
+                        {logoSrc && (
+                          <img
+                            src={logoSrc}
+                            alt={`${row.client} logo`}
+                            loading="lazy"
+                            className={`${LOGO_SIZE_CLASS[row.logoKey] ?? "max-h-12 md:max-h-14 max-w-[140px] md:max-w-[160px]"} w-auto object-contain drop-shadow-[0_0_14px_rgba(255,255,255,0.35)]`}
+                          />
+                        )}
+                      </div>
+                      <span className="text-[12px] md:text-[13px] text-white/85 font-mono-tdia uppercase tracking-[0.14em] w-[140px] md:w-[170px] text-left">
                         {row.client} · {row.sector}
                       </span>
                     </div>
