@@ -430,13 +430,13 @@
   "operationsCaseStudies": {
     "seo": {
       "title": "Études de cas Opérations | TDIA",
-      "description": "Cinq entreprises, cinq problèmes concrets réglés par un système sur mesure : inspections de flotte, plateforme éducative, sécurité chantier, CRM, réceptionniste IA."
+      "description": "Quatre entreprises, quatre problèmes concrets réglés par un système sur mesure : plateforme éducative, sécurité chantier, CRM, réceptionniste IA."
     },
     "backToOperations": "Retour à Opérations",
     "hero": {
       "eyebrow": "Études de cas · Opérations",
-      "headline1": "Cinq entreprises,",
-      "headline2": "cinq problèmes qui ne se réglaient pas avec un outil du commerce.",
+      "headline1": "Quatre entreprises,",
+      "headline2": "quatre problèmes qui ne se réglaient pas avec un outil du commerce.",
       "description": "Chaque projet ci-dessous est parti d'une frustration concrète de dirigeant : trop d'Excel, trop d'oubli, trop de choses gérées de tête. On raconte ici ce qui coinçait, ce qu'on a construit, et ce que ça a changé une fois livré."
     },
     "labels": {
@@ -445,16 +445,6 @@
       "impact": "Ce que ça a changé."
     },
     "cases": {
-      "klara": {
-        "company": "Opérateur de stationnements",
-        "title": "L'opération redevient visible depuis le bureau",
-        "storyProblem": "Les rapports d'inspection pré-départ étaient remplis sur un fichier Excel envoyé au gestionnaire. En pratique, les inspections manquées passaient inaperçues jusqu'à ce qu'un problème survienne, et rien ne rendait visible les employés qui laissaient traîner.",
-        "storySolution": "On a remplacé l'Excel par une plateforme où chaque véhicule reçoit trois inspections par jour, sur des créneaux fixes. Chaque retard remonte automatiquement au gestionnaire avec les minutes de retard, l'employé responsable et le contexte. Un score employé cumule les retards et oublis pour rendre les comportements problématiques visibles avant qu'ils deviennent un vrai problème.",
-        "storyImpact": "Le gestionnaire ne court plus après les rapports : il voit en direct l'état de la flotte et de son équipe. Les anomalies (dommages, alertes moteur, propreté) sont tracées avec photos et persistent jusqu'à résolution, ce qui a mis fin aux problèmes qui \"disparaissent\" entre deux quarts. Les inspections en retard passent d'un angle mort à un signal opérationnel exploitable.",
-        "metricValue": "15 / jour",
-        "metricLabel": "inspections attendues, rappelées, tracées",
-        "tags": ["logiciel sur mesure", "mobile-first", "scoring employé", "alertes automatiques"]
-      },
       "manara": {
         "company": "Manara",
         "title": "Un centre d'activités jeunesse dans un seul écosystème",

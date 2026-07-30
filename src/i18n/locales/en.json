@@ -430,13 +430,13 @@
   "operationsCaseStudies": {
     "seo": {
       "title": "Operations Case Studies | TDIA",
-      "description": "Five businesses, five concrete problems solved by a custom system: fleet inspections, education platform, site safety, CRM, AI receptionist."
+      "description": "Four businesses, four concrete problems solved by a custom system: education platform, site safety, CRM, AI receptionist."
     },
     "backToOperations": "Back to Operations",
     "hero": {
       "eyebrow": "Case studies · Operations",
-      "headline1": "Five businesses,",
-      "headline2": "five problems no off-the-shelf tool could solve.",
+      "headline1": "Four businesses,",
+      "headline2": "four problems no off-the-shelf tool could solve.",
       "description": "Every project below started from a real business owner frustration: too much Excel, too many things falling through, too much run from memory. We tell you what was stuck, what we built, and what changed after delivery."
     },
     "labels": {
@@ -445,16 +445,6 @@
       "impact": "What it changed."
     },
     "cases": {
-      "klara": {
-        "company": "Parking operator",
-        "title": "The operation becomes visible from the office again",
-        "storyProblem": "Pre-departure inspection reports were filled out on an Excel file sent to the manager. In practice, missed inspections went unnoticed until a real problem surfaced, and nothing made visible which employees were letting things slip.",
-        "storySolution": "We replaced Excel with a platform where every vehicle gets three inspections per day, on fixed time slots. Every late one automatically escalates to the manager with the minutes late, the responsible employee, and the context. A per-employee score adds up delays and misses so problem behavior surfaces before it becomes a real problem.",
-        "storyImpact": "The manager no longer chases reports: fleet state and team behavior are live on screen. Anomalies (damage, engine alerts, cleanliness) are logged with photos and persist until closed, ending the \"disappearing\" problems between shifts. Late inspections went from a blind spot to a usable operational signal.",
-        "metricValue": "15 / day",
-        "metricLabel": "inspections expected, reminded, tracked",
-        "tags": ["custom software", "mobile-first", "employee scoring", "auto alerts"]
-      },
       "manara": {
         "company": "Manara",
         "title": "A youth activity center in one ecosystem",

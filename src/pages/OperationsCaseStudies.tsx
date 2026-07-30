@@ -22,10 +22,6 @@ type CaseDef = {
 
 const cases: CaseDef[] = [
   {
-    slug: "klara",
-    images: ["/img/Klara.png", "/img/klara2.png"],
-  },
-  {
     slug: "manara",
     images: ["/img/manara1.jpg", "/img/Manar2.jpg"],
   },
