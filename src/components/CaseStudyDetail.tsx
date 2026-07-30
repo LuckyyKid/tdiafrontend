@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -7,14 +7,20 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { ArrowLeft, ExternalLink, PlayCircle, Check, Lightbulb } from "lucide-react";
+import { ArrowLeft, Play, X, Check, Lightbulb } from "lucide-react";
 import StickyHeader from './StickyHeader';
 import Footer from './Footer';
 import { fadeInUp, fadeInScale, staggerContainer, staggeredItem } from '../lib/animations';
 
+const extractYouTubeId = (url: string): string | null => {
+  const match = url.match(/(?:youtube\.com\/(?:embed\/|watch\?v=)|youtu\.be\/)([\w-]{11})/);
+  return match ? match[1] : null;
+};
+
 const CaseStudyDetail: React.FC = () => {
   const { caseId } = useParams<{ caseId: string }>();
   const { t, ready } = useTranslation();
+  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
 
   if (!ready) {
     return <div className="min-h-screen bg-[#060910]"></div>;
@@ -379,11 +385,34 @@ const CaseStudyDetail: React.FC = () => {
                           <div className="text-[#7c8aa5] text-xs md:text-sm break-words">{t(`csd.${caseId}.results.testimonial.title`)}</div>
                         </div>
                       </div>
-                      {t(`csd.${caseId}.results.testimonial.videoUrl`, { defaultValue: '' }) && (
-                        <div className="aspect-video tdia-card flex items-center justify-center">
-                          <PlayCircle className="w-12 h-12 md:w-16 md:h-16 text-white" />
-                        </div>
-                      )}
+                      {(() => {
+                        const videoUrl = t(`csd.${caseId}.results.testimonial.videoUrl`, { defaultValue: '' });
+                        const videoId = videoUrl ? extractYouTubeId(videoUrl) : null;
+                        if (!videoId) return null;
+                        return (
+                          <div
+                            className="aspect-video tdia-card overflow-hidden cursor-pointer group relative"
+                            onClick={() => setActiveVideoId(videoId)}
+                          >
+                            <img
+                              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                              onError={(e) => {
+                                (e.currentTarget as HTMLImageElement).src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                              }}
+                              alt={t(`csd.${caseId}.results.testimonial.name`)}
+                              className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-95 transition-opacity"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="relative">
+                                <div className="absolute -inset-4 rounded-full bg-[#2f6bff]/25 blur-2xl animate-pulse" />
+                                <button className="btn-tdia !p-4 rounded-full relative" aria-label="Play testimonial">
+                                  <Play className="h-5 w-5" fill="currentColor" />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </CardContent>
@@ -470,6 +499,34 @@ const CaseStudyDetail: React.FC = () => {
       </motion.div>
 
       <Footer />
+
+      {activeVideoId && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm bg-black/90"
+          onClick={() => setActiveVideoId(null)}
+        >
+          <div className="relative w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="absolute -top-12 right-0 text-white hover:text-[#9ec8ff] transition-colors"
+              onClick={() => setActiveVideoId(null)}
+              aria-label="Close video"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            <div className="aspect-video w-full tdia-card overflow-hidden">
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1`}
+                title="Testimonial Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

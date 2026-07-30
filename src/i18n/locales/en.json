@@ -2384,7 +2384,13 @@
             "label": "Lead Frequency",
             "desc": "Transformed from zero to receiving inquiries every day."
           }
-        ]
+        ],
+        "testimonial": {
+          "quote": "Before TDIA, I had zero leads. Now, we get requests every day. It's the first time we have a real system that works and generates volume.",
+          "name": "Francis Blanchard",
+          "title": "Co-Founder, O'Splash",
+          "videoUrl": "https://www.youtube.com/embed/FQt0T_avMEM"
+        }
       },
       "insights": {
         "bullets": [
