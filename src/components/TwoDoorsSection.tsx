@@ -140,7 +140,7 @@ const TwoDoorsSection: React.FC = () => {
 
                 {/* For who */}
                 <div className="mb-6">
-                  <div className="micro-label mb-3">{c.forWhoLabel}</div>
+                  <div className="text-[12px] md:text-[13px] text-white/85 font-mono-tdia uppercase tracking-[0.18em] mb-3">{c.forWhoLabel}</div>
                   <ul className="space-y-2">
                     {c.audiences.map((audience, i) => (
                       <li key={i} className="flex items-start gap-3 text-[#e6ecf7]/85 text-sm md:text-base">
@@ -153,7 +153,7 @@ const TwoDoorsSection: React.FC = () => {
 
                 {/* Proof strip */}
                 <div className="mt-auto pt-6 hairline-t">
-                  <div className="micro-label mb-2">{c.proofLabel}</div>
+                  <div className="text-[12px] md:text-[13px] text-white/85 font-mono-tdia uppercase tracking-[0.18em] mb-2">{c.proofLabel}</div>
                   <div className="mb-6">
                     <ProofCarousel
                       proofs={c.proofs}

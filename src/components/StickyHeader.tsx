@@ -28,23 +28,24 @@ const StickyHeader: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  if (!ready) return null;
-
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 40);
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
-    if (!isDrawerOpen) {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.width = '';
-    }
+    if (!isDrawerOpen) return;
+    const mql = window.matchMedia('(min-width: 768px)');
+    const onChange = (e: MediaQueryListEvent) => {
+      if (e.matches) setIsDrawerOpen(false);
+    };
+    mql.addEventListener('change', onChange);
+    return () => mql.removeEventListener('change', onChange);
   }, [isDrawerOpen]);
+
+  if (!ready) return null;
 
   const handleCTAClick = () => {
     trackCTAClick('Book Your Strategy Call', 'header');
@@ -54,12 +55,6 @@ const StickyHeader: React.FC = () => {
 
   const handleMenuItemClick = () => {
     setIsDrawerOpen(false);
-    setTimeout(() => {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.top = '';
-      document.body.style.width = '';
-    }, 50);
   };
 
   return (
@@ -169,7 +164,7 @@ const StickyHeader: React.FC = () => {
                 <Menu className="h-5 w-5" />
               </button>
             </DrawerTrigger>
-            <DrawerContent className="bg-[#060910] border-t border-[color:var(--tdia-hairline)] max-h-[85vh] flex flex-col">
+            <DrawerContent className="bg-[#060910] border-t border-[color:var(--tdia-hairline)] max-h-[85svh] flex flex-col">
               <DrawerHeader className="hairline-b flex-shrink-0">
                 <div className="flex justify-between items-center">
                   <DrawerTitle>

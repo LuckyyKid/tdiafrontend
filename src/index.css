@@ -96,11 +96,11 @@
   }
   .micro-label {
     font-family: 'JetBrains Mono', ui-monospace, monospace;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.28em;
-    color: var(--tdia-muted);
+    letter-spacing: 0.18em;
+    color: rgba(230, 236, 247, 0.82);
   }
   .tdia-h {
     font-family: 'Inter', system-ui, sans-serif;

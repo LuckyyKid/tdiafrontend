@@ -40,11 +40,24 @@
     "ctaAcquisition": "Je veux remplir mon pipeline",
     "ctaOperations": "Je veux moderniser mes opérations",
     "proof": "Deux systèmes. Un partenaire. Zéro devinette.",
-    "selectedBy": "Choisi par",
-    "highGrowthBrands": "les entreprises qui veulent grandir",
     "statRevenue": "Revenus générés",
     "statRoas": "ROAS moyen",
-    "statAdSpend": "Budget publicitaire géré"
+    "statAdSpend": "Budget publicitaire géré",
+    "badgeFactual": "Agence québécoise · 30+ clients · chiffres audités",
+    "resultsSheet": {
+      "header": "Derniers résultats livrés",
+      "caseStudiesLink": "Les études de cas →",
+      "rows": [
+        { "metric": "+215 %", "label": "de ventes en 60 jours", "client": "GoCoconut", "sector": "E-commerce", "logoKey": "gococonut" },
+        { "metric": "1 050", "label": "leads qualifiés en 6 mois", "client": "Onyx", "sector": "SaaS", "logoKey": "onyx" },
+        { "metric": "21,25 $", "label": "CPA sur 116 demandes en 45 jours", "client": "O'Splash", "sector": "Service", "logoKey": "osplash" }
+      ],
+      "note": "Chiffres tirés des tableaux de bord clients · méthodologie sur demande"
+    },
+    "clientBand": {
+      "clients": ["Onyx", "Runak", "GoCoconut", "Alfa Métal", "Groupe Vallée", "Boréal Pro"],
+      "sectors": "Manufacturier · cosmétique · construction · SaaS B2B"
+    }
   },
   "twoDoors": {
     "eyebrow": "Deux portes : choisis la tienne",
@@ -57,6 +70,7 @@
       "forWhoLabel": "Pour qui",
       "audiences": [
         "Marques e-commerce",
+        "SaaS B2B",
         "Entreprises de services locaux",
         "Entreprises qui recrutent"
       ],
@@ -293,12 +307,6 @@
           "answer": "Oui, toujours. Tes comptes publicitaires, ton tracking et tes données t'appartiennent, même après la fin du mandat."
         }
       ]
-    },
-    "finalCta": {
-      "heading": "Prends 20 minutes.",
-      "headingSerif": "On regarde tes chiffres et on te dit droit.",
-      "description": "Même si ce n'est pas nous qui devons t'aider, tu repartiras avec une lecture claire de ce qui te débloquerait le plus.",
-      "cta": "Réserver un appel de 20 min"
     }
   },
   "operationsPage": {
@@ -833,7 +841,7 @@
     },
     "finalCta": {
       "heading": "Prends 20 minutes.",
-      "headingSerif": "On regarde tes chiffres et on te dit droit.",
+      "headingSerif": "On regarde tes chiffres et on te dit ce qui va pas.",
       "description": "Même si ce n'est pas nous qui devons t'aider, tu repartiras avec une lecture claire de ce qui te débloquerait le plus.",
       "cta": "Réserver un appel de 20 min",
       "secondaryCta": "Moderniser tes opérations"
@@ -954,7 +962,8 @@
   "caseStudiez": {
     "title": "Nos",
     "titleHighlight": "Histoires de Succès",
-    "description": "Découvrez comment nous avons transformé les entreprises de nos clients avec des stratégies e‑commerce innovantes."
+    "description": "Découvrez comment nous avons transformé les entreprises de nos clients avec des stratégies e‑commerce innovantes.",
+    "viewAll": "Voir toutes nos études de cas"
   },
   "pages": {
     "ourWork": {

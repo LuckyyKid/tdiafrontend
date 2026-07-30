@@ -50,7 +50,7 @@ const InfiniteLogoBanner: React.FC = () => {
   const allLogos = [...logos, ...logos]; // duplication pour la boucle infinie
 
   return (
-    <div className="w-full bg-[#060910] hairline-t hairline-b py-8 md:py-10 overflow-hidden">
+    <div className="w-full bg-[#060910] hairline-t hairline-b py-10 md:py-14 overflow-hidden">
       {/* ---------- Bandeau logos ---------- */}
       <div className="relative w-full overflow-hidden">
         <div
@@ -64,7 +64,7 @@ const InfiniteLogoBanner: React.FC = () => {
                 src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
-                className="h-10 md:h-12 w-auto max-w-[160px] object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                className="h-20 md:h-28 w-auto max-w-[300px] md:max-w-[360px] object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}

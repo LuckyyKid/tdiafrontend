@@ -115,6 +115,24 @@ const CaseStudySection: React.FC = () => {
             </motion.article>
           ))}
         </div>
+
+        {/* CTA — voir toutes les études de cas */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-12 md:mt-16 flex justify-center"
+        >
+          <Link
+            to="/case-studies"
+            className="btn-tdia"
+            aria-label={t("caseStudiez.viewAll", "Voir toutes nos études de cas")}
+          >
+            {t("caseStudiez.viewAll", "Voir toutes nos études de cas")}
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

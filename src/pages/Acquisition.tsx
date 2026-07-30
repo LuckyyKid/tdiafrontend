@@ -306,39 +306,6 @@ const Acquisition: React.FC = () => {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section className="relative py-24 md:py-32 halo-cta">
-        <div className="container mx-auto max-w-4xl px-4 md:px-6 relative z-10">
-          <div className="tdia-card p-10 md:p-14 text-center">
-            <h2 className="tdia-h text-[32px] md:text-[42px] lg:text-[46px] mb-4">
-              <span>{t("acquisitionPage.finalCta.heading")} </span>
-              <br className="hidden md:block" />
-              <span className="serif">
-                {t("acquisitionPage.finalCta.headingSerif")}
-              </span>
-            </h2>
-            <p className="mt-4 text-base md:text-lg text-[#7c8aa5] max-w-2xl mx-auto leading-relaxed">
-              {t("acquisitionPage.finalCta.description")}
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <button
-                onClick={() =>
-                  openCalendly("Book Call — Acquisition Final", "acquisition_final_cta")
-                }
-                className="btn-tdia"
-              >
-                {t("acquisitionPage.finalCta.cta")}
-                <ArrowRight className="w-4 h-4" />
-              </button>
-              <Link to="/operations" className="btn-tdia-ghost">
-                {t("twoDoors.operations.title")}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );

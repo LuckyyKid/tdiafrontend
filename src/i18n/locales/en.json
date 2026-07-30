@@ -40,11 +40,24 @@
     "ctaAcquisition": "I want to fill my pipeline",
     "ctaOperations": "I want to modernize my operations",
     "proof": "Two systems. One partner. Zero guesswork.",
-    "selectedBy": "Selected by",
-    "highGrowthBrands": "businesses that want to grow",
     "statRevenue": "Revenue generated",
     "statRoas": "Average ROAS",
-    "statAdSpend": "Ad spend managed"
+    "statAdSpend": "Ad spend managed",
+    "badgeFactual": "Quebec agency · 30+ clients · audited numbers",
+    "resultsSheet": {
+      "header": "Latest results delivered",
+      "caseStudiesLink": "The case studies →",
+      "rows": [
+        { "metric": "+215%", "label": "in sales in 60 days", "client": "GoCoconut", "sector": "E-commerce", "logoKey": "gococonut" },
+        { "metric": "1,050", "label": "qualified leads in 6 months", "client": "Onyx", "sector": "SaaS", "logoKey": "onyx" },
+        { "metric": "$21.25", "label": "CPA on 116 requests in 45 days", "client": "O'Splash", "sector": "Service", "logoKey": "osplash" }
+      ],
+      "note": "Numbers pulled from client dashboards · methodology on request"
+    },
+    "clientBand": {
+      "clients": ["Onyx", "Runak", "GoCoconut", "Alfa Métal", "Groupe Vallée", "Boréal Pro"],
+      "sectors": "Manufacturing · cosmetics · construction · B2B SaaS"
+    }
   },
   "twoDoors": {
     "eyebrow": "Two doors : pick yours",
@@ -57,6 +70,7 @@
       "forWhoLabel": "For",
       "audiences": [
         "E-commerce brands",
+        "B2B SaaS",
         "Local service businesses",
         "Companies that are hiring"
       ],
@@ -293,12 +307,6 @@
           "answer": "Yes, always. Your ad accounts, tracking and data belong to you, even after the engagement ends."
         }
       ]
-    },
-    "finalCta": {
-      "heading": "Take 20 minutes.",
-      "headingSerif": "We look at your numbers and tell you straight.",
-      "description": "Even if it's not us who should help you, you'll leave with a clear read on what would unblock you most.",
-      "cta": "Book a 20-min call"
     }
   },
   "operationsPage": {
@@ -833,7 +841,7 @@
     },
     "finalCta": {
       "heading": "Take 20 minutes.",
-      "headingSerif": "We look at your numbers and tell you straight.",
+      "headingSerif": "We look at your numbers and tell you what's wrong.",
       "description": "Even if it's not us who should help you, you'll leave with a clear read on what would unblock you most.",
       "cta": "Book a 20-min call",
       "secondaryCta": "Modernize your operations"
@@ -1191,7 +1199,8 @@
   "caseStudiez": {
     "title": "Our Client",
     "titleHighlight": "Success Stories",
-    "description": "Discover how we transformed our clients' businesses with innovative e‑commerce strategies."
+    "description": "Discover how we transformed our clients' businesses with innovative e‑commerce strategies.",
+    "viewAll": "See all our case studies"
   },
   "pages": {
     "ourWork": {

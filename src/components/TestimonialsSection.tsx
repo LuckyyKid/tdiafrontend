@@ -65,28 +65,34 @@ const TestimonialsSection: React.FC = () => {
                     </div>
 
                     {/* Video */}
-                    <div
-                      className="tdia-card aspect-video overflow-hidden cursor-pointer group order-1 md:order-2"
-                      onClick={() => handleVideoClick(testimonial.id === 1 ? "nPoN4ydzHmY" : "FQt0T_avMEM")}
-                    >
-                      <div className="relative w-full h-full">
-                        <img
-                          src={testimonial.id === 1
-                            ? "/lovable-uploads/37161ce8-0d5a-4152-90a5-502235399042.png"
-                            : "/lovable-uploads/c2a38297-99ef-4d39-a446-c18038b669b7.png"}
-                          alt={`${testimonial.name} testimonial`}
-                          className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-80 transition-opacity"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="relative">
-                            <div className="absolute -inset-4 rounded-full bg-[#2f6bff]/25 blur-2xl animate-pulse" />
-                            <button className="btn-tdia !p-4 rounded-full relative" aria-label="Play testimonial">
-                              <Play className="h-5 w-5" fill="currentColor" />
-                            </button>
+                    {(() => {
+                      const videoId = testimonial.id === 1 ? "nPoN4ydzHmY" : "FQt0T_avMEM";
+                      return (
+                        <div
+                          className="tdia-card aspect-video overflow-hidden cursor-pointer group order-1 md:order-2"
+                          onClick={() => handleVideoClick(videoId)}
+                        >
+                          <div className="relative w-full h-full">
+                            <img
+                              src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                              onError={(e) => {
+                                (e.currentTarget as HTMLImageElement).src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                              }}
+                              alt={`${testimonial.name} testimonial`}
+                              className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-95 transition-opacity"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="relative">
+                                <div className="absolute -inset-4 rounded-full bg-[#2f6bff]/25 blur-2xl animate-pulse" />
+                                <button className="btn-tdia !p-4 rounded-full relative" aria-label="Play testimonial">
+                                  <Play className="h-5 w-5" fill="currentColor" />
+                                </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
+                      );
+                    })()}
                   </div>
                 </CarouselItem>
               ))}
@@ -104,8 +110,11 @@ const TestimonialsSection: React.FC = () => {
       </div>
 
       {showVideo && (
-        <div className="fixed inset-0/95 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
-          <div className="relative w-full max-w-5xl">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm bg-black/90"
+          onClick={() => setShowVideo(false)}
+        >
+          <div className="relative w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
             <button
               className="absolute -top-12 right-0 text-white hover:text-[#9ec8ff] transition-colors"
               onClick={() => setShowVideo(false)}
