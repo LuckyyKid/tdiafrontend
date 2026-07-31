@@ -17,68 +17,28 @@ const CaseStudies: React.FC = () => {
   const cases = [
     {
       slug: 'onyx',
-      companyKey: 'caseStudies.onyx.company',
-      imageKey: 'caseStudies.onyx.image',
       imageFallback: '/lovable-uploads/02f8bc66-3042-4b06-a33f-fa29d507dd24.png',
-      descKey: 'caseStudies.onyx.description',
-      descFallback: 'Hyper‑focused B2B lead‑gen for a complex industrial offer.',
-      tagsKey: 'caseStudies.onyx.tags',
-      tagsFallback: ['lead generation', 'B2B strategy', 'market research'],
       metricValue: '1050+',
-      metricLabel: 'qualified leads',
-      subLabel: 'in 6 months',
     },
     {
       slug: 'runak',
-      companyKey: 'caseStudies.runak.company',
-      imageKey: 'caseStudies.runak.image',
       imageFallback: '/lovable-uploads/e0372708-63e6-4974-8764-44156350601d.png',
-      descKey: 'caseStudies.runak.description',
-      descFallback: 'Targeted email flows and CRO lifts generated outsized returns.',
-      tagsKey: 'caseStudies.runak.tags',
-      tagsFallback: ['conversion', 'email marketing', 'analytics'],
       metricValue: '~8×',
-      metricLabel: 'ROAS moyen',
-      subLabel: 'cosmetics',
     },
     {
       slug: 'lockfeet',
-      companyKey: 'caseStudies.lockfeet.company',
-      imageKey: 'caseStudies.lockfeet.image',
       imageFallback: '/lovable-uploads/19a93a85-4204-4c42-a672-c7a7e0b7fb0b.png',
-      descKey: 'caseStudies.lockfeet.description',
-      descFallback: 'A strategic Facebook‑Ads sprint: 9.6M+ impressions and 5× ROAS.',
-      tagsKey: 'caseStudies.lockfeet.tags',
-      tagsFallback: ['Facebook Ads', 'storytelling', 'expansion'],
       metricValue: '27K → 85K',
-      metricLabel: 'ventes mensuelles',
-      subLabel: 'in 3 months',
     },
     {
       slug: 'gococonut',
-      companyKey: 'caseStudies.gococonut.company',
-      imageKey: 'caseStudies.gococonut.image',
       imageFallback: '/lovable-uploads/placeholder-gococonut.png',
-      descKey: 'caseStudies.gococonut.description',
-      descFallback: 'Innovative marketing for children\'s furniture that drove exceptional growth.',
-      tagsKey: 'caseStudies.gococonut.tags',
-      tagsFallback: ['e-commerce', 'product marketing', 'targeting'],
       metricValue: '19.81×',
-      metricLabel: 'ROAS',
-      subLabel: 'in 60 days',
     },
     {
       slug: 'osplash',
-      companyKey: 'caseStudies.osplash.company',
-      imageKey: 'caseStudies.osplash.image',
       imageFallback: '/lovable-uploads/osplash-case-study.png',
-      descKey: 'caseStudies.osplash.description',
-      descFallback: 'Google Ads strategy going from 0 leads to 116 qualified inquiries.',
-      tagsKey: 'caseStudies.osplash.tags',
-      tagsFallback: ['Google Ads', 'lead gen', 'local'],
       metricValue: '0 → 116',
-      metricLabel: 'leads qualifiés',
-      subLabel: 'in 45 days',
     },
   ];
 
@@ -115,11 +75,13 @@ const CaseStudies: React.FC = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {cases.map((c) => {
-            const tagsData = ready ? t(c.tagsKey, { returnObjects: true }) : c.tagsFallback;
-            const tags: string[] = Array.isArray(tagsData) ? tagsData : c.tagsFallback;
-            const company = ready ? t(c.companyKey) : c.slug;
-            const image = ready ? t(c.imageKey, c.imageFallback) : c.imageFallback;
-            const description = ready ? t(c.descKey, c.descFallback) : c.descFallback;
+            const tagsData = ready ? t(`caseStudies.${c.slug}.tags`, { returnObjects: true }) : [];
+            const tags: string[] = Array.isArray(tagsData) ? tagsData : [];
+            const company = ready ? t(`caseStudies.${c.slug}.company`) : c.slug;
+            const image = ready ? t(`caseStudies.${c.slug}.image`, c.imageFallback) : c.imageFallback;
+            const description = ready ? t(`caseStudies.${c.slug}.description`) : '';
+            const metricLabel = ready ? t(`caseStudies.${c.slug}.metricLabel`) : '';
+            const subLabel = ready ? t(`caseStudies.${c.slug}.subLabel`) : '';
 
             return (
               <motion.div key={c.slug} variants={staggeredItem}>
@@ -131,9 +93,9 @@ const CaseStudies: React.FC = () => {
                       <div className="micro-label mb-2">{company}</div>
                       <div className="flex items-baseline gap-3">
                         <span className="font-mono-tdia text-[28px] md:text-[36px] text-white leading-none">{c.metricValue}</span>
-                        <span className="text-sm text-[#9ec8ff]">{c.metricLabel}</span>
+                        <span className="text-sm text-[#9ec8ff]">{metricLabel}</span>
                       </div>
-                      <p className="text-xs text-[#7c8aa5] mt-1">{c.subLabel}</p>
+                      <p className="text-xs text-[#7c8aa5] mt-1">{subLabel}</p>
                     </div>
                   </div>
 

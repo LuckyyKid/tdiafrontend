@@ -31,7 +31,7 @@ const TeamSection: React.FC = () => {
       videoPreview: "https://example.com/isaac-preview.mp4",
       videoFull: "https://example.com/isaac-full.mp4",
       bio: t('team.founderBio'),
-      style: [{ label: "Strategic", icon: "" }, { label: "Data-Driven", icon: "" }, { label: "Innovative", icon: "" }]
+      style: [{ label: t('teamStyles.strategic'), icon: "" }, { label: t('teamStyles.dataDriven'), icon: "" }, { label: t('teamStyles.innovative'), icon: "" }]
     },
     {
       id: "mahdi",
@@ -41,7 +41,7 @@ const TeamSection: React.FC = () => {
       videoPreview: "https://example.com/mahdi-preview.mp4",
       videoFull: "https://example.com/mahdi-full.mp4",
       bio: t('team.creativeBio'),
-      style: [{ label: "Creative", icon: "" }, { label: "Detail-Oriented", icon: "" }, { label: "Collaborative", icon: "" }]
+      style: [{ label: t('teamStyles.creative'), icon: "" }, { label: t('teamStyles.detailOriented'), icon: "" }, { label: t('teamStyles.collaborative'), icon: "" }]
     },
     {
       id: "bafing",
@@ -51,7 +51,7 @@ const TeamSection: React.FC = () => {
       videoPreview: "https://example.com/bafing-preview.mp4",
       videoFull: "https://example.com/bafing-full.mp4",
       bio: t('team.dataBio'),
-      style: [{ label: "Analytical", icon: "" }, { label: "Proactive", icon: "" }, { label: "Methodical", icon: "" }]
+      style: [{ label: t('teamStyles.analytical'), icon: "" }, { label: t('teamStyles.proactive'), icon: "" }, { label: t('teamStyles.methodical'), icon: "" }]
     },
   ];
 

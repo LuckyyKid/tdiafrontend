@@ -18,15 +18,16 @@ import CreativesOptimisees from "./pages/CreativesOptimisees";
 import ImplementationData from "./pages/ImplementationData";
 import OurWork from "./pages/OurWork";
 import Career from "./pages/Career";
+import MediaBuyer from "./pages/jobs/MediaBuyer";
+import OperationsEngineer from "./pages/jobs/OperationsEngineer";
+import BusinessAnalyst from "./pages/jobs/BusinessAnalyst";
+import ExecutiveAssistant from "./pages/jobs/ExecutiveAssistant";
 import EcommerceProblems from "./pages/EcommerceProblems";
 import CaseStudyDetail from "./components/CaseStudyDetail";
 import AIPerformanceMarketing from "./pages/blog/AIPerformanceMarketing";
 import PrivacyFirstMarketing from "./pages/blog/PrivacyFirstMarketing";
 import VideoContentDominance from "./pages/blog/VideoContentDominance";
 import AttributionModeling from "./pages/blog/AttributionModeling";
-import SeniorMediaBuyer from "./pages/jobs/SeniorMediaBuyer";
-import DataAnalyst from "./pages/jobs/DataAnalyst";
-import CreativeDesigner from "./pages/jobs/CreativeDesigner";
 import ThankYou from "./pages/ThankYou";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
@@ -83,10 +84,11 @@ const App = () => {
             <Route path="/services/creatives-optimisees" element={<CreativesOptimisees />} />
             <Route path="/services/implementation-data" element={<ImplementationData />} />
             <Route path="/explore/our-work" element={<OurWork />} />
-            {/* <Route path="/explore/career" element={<Career />} />
-            <Route path="/explore/career/senior-media-buyer" element={<SeniorMediaBuyer />} />
-            <Route path="/explore/career/data-analyst" element={<DataAnalyst />} />
-            <Route path="/explore/career/creative-designer" element={<CreativeDesigner />} /> */}
+            <Route path="/explore/career" element={<Career />} />
+            <Route path="/explore/career/media-buyer" element={<MediaBuyer />} />
+            <Route path="/explore/career/operations-engineer" element={<OperationsEngineer />} />
+            <Route path="/explore/career/business-analyst" element={<BusinessAnalyst />} />
+            <Route path="/explore/career/executive-assistant" element={<ExecutiveAssistant />} />
             <Route path="/our-team" element={<OurTeam />} />
             <Route path="/ecommerce-problems" element={<EcommerceProblems />} />
             <Route path="/blog/ai-performance-marketing" element={<AIPerformanceMarketing />} />

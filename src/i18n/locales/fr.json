@@ -9,6 +9,7 @@
     "twitterDescription": "The Digital Intelligence Agency - Votre partenaire en croissance digitale stratégique et excellence en marketing de performance."
   },
   "header": {
+    "home": "Accueil",
     "services": "Services",
     "servicesAcquisition": "Acquisition",
     "servicesAcquisitionSubtitle": "Remplir ton pipeline",
@@ -188,7 +189,7 @@
         },
         {
           "them": "Appliquent la même recette à tous leurs clients.",
-          "us": "Un diagnostic d'abord : on identifie ton problème principal — créatif, offre, funnel ou capacité — et le plan attaque celui-là avant tout le reste."
+          "us": "Un diagnostic d'abord : on identifie ton problème principal, créatif, offre, funnel ou capacité, et le plan attaque celui-là avant tout le reste."
         },
         {
           "them": "Produisent des créatives au feeling, ou recyclées d'un autre compte.",
@@ -1366,6 +1367,8 @@
       "description": "Un sprint stratégique Facebook‑Ads : 9,6 M+ d'impressions et 5× ROAS en s'étendant au‑delà du B2B.",
       "learnMore": "En savoir plus sur {{company}}",
       "image": "/lovable-uploads/19a93a85-4204-4c42-a672-c7a7e0b7fb0b.png",
+      "metricLabel": "ventes mensuelles",
+      "subLabel": "en 3 mois",
       "tags": [
         "Facebook Ads",
         "storytelling visuel",
@@ -1381,6 +1384,8 @@
       "description": "Des flows email ciblés et du CRO ont généré des retours exceptionnels.",
       "learnMore": "En savoir plus sur {{company}}",
       "image": "/lovable-uploads/e0372708-63e6-4974-8764-44156350601d.webp",
+      "metricLabel": "ROAS moyen",
+      "subLabel": "cosmétiques",
       "tags": [
         "optimisation de conversion",
         "email marketing",
@@ -1395,6 +1400,8 @@
       "description": "Lead‑gen B2B hyper‑ciblé pour une offre industrielle complexe.",
       "learnMore": "En savoir plus sur {{company}}",
       "image": "/lovable-uploads/02f8bc66-3042-4b06-a33f-fa29d507dd24.png",
+      "metricLabel": "leads qualifiés",
+      "subLabel": "en 6 mois",
       "tags": [
         "génération de leads",
         "stratégie B2B",
@@ -1409,6 +1416,8 @@
       "description": "Stratégies marketing innovantes pour le mobilier enfant qui ont généré une croissance exceptionnelle.",
       "learnMore": "En savoir plus sur {{company}}",
       "image": "/lovable-uploads/a167b663-d622-4846-a730-b44dd649af3c.png",
+      "metricLabel": "ROAS",
+      "subLabel": "en 60 jours",
       "tags": [
         "e-commerce",
         "marketing produit",
@@ -1423,6 +1432,8 @@
       "description": "Comment O'Splash est passé de 0 leads à 116 demandes qualifiées en 45 jours grâce à une stratégie Google Ads complète avec CPA de 21,25$.",
       "learnMore": "En savoir plus sur {{company}}",
       "image": "/lovable-uploads/osplash-case-study.png",
+      "metricLabel": "leads qualifiés",
+      "subLabel": "en 45 jours",
       "tags": [
         "Google Ads",
         "génération de leads",
@@ -1546,7 +1557,7 @@
     "d1": "Vous lancez constamment de nouvelles publicités sans méthode claire. Vous publiez ce qui vous semble bien sur le moment, en espérant que quelque chose marche, mais il n'y a pas de processus derrière. Vous ne testez pas vraiment, vous devinez. Certaines publicités fonctionnent correctement, d'autres échouent, et vous ne pouvez pas expliquer pourquoi. Cette approche aléatoire crée du stress, gaspille le budget, et ne vous donne aucun apprentissage réel sur lequel construire. Vous vous sentez coincé dans une boucle où rien ne tient assez longtemps pour scaler.",
     "d2": "Vous mettez de l'argent dans les publicités, mais vous volez à l'aveugle. Vous voyez ROAS, CPMs, CTRs... mais vous ne savez pas vraiment ce qu'ils signifient, ou comment agir dessus. Vous dépensez sans comprendre, et on dirait que votre budget disparaît dans les airs. Sans vue claire sur ce qui marche et ce qui ne marche pas, prendre des décisions semble risqué, et vous remettez constamment en question vos choix.",
     "d3": "Vous lancez une publicité, elle marche quelques jours, puis la performance s'effondre. Alors vous vous précipitez pour en faire de nouvelles, répétez le cycle, et finissez dans un état constant de panique créative. Il n'y a pas de système, pas de pipeline, pas de prévisibilité, juste des pics courts suivis de stress. Vous savez que vous ne pouvez pas scaler comme ça, mais vous ne savez pas comment créer du contenu qui dure vraiment ou qui s'intègre dans votre stratégie. Et vous en avez marre de toujours vous sentir en retard.",
-    "d4": "Vous êtes sur toutes les plateformes — Meta, TikTok, Google — vous lancez des campagnes, ajustez les paramètres, créez des contenus. Vous êtes occupé. Mais malgré tous ces efforts, les résultats sont plats. Rien n'est constant. Vous ne savez pas où est le vrai problème, et chaque jour ressemble à éteindre des feux au lieu de grandir. Vous êtes dispersé, essayant de tout faire, mais rien ne fait vraiment bouger l'aiguille. C'est épuisant, et vous commencez à perdre confiance en tout ça."
+    "d4": "Vous êtes sur toutes les plateformes, Meta, TikTok, Google, vous lancez des campagnes, ajustez les paramètres, créez des contenus. Vous êtes occupé. Mais malgré tous ces efforts, les résultats sont plats. Rien n'est constant. Vous ne savez pas où est le vrai problème, et chaque jour ressemble à éteindre des feux au lieu de grandir. Vous êtes dispersé, essayant de tout faire, mais rien ne fait vraiment bouger l'aiguille. C'est épuisant, et vous commencez à perdre confiance en tout ça."
   },
   "caseCarousel": {
     "headingPrefix": "Les Histoires de Succès",
@@ -2229,7 +2240,7 @@
       {
         "number": "2",
         "title": "On fixe combien on peut payer, et jusqu'où on peut aller",
-        "intro": "Chaque produit a un CAC recommandé — celui qui garde la marge — et un CAC max, celui à ne jamais dépasser sans perdre d'argent. On calcule ces deux seuils avant la première dépense.",
+        "intro": "Chaque produit a un CAC recommandé, celui qui garde la marge, et un CAC max, celui à ne jamais dépasser sans perdre d'argent. On calcule ces deux seuils avant la première dépense.",
         "subtitle": "Le planner budgétaire fait ensuite trois choses :",
         "items": [
           "Recommander le budget quotidien qui reste dans le vert.",
@@ -2476,201 +2487,216 @@
     ]
   },
   "careerPage": {
-    "title": "Rejoignez Notre",
-    "titleHighlight": "Équipe",
-    "subtitle": "Faites partie d'une équipe qui transforme le marketing digital avec des stratégies basées sur les données et des approches innovantes.",
-    "teamImageAlt": "Collaboration de notre équipe",
+    "microLabel": "Carrières",
+    "title": "Rejoins l'équipe qui",
+    "titleHighlight": "livre la croissance",
+    "subtitle": "On engage des gens qui aiment livrer des résultats mesurables, pas ceux qui aiment les slides. Deux pôles : Acquisition (média payant, créa, analytique) et Opérations (systèmes, automatisations, données clients).",
+    "teamImageAlt": "L'équipe TDIA en collaboration",
     "whyWorkWithUs": {
-      "title": "Pourquoi Travailler Avec Nous",
+      "title": "Ce que tu trouves ici",
       "growth": {
-        "title": "Opportunités de Croissance",
-        "description": "Apprentissage continu et avancement dans une industrie dynamique avec des parcours de carrière clairs."
+        "title": "Un rôle avec de la vraie autonomie",
+        "description": "Tu portes tes dossiers du cadrage à la livraison. Tu prends tes décisions techniques et tu défends tes recommandations directement en revue client."
       },
       "culture": {
-        "title": "Culture Collaborative",
-        "description": "Travaillez en équipes interfonctionnelles avec des professionnels talentueux passionnés par l'innovation."
+        "title": "Une équipe qui va droit au but",
+        "description": "Les décisions se prennent vite, à l'écrit ou en call court. On préfère les échanges directs aux comités. Les bonnes idées avancent sans détour."
       },
       "projects": {
-        "title": "Projets de Pointe",
-        "description": "Relevez des défis passionnants pour des clients leaders de l'industrie et mettez en œuvre des solutions avant-gardistes."
+        "title": "Des mandats concrets",
+        "description": "Tu travailles sur des chantiers réels avec des budgets réels, chez des clients qui attendent des résultats mesurables, pas des livrables décoratifs."
       }
     },
     "openPositions": {
-      "title": "Postes Ouverts",
+      "title": "Postes ouverts",
       "positions": [
         {
-          "title": "Senior Media Buyer",
-          "department": "Équipe Marketing",
+          "title": "Média Buyer",
+          "department": "Pôle Acquisition",
           "type": "Temps plein",
-          "location": "Télétravail",
-          "description": "Gérez des campagnes publicitaires de plusieurs millions de dollars et générez un ROI exceptionnel pour nos clients e-commerce."
+          "location": "100 % à distance",
+          "description": "Tu prends en main les comptes Meta et Google de nos clients e-commerce et services locaux. Tu es responsable du ROAS et du coût par acquisition, pas juste du reporting hebdo. Tu proposes les tests, tu les lances, tu défends tes chiffres en revue client."
         },
         {
-          "title": "Analyste de Données",
-          "department": "Équipe Analytique",
+          "title": "Operations Engineer",
+          "department": "Pôle Opérations",
           "type": "Temps plein",
-          "location": "Télétravail",
-          "description": "Transformez les données brutes en insights actionnables qui orientent la prise de décision stratégique."
+          "location": "100 % à distance",
+          "description": "Tu implémentes les systèmes qui remplacent les tâches manuelles chez nos clients : automatisations CRM, tableaux de bord, intégrations IoT, connecteurs API. Tu livres des systèmes qui tournent en production, pas des maquettes ni des POC qui dorment."
         },
         {
-          "title": "Designer Créatif",
-          "department": "Équipe Créative",
+          "title": "Business Analyst",
+          "department": "Pôle Stratégie",
           "type": "Temps plein",
-          "location": "Télétravail",
-          "description": "Créez du contenu visuel convaincant qui capte l'attention et favorise le succès des campagnes."
+          "location": "100 % à distance",
+          "description": "Tu transformes les données clients en décisions concrètes : où couper, où investir, quoi tester en priorité. Tu travailles main dans la main avec les média buyers et les opération engineers pour arbitrer les chantiers qui débloquent la croissance."
+        },
+        {
+          "title": "Executive Assistant",
+          "department": "Opérations internes",
+          "type": "Temps plein",
+          "location": "100 % à distance",
+          "description": "Tu fluidifies le quotidien de la direction : agenda, priorisation, coordination des équipes internes et clients, suivi des engagements pris en réunion. Tu es le point de contact qui empêche les choses de tomber entre deux chaises."
         }
       ],
-      "viewDetails": "Voir les Détails"
+      "viewDetails": "Postuler"
     },
     "generalApplication": {
-      "title": "Vous Ne Trouvez Pas Votre Rôle Idéal ?",
-      "description": "Nous sommes toujours à la recherche de personnes talentueuses pour rejoindre notre équipe. Envoyez-nous votre CV et dites-nous comment vous aimeriez contribuer à notre mission.",
-      "cta": "Soumettre une Candidature Ouverte"
+      "title": "Ton profil n'est pas dans la liste ?",
+      "description": "Envoie-nous quand même ton CV en expliquant en quelques lignes ce que tu voudrais venir livrer chez TDIA. On répond à chaque candidature sérieuse, même hors postes ouverts, les meilleures embauches qu'on a faites sont souvent arrivées comme ça.",
+      "cta": "Envoyer ma candidature"
     },
     "faq": {
-      "title": "Questions Fréquentes",
+      "title": "Questions fréquentes",
       "items": [
         {
           "question": "Comment se déroule le processus de recrutement ?",
-          "answer": "Notre processus de recrutement comprend généralement une revue initiale de candidature, une évaluation des compétences pertinente au poste, et 2-3 tours d'entretiens avec les membres de l'équipe et la direction. Nous visons à prendre des décisions rapidement et à tenir les candidats informés tout au long du processus."
+          "answer": "On garde le processus court et concret. Étape 1 : revue de ton CV et de ta lettre courte (48 h de réponse en moyenne). Étape 2 : un premier appel de 30 minutes avec la personne responsable du pôle, on veut comprendre comment tu penses, pas te faire réciter ton CV. Étape 3 : un exercice technique lié à ton poste (ex. un audit de compte publicitaire pour un média buyer, un plan d'implémentation pour un opération engineer), tu as 3 à 5 jours pour le rendre, et on te paie ton temps si l'exercice dépasse 2 heures. Étape 4 : un entretien final avec le fondateur pour parler alignement, rémunération et prochaines étapes. Du premier contact à l'offre, on vise moins de 3 semaines. On te donne toujours un retour écrit, même si on ne retient pas ta candidature."
         },
         {
           "question": "Offrez-vous des programmes de stage ?",
-          "answer": "Oui, nous offrons des programmes de stage deux fois par an pour les étudiants et les récents diplômés cherchant à acquérir de l'expérience en marketing digital. Nos stagiaires travaillent sur de vrais projets clients sous la supervision de membres d'équipe expérimentés."
+          "answer": "Oui, on prend deux stagiaires par cohorte, deux fois par année (session d'hiver et session d'été). Le stage dure 12 à 16 semaines, il est rémunéré, et il est structuré autour d'un vrai mandat client, pas de photocopies ni de rangement de Google Drive. Chaque stagiaire est jumelé à un mentor senior qui prend une heure de coaching par semaine minimum. À la fin du stage, on fait une revue formelle : environ un stagiaire sur deux se voit offrir un poste permanent. Les candidatures se font en continu via ce formulaire, précise juste dans ta note que tu vises un stage et la session qui t'intéresse."
         },
         {
-          "question": "Quels avantages offrez-vous ?",
-          "answer": "Nous offrons une rémunération compétitive, une assurance santé, des arrangements de travail flexibles, des opportunités de développement professionnel et des primes de performance. Nous organisons également des retraites d'équipe et des événements sociaux pour favoriser la cohésion d'équipe."
+          "question": "Quels sont les avantages et la rémunération ?",
+          "answer": "Salaire compétitif indexé sur les grilles du marché montréalais tech (on communique la fourchette dès le premier appel, jamais après). Bonus trimestriel indexé sur la performance de ton pôle, pas sur des KPI cosmétiques. Assurance collective (santé, dentaire, paramédical) prise en charge à 80 %. 4 semaines de vacances dès la première année, plus la semaine des fêtes offerte. Budget de formation annuel de 1 500 $ par personne (conférences, certifications, cours en ligne, tu choisis). Équipement fourni : MacBook Pro ou équivalent Windows, écran, chaise ergonomique si tu télétravailles régulièrement. Retraite d'équipe une fois par année, généralement hors Montréal."
         },
         {
           "question": "Le télétravail est-il vraiment soutenu ?",
-          "answer": "Absolument ! Nous sommes une entreprise axée sur le télétravail avec des membres d'équipe dans différents fuseaux horaires. Nous fournissons tous les outils et le soutien nécessaires pour une collaboration à distance efficace et maintenons une forte culture d'équipe grâce à des réunions virtuelles régulières et des retraites annuelles en personne."
+          "answer": "Oui, à 100 %. Tous nos postes sont ouverts en télétravail complet, peu importe le rôle ou le pôle. Tu choisis ton lieu de travail, on ne t'impose aucune journée au bureau. On investit dans les outils qui rendent le distanciel viable : Slack pour l'async, Loom pour les revues sans réunion, Notion pour la documentation, Google Meet pour les points synchrones. Les nouveaux arrivants ont un onboarding structuré à distance avec un binôme senior dédié pendant les premières semaines, c'est là que la culture se transmet, et ça évite qu'on te laisse à deviner tout seul comment on travaille."
         }
       ]
     }
   },
   "jobPages": {
-    "backToCareers": "Retour aux Carrières",
-    "remote": "Télétravail",
+    "backToCareers": "Retour aux carrières",
+    "hybrid": "100 % à distance",
     "fullTime": "Temps plein",
-    "aboutRole": "À Propos de Ce Poste",
-    "keyResponsibilities": "Responsabilités Principales",
-    "qualifications": "Qualifications",
-    "whatWeOffer": "Ce Que Nous Offrons",
-    "seniorMediaBuyer": {
-      "title": "Senior Media Buyer",
-      "team": "Équipe Marketing",
-      "imageAlt": "Collaboration d'équipe",
-      "description1": "Nous recherchons un Senior Media Buyer expérimenté pour rejoindre notre équipe performante. Vous serez responsable de la gestion de campagnes publicitaires de plusieurs millions de dollars sur diverses plateformes, optimisant pour un ROI maximal et générant des résultats exceptionnels pour nos clients.",
-      "description2": "En tant que Senior Media Buyer, vous travaillerez directement avec notre équipe stratégique pour exécuter des campagnes basées sur les données qui génèrent constamment des retours de 4x+ pour nos clients e-commerce.",
-      "responsibilities": [
-        "Gérer et optimiser les campagnes publicitaires Facebook, Google et TikTok avec des budgets dépassant 100 000$/mois",
-        "Analyser les données de performance et mettre en œuvre des optimisations stratégiques pour améliorer le ROAS",
-        "Collaborer avec les équipes créatives pour développer des créatives publicitaires à fort taux de conversion",
-        "Effectuer des tests A/B sur les audiences, les créatives et les structures de campagne",
-        "Surveiller les tendances du secteur et mettre en œuvre de nouvelles stratégies publicitaires",
-        "Fournir des rapports de performance détaillés et des insights aux clients",
-        "Encadrer les membres juniors de l'équipe et partager les meilleures pratiques"
-      ],
-      "qualifications": [
-        "3+ ans d'expérience en achat média payant avec un historique prouvé",
-        "Expertise dans Facebook Ads Manager, Google Ads et TikTok Ads",
-        "Expérience de gestion de budgets publicitaires mensuels de 50 000$+",
-        "Solides compétences analytiques et maîtrise des outils d'analyse de données",
-        "Connaissance du marketing e-commerce et de l'acquisition de clients",
-        "Certifications Facebook Blueprint et Google Ads préférées"
-      ],
-      "benefits": [
-        "Salaire compétitif avec bonus basés sur la performance",
-        "Flexibilité de travail 100% à distance",
-        "Accès à des outils et plateformes marketing de pointe",
-        "Opportunités continues d'apprentissage et de développement professionnel",
-        "Assurance santé et avantages bien-être",
-        "Retraites d'équipe annuelles et événements d'entreprise"
-      ],
-      "formFields": {
-        "portfolioLabel": "Profil LinkedIn",
-        "portfolioPlaceholder": "linkedin.com/in/johndoe",
-        "linkedinLabel": "Portfolio/Site Web",
-        "linkedinPlaceholder": "https://votreportfolio.com"
-      }
+    "openRole": "Poste ouvert",
+    "scope": "Périmètre",
+    "profile": "Profil",
+    "benefits": "Avantages",
+    "aboutRole": "À propos du poste",
+    "keyResponsibilities": "Ce que tu portes au quotidien",
+    "qualifications": "Ce qu'on cherche",
+    "whatWeOffer": "Ce qu'on offre en retour",
+    "form": {
+      "microLabel": "Postuler",
+      "title": "Postuler à ce poste",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+1 (514) 555-0123",
+      "portfolioLabel": "Portfolio ou site web (optionnel)",
+      "portfolioPlaceholder": "https://tonportfolio.com",
+      "linkedinLabel": "Profil LinkedIn (optionnel)",
+      "linkedinPlaceholder": "linkedin.com/in/tonprofil",
+      "experienceLabel": "Années d'expérience",
+      "experiencePlaceholder": "3",
+      "cvLabel": "Ton CV",
+      "cvHelp": "Formats acceptés : PDF, DOC, DOCX (5 Mo max)",
+      "submit": "Envoyer ma candidature",
+      "submitting": "Envoi en cours…",
+      "disclaimer": "En soumettant ce formulaire, tu acceptes notre politique de confidentialité et nos conditions d'utilisation."
     },
-    "dataAnalyst": {
-      "title": "Analyste de Données",
-      "team": "Équipe Analytique",
-      "imageAlt": "Tableau de bord d'analyse de données",
-      "description1": "Rejoignez notre équipe analytique en tant qu'Analyste de Données et aidez à transformer les données brutes en insights actionnables qui favorisent le succès de nos clients. Vous travaillerez avec de grands ensembles de données provenant de plusieurs plateformes publicitaires pour identifier les tendances, optimiser les performances et soutenir la prise de décision stratégique.",
-      "description2": "Ce rôle est parfait pour quelqu'un qui aime plonger dans les données, créer des visualisations significatives et avoir un impact direct sur les résultats commerciaux grâce à des recommandations basées sur les données.",
+    "mediaBuyer": {
+      "title": "Média Buyer",
+      "team": "Pôle Acquisition",
+      "imageAlt": "Revue de campagne chez TDIA",
+      "description1": "On engage un ou une Média Buyer pour prendre en main les comptes Meta et Google de nos clients e-commerce et services locaux. Tu es responsable du ROAS et du coût par acquisition, pas juste du reporting hebdo. Tu proposes les tests, tu les lances, tu défends tes chiffres en revue client.",
+      "description2": "Ce n'est pas un rôle où on te donne un playbook à exécuter. Nos clients (Atlas Énergie, O'Splash, marques DTC québécoises) ont chacun leur structure de compte, leur modèle d'attribution et leurs contraintes de marge. Tu construis ta stratégie avec le Business Analyst et tu la fais évoluer chaque semaine à partir des données réelles.",
       "responsibilities": [
-        "Analyser les données de performance publicitaire sur Facebook, Google, TikTok et d'autres plateformes",
-        "Créer des tableaux de bord complets et des rapports pour les équipes internes et les clients",
-        "Identifier les tendances, les modèles et les opportunités d'optimisation dans les données de campagne",
-        "Collaborer avec les acheteurs média pour mettre en œuvre des optimisations basées sur les données",
-        "Développer des modèles prédictifs pour prévoir les performances des campagnes",
-        "Automatiser les processus de reporting et améliorer la précision des données",
-        "Présenter les résultats et recommandations aux parties prenantes"
+        "Prendre en main un portefeuille de 6 à 8 comptes clients (Meta, Google, occasionnellement TikTok)",
+        "Concevoir et lancer les tests créatifs et audiences chaque semaine",
+        "Optimiser au ROAS blended et au coût par acquisition réel, pas au ROAS plateforme",
+        "Défendre tes décisions en revue hebdo avec les clients, chiffres à l'appui",
+        "Coordonner avec l'équipe créa pour renouveler les angles avant l'usure",
+        "Alimenter la base de learnings partagée entre tous les comptes de l'agence"
       ],
       "qualifications": [
-        "Baccalauréat en science des données, statistiques, mathématiques ou domaine connexe",
-        "2+ ans d'expérience en analyse de données, de préférence en marketing digital",
-        "Maîtrise de SQL, Python ou R pour la manipulation et l'analyse de données",
-        "Expérience avec des outils de visualisation de données (Tableau, Power BI ou similaire)",
-        "Excellentes capacités de pensée analytique et de résolution de problèmes",
-        "Expérience avec Google Analytics, Facebook Analytics ou plateformes similaires"
-      ],
-      "benefits": [
-        "Salaire compétitif avec incitations à la performance",
-        "Environnement de travail axé sur le télétravail",
-        "Accès à des outils d'analyse et de données premium",
-        "Budget de développement professionnel pour cours et certifications",
-        "Mentorat de scientifiques de données seniors",
-        "Horaires de travail flexibles et politique de congés"
-      ],
-      "formFields": {
-        "portfolioLabel": "Portfolio/GitHub",
-        "portfolioPlaceholder": "github.com/janesmith",
-        "linkedinLabel": "Profil LinkedIn",
-        "linkedinPlaceholder": "linkedin.com/in/janesmith"
-      }
+        "2+ ans de gestion active de comptes Meta et Google Ads avec des budgets de 20 000 $+/mois",
+        "Maîtrise concrète de Meta Ads Manager, Google Ads Editor et GA4",
+        "Capacité à lire un P&L client et à comprendre où se cache la marge",
+        "Confort dans les conversations directes avec des fondateurs",
+        "Français et anglais courants, nos clients sont mixtes"
+      ]
     },
-    "creativeDesigner": {
-      "title": "Designer Créatif",
-      "team": "Équipe Créative",
-      "imageAlt": "Espace de travail de design créatif",
-      "description1": "Nous recherchons un Designer Créatif talentueux pour rejoindre notre équipe et créer du contenu visuel convaincant qui génère des résultats. Vous serez responsable de la conception de créatives publicitaires à fort taux de conversion, de contenu pour les réseaux sociaux et de matériel marketing qui capte l'attention et incite à l'action.",
-      "description2": "Ce rôle combine créativité et marketing de performance, où vos designs ont un impact direct sur le succès des campagnes et le ROI des clients.",
+    "operationsEngineer": {
+      "title": "Operations Engineer",
+      "team": "Pôle Opérations",
+      "imageAlt": "Conception d'un système client TDIA",
+      "description1": "On engage un ou une Operations Engineer pour implémenter les systèmes qui remplacent les tâches manuelles chez nos clients : automatisations CRM, tableaux de bord, intégrations IoT, connecteurs API. Tu livres des systèmes qui tournent en production, pas des maquettes ni des POC qui dorment dans un dossier partagé.",
+      "description2": "Nos chantiers types : suivi de flotte temps réel pour une compagnie de transport, connecteur entre ERP et Shopify, automatisation du parcours lead pour une entreprise d'isolation, tableau de bord unifié pour un franchisé multi-succursales. Tu prends un chantier de bout en bout : cadrage avec le client, choix technique, développement, déploiement, suivi.",
       "responsibilities": [
-        "Concevoir des créatives publicitaires à fort taux de conversion pour Facebook, Instagram, TikTok et Google",
-        "Créer du contenu vidéo engageant et des animations pour les campagnes sur les réseaux sociaux",
-        "Développer des éléments d'identité de marque et du matériel marketing",
-        "Collaborer avec les acheteurs média pour optimiser la performance créative",
-        "Analyser les données de performance créative et itérer sur les designs",
-        "Maintenir la cohérence de la marque dans tous les supports clients",
-        "Rester à jour sur les tendances de design et les meilleures pratiques des plateformes"
+        "Cadrer les besoins avec les clients, souvent des fondateurs non-tech",
+        "Concevoir l'architecture d'intégration entre les outils déjà en place",
+        "Développer les automatisations (Make, n8n, Zapier, code custom quand nécessaire)",
+        "Bâtir les tableaux de bord (Looker Studio, Metabase, Retool)",
+        "Documenter et former les équipes clientes à l'utilisation",
+        "Maintenir les systèmes en production et intervenir sur les incidents"
       ],
       "qualifications": [
-        "Baccalauréat en design graphique, arts visuels ou domaine connexe",
-        "2+ ans d'expérience en design numérique, de préférence en publicité",
-        "Maîtrise de la suite Adobe Creative (Photoshop, Illustrator, After Effects)",
-        "Expérience en montage vidéo et animations",
-        "Compréhension des exigences et meilleures pratiques des plateformes de réseaux sociaux",
-        "Connaissance des principes UX/UI et du design web"
+        "2+ ans en implémentation de systèmes ou en dev full-stack orienté back-office",
+        "Maîtrise d'au moins un outil d'automatisation (Make, n8n, Zapier) et de JavaScript ou Python pour le custom",
+        "Confort avec les API REST, les webhooks et les bases relationnelles",
+        "Expérience de travail direct avec des non-tech, traduire un besoin métier en système",
+        "Français courant, anglais fonctionnel"
+      ]
+    },
+    "businessAnalyst": {
+      "title": "Business Analyst",
+      "team": "Pôle Stratégie",
+      "imageAlt": "Session d'analyse de données clients TDIA",
+      "description1": "On engage un ou une Business Analyst pour transformer les données clients en décisions concrètes : où couper, où investir, quoi tester en priorité. Tu travailles en tandem avec les Média Buyers et les Operations Engineers pour arbitrer les chantiers qui débloquent la croissance.",
+      "description2": "Ton livrable n'est pas un deck de 40 slides. C'est une note courte de 3 à 5 recommandations, chacune reliée à un chiffre défendable et à une action précise. Tu es la personne qui empêche l'équipe de tomber amoureuse d'une idée sans preuve.",
+      "responsibilities": [
+        "Consolider les données de 4 à 8 comptes clients (ads, CRM, ventes, opérations)",
+        "Bâtir les modèles d'attribution et de cohorte adaptés à chaque business",
+        "Identifier les fuites de marge et les leviers de croissance sous-exploités",
+        "Produire les notes de recommandation hebdomadaires ou mensuelles",
+        "Présenter directement aux fondateurs clients, souvent seul(e) en revue",
+        "Coder les tableaux de bord partagés avec les clients"
       ],
-      "benefits": [
-        "Salaire compétitif avec bonus de performance créative",
-        "Travail à distance avec horaires flexibles",
-        "Accès à des logiciels et outils de design premium",
-        "Liberté créative pour expérimenter et innover",
-        "Retours réguliers et mentorat de designers seniors",
-        "Budget pour cours de design et participation à des conférences"
+      "qualifications": [
+        "2+ ans en analyse business, data analytics ou consulting stratégique",
+        "SQL solide, maîtrise d'un outil BI (Looker, Metabase, Power BI)",
+        "Compréhension des mécaniques d'acquisition payante : CAC, LTV, ROAS, MER",
+        "Capacité à écrire clairement, nos livrables sont écrits, pas seulement oraux",
+        "Français et anglais courants"
+      ]
+    },
+    "executiveAssistant": {
+      "title": "Executive Assistant",
+      "team": "Opérations internes",
+      "imageAlt": "Coordination des opérations internes TDIA",
+      "description1": "On engage un ou une Executive Assistant pour fluidifier le quotidien de la direction : agenda, priorisation, coordination des équipes internes et clients, suivi des engagements pris en réunion. Tu es le point de contact qui empêche les choses de tomber entre deux chaises.",
+      "description2": "Ce n'est pas un rôle d'assistanat classique. Chez TDIA, tu es en contact direct avec les fondateurs de nos clients, tu participes aux revues stratégiques, et tu es souvent la personne qui débloque un dossier bloqué depuis deux semaines. Autant d'impact qu'un chef de projet, avec plus d'autonomie.",
+      "responsibilities": [
+        "Gérer les agendas et les priorités de la direction",
+        "Coordonner les meetings clients : préparation, animation, suivi",
+        "Tenir à jour la liste des engagements pris en réunion et relancer jusqu'à clôture",
+        "Traiter les demandes administratives et logistiques (contrats, factures, voyages)",
+        "Assurer la liaison entre les pôles internes : Acquisition, Opérations, Stratégie",
+        "Piloter les processus internes (onboarding client, offboarding, revues trimestrielles)"
       ],
-      "formFields": {
-        "portfolioLabel": "URL Portfolio",
-        "portfolioPlaceholder": "behance.net/alexjohnson",
-        "linkedinLabel": "Profil LinkedIn",
-        "linkedinPlaceholder": "linkedin.com/in/alexjohnson"
-      }
-    }
+      "qualifications": [
+        "2+ ans en assistanat de direction, gestion de projet ou coordination d'équipe",
+        "Maîtrise de Google Workspace, Notion et Slack, Notion est central chez nous",
+        "Rigueur extrême dans le suivi : aucun engagement ne doit se perdre",
+        "Excellentes compétences rédactionnelles en français et en anglais",
+        "Confort dans un environnement à cadence rapide avec des priorités changeantes"
+      ]
+    },
+    "sharedBenefits": [
+      "Salaire compétitif indexé sur les grilles du marché montréalais tech, communiqué dès le premier appel",
+      "Bonus trimestriel indexé sur la performance de ton pôle, pas sur des KPI cosmétiques",
+      "Assurance collective (santé, dentaire, paramédical) prise en charge à 80 %",
+      "4 semaines de vacances dès la première année, plus la semaine des fêtes offerte",
+      "Budget de formation annuel de 1 500 $ par personne",
+      "Équipement fourni : MacBook Pro ou équivalent Windows, écran, chaise ergonomique",
+      "Retraite d'équipe une fois par année, généralement hors Montréal"
+    ]
   },
   "dataImplementationPage": {
     "title": "Implémentation de",
@@ -2758,6 +2784,17 @@
     "founder": "Fondateur de TDIA",
     "headCreatives": "Directeur Créatif",
     "headData": "Directeur Data & CRO"
+  },
+  "teamStyles": {
+    "strategic": "Stratégique",
+    "dataDriven": "Orienté données",
+    "innovative": "Innovant",
+    "creative": "Créatif",
+    "detailOriented": "Souci du détail",
+    "collaborative": "Collaboratif",
+    "analytical": "Analytique",
+    "proactive": "Proactif",
+    "methodical": "Méthodique"
   },
   "teamModal": {
     "style": "- Style",
@@ -2966,7 +3003,7 @@
       {
         "n": "01",
         "title": "Ingestion des données",
-        "body": "On branche l'ensemble de votre stack — Meta, Google, TikTok, Shopify, Klaviyo, GA4 — dans un flux unifié. Toutes les décisions partent de la même vérité, avec un External ID commun pour empêcher les doubles comptages.",
+        "body": "On branche l'ensemble de votre stack, Meta, Google, TikTok, Shopify, Klaviyo, GA4, dans un flux unifié. Toutes les décisions partent de la même vérité, avec un External ID commun pour empêcher les doubles comptages.",
         "prevents": "de raisonner sur des dashboards contradictoires qui font mentir chaque canal."
       },
       {
@@ -2990,7 +3027,7 @@
       {
         "n": "05",
         "title": "Ajustement saisonnier",
-        "body": "Les pics — BFCM, fêtes, lancements produits — modifient à la fois la demande et la pression concurrentielle. On ajuste en avance CPM prévus, budget quotidien et cadence créative pour ne pas subir la saison.",
+        "body": "Les pics, BFCM, fêtes, lancements produits, modifient à la fois la demande et la pression concurrentielle. On ajuste en avance CPM prévus, budget quotidien et cadence créative pour ne pas subir la saison.",
         "prevents": "de perdre l'effet Black Friday parce que le budget a été alloué en mode « moyenne annuelle » de janvier."
       },
       {
@@ -3014,7 +3051,7 @@
       {
         "n": "09",
         "title": "Optimisation live + cohortes",
-        "body": "Chaque semaine, les cohortes réelles — LTV, taux de retour, marge nette par canal — sont comparées à la prévision. Le budget migre vers ce qui compose vraiment le profit, pas vers ce qui brille le vendredi soir.",
+        "body": "Chaque semaine, les cohortes réelles, LTV, taux de retour, marge nette par canal, sont comparées à la prévision. Le budget migre vers ce qui compose vraiment le profit, pas vers ce qui brille le vendredi soir.",
         "prevents": "de scaler un canal rentable en apparence mais avec un LTV effondré à 60 jours."
       }
     ],
@@ -3116,7 +3153,7 @@
         "modules": [
           {
             "title": "Test & Learn Protocol™",
-            "body": "Chaque test part d'une hypothèse — « si X, alors Y, parce que Z » — et se termine par [Tested] [Validated] [Iterate] [Kill]. La base de connaissances compose semaine après semaine."
+            "body": "Chaque test part d'une hypothèse, « si X, alors Y, parce que Z », et se termine par [Tested] [Validated] [Iterate] [Kill]. La base de connaissances compose semaine après semaine."
           },
           {
             "title": "Hypothesis Builder™",

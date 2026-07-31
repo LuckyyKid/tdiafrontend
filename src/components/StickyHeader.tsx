@@ -16,7 +16,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import LanguageSwitcher from './LanguageSwitcher';
@@ -164,8 +163,8 @@ const StickyHeader: React.FC = () => {
                 <Menu className="h-5 w-5" />
               </button>
             </DrawerTrigger>
-            <DrawerContent className="bg-[#060910] border-t border-[color:var(--tdia-hairline)] max-h-[85svh] flex flex-col">
-              <DrawerHeader className="hairline-b flex-shrink-0">
+            <DrawerContent className="bg-[#060910] border-t border-[color:var(--tdia-hairline)] max-h-[92svh] flex flex-col">
+              <DrawerHeader className="hairline-b flex-shrink-0 py-3">
                 <div className="flex justify-between items-center">
                   <DrawerTitle>
                     <img src="/favicon.png" alt="TDIA" className="h-7 w-auto" />
@@ -178,48 +177,57 @@ const StickyHeader: React.FC = () => {
                 </div>
               </DrawerHeader>
 
-              <ScrollArea className="flex-1 px-4">
-                <div className="py-4 space-y-1">
-                  <Link to="/" onClick={handleMenuItemClick} className="block py-3 text-[#e6ecf7] hairline-b hover:text-white">
-                    Home
-                  </Link>
-                  <Link to="/case-studies" onClick={handleMenuItemClick} className="block py-3 text-[#e6ecf7] hairline-b hover:text-white">
-                    {t('header.caseStudies')}
-                  </Link>
-                  <div className="py-3 hairline-b">
-                    <div className="text-white text-sm mb-2">{t('header.services')}</div>
-                    <div className="pl-2 space-y-2">
-                      <Link to="/acquisition" onClick={handleMenuItemClick} className="block py-1.5">
-                        <div className="text-sm text-[#e6ecf7] hover:text-white">{t('header.servicesAcquisition')}</div>
-                        <div className="text-xs text-[#7c8aa5]">{t('header.servicesAcquisitionSubtitle')}</div>
-                      </Link>
-                      <Link to="/operations" onClick={handleMenuItemClick} className="block py-1.5">
-                        <div className="text-sm text-[#e6ecf7] hover:text-white">{t('header.servicesOperations')}</div>
-                        <div className="text-xs text-[#7c8aa5]">{t('header.servicesOperationsSubtitle')}</div>
-                      </Link>
+              <div className="relative flex-1 min-h-0">
+                <div
+                  className="h-full overflow-y-auto overscroll-contain px-4 pb-8"
+                  style={{ WebkitOverflowScrolling: 'touch' }}
+                >
+                  <div className="py-3 space-y-0.5">
+                    <Link to="/" onClick={handleMenuItemClick} className="block py-2.5 text-[#e6ecf7] hairline-b hover:text-white">
+                      {t('header.home')}
+                    </Link>
+                    <Link to="/case-studies" onClick={handleMenuItemClick} className="block py-2.5 text-[#e6ecf7] hairline-b hover:text-white">
+                      {t('header.caseStudies')}
+                    </Link>
+                    <div className="py-2.5 hairline-b">
+                      <div className="text-white text-sm mb-1.5">{t('header.services')}</div>
+                      <div className="pl-2 space-y-1.5">
+                        <Link to="/acquisition" onClick={handleMenuItemClick} className="block py-1">
+                          <div className="text-sm text-[#e6ecf7] hover:text-white">{t('header.servicesAcquisition')}</div>
+                          <div className="text-xs text-[#7c8aa5]">{t('header.servicesAcquisitionSubtitle')}</div>
+                        </Link>
+                        <Link to="/operations" onClick={handleMenuItemClick} className="block py-1">
+                          <div className="text-sm text-[#e6ecf7] hover:text-white">{t('header.servicesOperations')}</div>
+                          <div className="text-xs text-[#7c8aa5]">{t('header.servicesOperationsSubtitle')}</div>
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                  <div className="py-3 hairline-b">
-                    <div className="text-white text-sm mb-2">{t('header.explore')}</div>
-                    <div className="pl-2 space-y-1">
-                      <Link to="/explore/our-work" onClick={handleMenuItemClick} className="block py-1.5 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
-                        {t('header.ourWork')}
-                      </Link>
-                      <Link to="/ecommerce-problems" onClick={handleMenuItemClick} className="block py-1.5 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
-                        {t('header.ecommerceProblems')}
-                      </Link>
+                    <div className="py-2.5 hairline-b">
+                      <div className="text-white text-sm mb-1.5">{t('header.explore')}</div>
+                      <div className="pl-2 space-y-1">
+                        <Link to="/explore/our-work" onClick={handleMenuItemClick} className="block py-1 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
+                          {t('header.ourWork')}
+                        </Link>
+                        <Link to="/ecommerce-problems" onClick={handleMenuItemClick} className="block py-1 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
+                          {t('header.ecommerceProblems')}
+                        </Link>
+                        <Link to="/explore/career" onClick={handleMenuItemClick} className="block py-1 text-sm text-[#7c8aa5] hover:text-[#9ec8ff]">
+                          {t('header.career')}
+                        </Link>
+                      </div>
                     </div>
+                    <Link to="/our-team" onClick={handleMenuItemClick} className="block py-2.5 text-[#e6ecf7] hairline-b hover:text-white">
+                      {t('header.ourTeam')}
+                    </Link>
+                    <Link to="/methodologie" onClick={handleMenuItemClick} className="block py-2.5 text-[#e6ecf7] hover:text-white">
+                      {t('header.ourProcess')}
+                    </Link>
                   </div>
-                  <Link to="/our-team" onClick={handleMenuItemClick} className="block py-3 text-[#e6ecf7] hairline-b hover:text-white">
-                    {t('header.ourTeam')}
-                  </Link>
-                  <Link to="/methodologie" onClick={handleMenuItemClick} className="block py-3 text-[#e6ecf7] hover:text-white">
-                    {t('header.ourProcess')}
-                  </Link>
                 </div>
-              </ScrollArea>
+                <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-[#060910] to-transparent" />
+              </div>
 
-              <div className="p-4 hairline-t">
+              <div className="p-4 hairline-t flex-shrink-0">
                 <button
                   onClick={() => { handleCTAClick(); handleMenuItemClick(); }}
                   className="btn-tdia w-full"

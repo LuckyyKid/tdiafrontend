@@ -13,14 +13,10 @@ interface Job {
   description2: string;
   responsibilities: string[];
   qualifications: string[];
-  benefits: string[];
-  imageAlt: string;
-  formFields: Record<string, unknown>;
 }
 
 interface JobPageLayoutProps {
   job: Job;
-  image?: string;
 }
 
 const Bullet: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -32,8 +28,11 @@ const Bullet: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   </li>
 );
 
-const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job, image = "/lovable-uploads/78b39c4c-a78c-426e-bbe3-10d4fc7b9491.png" }) => {
+const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job }) => {
   const { t } = useTranslation();
+
+  const sharedBenefitsRaw = t('jobPages.sharedBenefits', { returnObjects: true });
+  const sharedBenefits: string[] = Array.isArray(sharedBenefitsRaw) ? sharedBenefitsRaw as string[] : [];
 
   return (
     <div className="min-h-screen flex flex-col bg-[#060910] text-white">
@@ -49,14 +48,14 @@ const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job, image = "/lovable-up
         </Link>
 
         <div className="mb-12">
-          <div className="micro-label mb-4">Open role</div>
+          <div className="micro-label mb-4">{t('jobPages.openRole')}</div>
           <h1 className="tdia-h text-[36px] md:text-[52px] mb-6">
             <span>{job.title}</span>
           </h1>
           <div className="flex flex-wrap items-center gap-6 text-xs text-[#7c8aa5] mb-6 font-mono-tdia uppercase tracking-wider">
             <div className="flex items-center gap-1.5">
               <MapPin className="h-3.5 w-3.5 text-[#9ec8ff]" />
-              {t('jobPages.remote')}
+              {t('jobPages.hybrid')}
             </div>
             <div className="flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5 text-[#9ec8ff]" />
@@ -66,10 +65,6 @@ const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job, image = "/lovable-up
               <Users className="h-3.5 w-3.5 text-[#9ec8ff]" />
               {job.team}
             </div>
-          </div>
-
-          <div className="tdia-card aspect-video rounded-2xl overflow-hidden">
-            <img src={image} alt={job.imageAlt} className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -84,7 +79,7 @@ const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job, image = "/lovable-up
             </div>
 
             <div className="tdia-card p-8">
-              <div className="micro-label mb-3">Scope</div>
+              <div className="micro-label mb-3">{t('jobPages.scope')}</div>
               <h3 className="tdia-h text-[20px] md:text-[24px] mb-4">
                 <span>{t('jobPages.keyResponsibilities')}</span>
               </h3>
@@ -94,7 +89,7 @@ const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job, image = "/lovable-up
             </div>
 
             <div className="tdia-card p-8">
-              <div className="micro-label mb-3">Profile</div>
+              <div className="micro-label mb-3">{t('jobPages.profile')}</div>
               <h3 className="tdia-h text-[20px] md:text-[24px] mb-4">
                 <span>{t('jobPages.qualifications')}</span>
               </h3>
@@ -104,19 +99,19 @@ const JobPageLayout: React.FC<JobPageLayoutProps> = ({ job, image = "/lovable-up
             </div>
 
             <div className="tdia-card p-8">
-              <div className="micro-label mb-3">Benefits</div>
+              <div className="micro-label mb-3">{t('jobPages.benefits')}</div>
               <h3 className="tdia-h text-[20px] md:text-[24px] mb-4">
                 <span>{t('jobPages.whatWeOffer')}</span>
               </h3>
               <ul className="space-y-3">
-                {job.benefits.map((item, i) => <Bullet key={i}>{item}</Bullet>)}
+                {sharedBenefits.map((item, i) => <Bullet key={i}>{item}</Bullet>)}
               </ul>
             </div>
           </div>
 
           <div className="lg:col-span-1">
             <div className="sticky top-24">
-              <JobApplicationForm position={job.title} fields={job.formFields} />
+              <JobApplicationForm position={job.title} />
             </div>
           </div>
         </div>

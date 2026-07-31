@@ -9,6 +9,7 @@
     "twitterDescription": "The Digital Intelligence Agency - Your partner in strategic digital growth and performance marketing excellence."
   },
   "header": {
+    "home": "Home",
     "services": "Services",
     "servicesAcquisition": "Acquisition",
     "servicesAcquisitionSubtitle": "Fill your pipeline",
@@ -188,7 +189,7 @@
         },
         {
           "them": "Apply the same recipe to every client.",
-          "us": "Diagnostic first: we identify your main bottleneck — creative, offer, funnel or capacity — and the plan attacks that one before anything else."
+          "us": "Diagnostic first: we identify your main bottleneck, creative, offer, funnel or capacity, and the plan attacks that one before anything else."
         },
         {
           "them": "Produce creative on gut feel, or recycled from another account.",
@@ -1356,80 +1357,6 @@
         }
       ]
     },
-    "careerPage": {
-      "title": "Join Our",
-      "titleHighlight": "Team",
-      "subtitle": "Be part of a team that's transforming digital marketing with data-driven strategies and innovative approaches.",
-      "teamImageAlt": "Our team collaboration",
-      "whyWorkWithUs": {
-        "title": "Why Work With Us",
-        "growth": {
-          "title": "Growth Opportunities",
-          "description": "Continuous learning and advancement in a fast-paced industry with clear career paths."
-        },
-        "culture": {
-          "title": "Collaborative Culture",
-          "description": "Work in cross-functional teams with talented professionals who are passionate about innovation."
-        },
-        "projects": {
-          "title": "Cutting-edge Projects",
-          "description": "Tackle exciting challenges for industry-leading clients and implement forward-thinking solutions."
-        }
-      },
-      "openPositions": {
-        "title": "Open Positions",
-        "positions": [
-          {
-            "title": "Senior Media Buyer",
-            "department": "Marketing Team",
-            "type": "Full-time",
-            "location": "Remote",
-            "description": "Manage multi-million dollar ad campaigns and drive exceptional ROI for our e-commerce clients."
-          },
-          {
-            "title": "Data Analyst",
-            "department": "Analytics Team",
-            "type": "Full-time",
-            "location": "Remote",
-            "description": "Transform raw data into actionable insights that drive strategic decision-making."
-          },
-          {
-            "title": "Creative Designer",
-            "department": "Creative Team",
-            "type": "Full-time",
-            "location": "Remote",
-            "description": "Create compelling visual content that captures attention and drives campaign success."
-          }
-        ],
-        "viewDetails": "View Details"
-      },
-      "generalApplication": {
-        "title": "Don't See Your Perfect Role?",
-        "description": "We're always looking for talented individuals to join our team. Send us your resume and let us know how you'd like to contribute to our mission.",
-        "cta": "Submit Open Application"
-      },
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "items": [
-          {
-            "question": "What is the hiring process like?",
-            "answer": "Our hiring process typically includes an initial application review, a skills assessment relevant to the position, and 2-3 interview rounds with team members and leadership. We aim to make decisions quickly and keep candidates informed throughout the process."
-          },
-          {
-            "question": "Do you offer internship programs?",
-            "answer": "Yes, we offer internship programs twice a year for students and recent graduates looking to gain experience in digital marketing. Our interns work on real client projects under the guidance of experienced team members."
-          },
-          {
-            "question": "What benefits do you offer?",
-            "answer": "We offer competitive compensation, health insurance, flexible work arrangements, professional development opportunities, and performance bonuses. We also organize team retreats and social events to foster team building."
-          },
-          {
-            "question": "Is remote work truly supported?",
-            "answer": "Absolutely! We're a remote-first company with team members across different time zones. We provide all the tools and support needed for effective remote collaboration and maintain a strong team culture through regular virtual meetings and annual in-person retreats."
-          }
-        ]
-      }
-    },
     "ecommerceProblems": {
       "title": "10 E-Commerce Problems Blocking Your Growth",
       "description": "Discover the most common obstacles preventing your online store from reaching its full potential.",
@@ -1609,6 +1536,8 @@
       "description": "A strategic Facebook‑Ads sprint: 9.6 M+ impressions and 5× ROAS while expanding beyond B2B.",
       "learnMore": "Learn more about {{company}}",
       "image": "/lovable-uploads/19a93a85-4204-4c42-a672-c7a7e0b7fb0b.png",
+      "metricLabel": "monthly sales",
+      "subLabel": "in 3 months",
       "tags": [
         "Facebook Ads",
         "visual storytelling",
@@ -1624,6 +1553,8 @@
       "description": "Targeted email flows and CRO lifts generated outsized returns.",
       "learnMore": "Learn more about {{company}}",
       "image": "/lovable-uploads/e0372708-63e6-4974-8764-44156350601d.webp",
+      "metricLabel": "average ROAS",
+      "subLabel": "cosmetics",
       "tags": [
         "conversion optimisation",
         "email marketing",
@@ -1638,6 +1569,8 @@
       "description": "Hyper‑focused B2B lead‑gen for a complex industrial offer.",
       "learnMore": "Learn more about {{company}}",
       "image": "/lovable-uploads/02f8bc66-3042-4b06-a33f-fa29d507dd24.png",
+      "metricLabel": "qualified leads",
+      "subLabel": "in 6 months",
       "tags": [
         "lead generation",
         "B2B strategy",
@@ -1652,6 +1585,8 @@
       "description": "Innovative marketing strategies for children's furniture that drove exceptional growth.",
       "learnMore": "Learn more about {{company}}",
       "image": "/lovable-uploads/a167b663-d622-4846-a730-b44dd649af3c.png",
+      "metricLabel": "ROAS",
+      "subLabel": "in 60 days",
       "tags": [
         "e-commerce",
         "product marketing",
@@ -1666,6 +1601,8 @@
       "description": "How O'Splash went from 0 leads to 116 qualified inquiries in 45 days through a complete Google Ads strategy with $21.25 CPA.",
       "learnMore": "Learn more about {{company}}",
       "image": "/lovable-uploads/osplash-case-study.png",
+      "metricLabel": "qualified leads",
+      "subLabel": "in 45 days",
       "tags": [
         "Google Ads",
         "lead generation",
@@ -1789,7 +1726,7 @@
     "d1": "You're constantly launching new ads without a clear method. You post what feels right in the moment, hoping something will work, but there's no process behind it. You're not really testing, you're guessing. Some ads perform okay, others flop, and you can't explain why. This random approach creates stress, wastes budget, and gives you no real learning to build on. You feel stuck in a loop where nothing sticks long enough to scale.",
     "d2": "You're putting money into ads, but you're flying blind. You see ROAS, CPMs, CTRs... but you don't really know what they mean, or how to act on them. You're spending without understanding, and it feels like your budget disappears into thin air. Without a clear view on what works and what doesn't, making decisions feels risky, and you constantly second-guess yourself.",
     "d3": "You launch an ad, it works for a few days, and then performance drops off a cliff. So you rush to make new ones, repeat the cycle, and end up in a constant state of creative panic. There's no system, no pipeline, no predictability, just short bursts followed by stress. You know you can't scale like that, but you don't know how to create content that actually lasts or fits your strategy. And you're tired of feeling like you're always behind.",
-    "d4": "You're on all platforms — Meta, TikTok, Google — running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat. Nothing is consistent. You don't know where the real problem is, and every day feels like firefighting instead of growing. You're spread too thin, trying to do everything, but none of it is really moving the needle. It's exhausting, and you're starting to lose confidence in the whole thing."
+    "d4": "You're on all platforms, Meta, TikTok, Google, running campaigns, tweaking settings, making creatives. You're busy. But despite all that effort, the results are flat. Nothing is consistent. You don't know where the real problem is, and every day feels like firefighting instead of growing. You're spread too thin, trying to do everything, but none of it is really moving the needle. It's exhausting, and you're starting to lose confidence in the whole thing."
   },
   "caseCarousel": {
     "headingPrefix": "Our Client",
@@ -2429,7 +2366,7 @@
       {
         "number": "2",
         "title": "We set what you can pay, and how far you can push",
-        "intro": "Every product has a recommended CAC — the one that keeps margin — and a max CAC, the one we never cross without losing money. We calculate both thresholds before the first dollar goes out.",
+        "intro": "Every product has a recommended CAC, the one that keeps margin, and a max CAC, the one we never cross without losing money. We calculate both thresholds before the first dollar goes out.",
         "subtitle": "The budget planner then does three things:",
         "items": [
           "Recommend the daily spend that stays in the green.",
@@ -2524,6 +2461,17 @@
     "founder": "Founder of TDIA",
     "headCreatives": "Head of Creatives",
     "headData": "Head of Data & CRO"
+  },
+  "teamStyles": {
+    "strategic": "Strategic",
+    "dataDriven": "Data-Driven",
+    "innovative": "Innovative",
+    "creative": "Creative",
+    "detailOriented": "Detail-Oriented",
+    "collaborative": "Collaborative",
+    "analytical": "Analytical",
+    "proactive": "Proactive",
+    "methodical": "Methodical"
   },
   "teamModal": {
     "style": "'s style",
@@ -2732,7 +2680,7 @@
       {
         "n": "01",
         "title": "Data ingestion",
-        "body": "We wire your entire stack — Meta, Google, TikTok, Shopify, Klaviyo, GA4 — into a unified feed. Every decision starts from the same truth, with a shared External ID that blocks double-counting.",
+        "body": "We wire your entire stack, Meta, Google, TikTok, Shopify, Klaviyo, GA4, into a unified feed. Every decision starts from the same truth, with a shared External ID that blocks double-counting.",
         "prevents": "reasoning on contradictory dashboards that let every channel lie."
       },
       {
@@ -2756,7 +2704,7 @@
       {
         "n": "05",
         "title": "Seasonal adjustment",
-        "body": "Peaks — BFCM, holidays, product launches — shift both demand and competitive pressure. We adjust projected CPMs, daily budget, and creative cadence in advance, so the season doesn't happen to us.",
+        "body": "Peaks, BFCM, holidays, product launches, shift both demand and competitive pressure. We adjust projected CPMs, daily budget, and creative cadence in advance, so the season doesn't happen to us.",
         "prevents": "losing the Black Friday effect because the budget was allocated in January-average mode."
       },
       {
@@ -2774,13 +2722,13 @@
       {
         "n": "08",
         "title": "CRO Pipeline Engine™",
-        "body": "Product pages, cart, checkout: every step is mapped. A/B tests are prioritized by revenue impact — not intuition — and shipped weekly with a result measurable in margin, not clicks.",
+        "body": "Product pages, cart, checkout: every step is mapped. A/B tests are prioritized by revenue impact, not intuition, and shipped weekly with a result measurable in margin, not clicks.",
         "prevents": "paid traffic from landing on a page that bleeds, even when the ads are excellent."
       },
       {
         "n": "09",
         "title": "Live optimization + cohorts",
-        "body": "Every week, real cohorts — LTV, return rate, net margin per channel — are compared to forecast. Budget migrates toward what actually compounds profit, not what looks bright on Friday night.",
+        "body": "Every week, real cohorts, LTV, return rate, net margin per channel, are compared to forecast. Budget migrates toward what actually compounds profit, not what looks bright on Friday night.",
         "prevents": "scaling a channel that looks profitable on paper but has a collapsed 60-day LTV."
       }
     ],
@@ -2882,7 +2830,7 @@
         "modules": [
           {
             "title": "Test & Learn Protocol™",
-            "body": "Every test starts from a hypothesis — \"if X, then Y, because Z\" — and ends with [Tested] [Validated] [Iterate] [Kill]. The knowledge base compounds week after week."
+            "body": "Every test starts from a hypothesis,\"if X, then Y, because Z\", and ends with [Tested] [Validated] [Iterate] [Kill]. The knowledge base compounds week after week."
           },
           {
             "title": "Hypothesis Builder™",
@@ -2999,5 +2947,217 @@
       "headingAfter": " numbers.",
       "button": "Book a strategy call"
     }
+  },
+  "careerPage": {
+    "microLabel": "Careers",
+    "title": "Join the team that",
+    "titleHighlight": "delivers growth",
+    "subtitle": "We hire people who love shipping measurable results, not the ones who love slides. Two poles: Acquisition (paid media, creative, analytics) and Operations (systems, automation, customer data).",
+    "teamImageAlt": "The TDIA team collaborating",
+    "whyWorkWithUs": {
+      "title": "What you find here",
+      "growth": {
+        "title": "A role with real autonomy",
+        "description": "You own your files from scoping to delivery. You make your technical calls and defend your recommendations directly in client reviews."
+      },
+      "culture": {
+        "title": "A team that gets to the point",
+        "description": "Decisions get made fast, in writing or on short calls. We prefer direct exchanges over committees. Good ideas move without detours."
+      },
+      "projects": {
+        "title": "Concrete mandates",
+        "description": "You work on real projects with real budgets, for clients that expect measurable results, not decorative deliverables."
+      }
+    },
+    "openPositions": {
+      "title": "Open positions",
+      "positions": [
+        {
+          "title": "Media Buyer",
+          "department": "Acquisition Pole",
+          "type": "Full-time",
+          "location": "100% remote",
+          "description": "You take ownership of the Meta and Google accounts of our e-commerce and local services clients. You are accountable for ROAS and cost per acquisition, not just weekly reporting. You propose the tests, you launch them, you defend your numbers in the client review."
+        },
+        {
+          "title": "Operations Engineer",
+          "department": "Operations Pole",
+          "type": "Full-time",
+          "location": "100% remote",
+          "description": "You implement the systems that replace manual tasks at our clients: CRM automations, dashboards, IoT integrations, API connectors. You ship systems that run in production, not mockups or POCs that gather dust."
+        },
+        {
+          "title": "Business Analyst",
+          "department": "Strategy Pole",
+          "type": "Full-time",
+          "location": "100% remote",
+          "description": "You turn client data into concrete decisions: where to cut, where to invest, what to test first. You work hand in hand with the media buyers and operations engineers to arbitrate the projects that unlock growth."
+        },
+        {
+          "title": "Executive Assistant",
+          "department": "Internal Operations",
+          "type": "Full-time",
+          "location": "100% remote",
+          "description": "You smooth out the leadership team's day-to-day: agenda, prioritization, coordination of internal and client teams, follow-up on commitments made in meetings. You are the point of contact that stops things from falling through the cracks."
+        }
+      ],
+      "viewDetails": "Apply"
+    },
+    "generalApplication": {
+      "title": "Your profile isn't in the list?",
+      "description": "Send us your CV anyway with a few lines on what you'd want to come and ship at TDIA. We reply to every serious application, even outside open roles, the best hires we've made often came in that way.",
+      "cta": "Send my application"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "How does the hiring process work?",
+          "answer": "We keep the process short and concrete. Step 1: review of your CV and short cover note (48h reply on average). Step 2: a first 30-minute call with the pole lead, we want to understand how you think, not have you recite your CV. Step 3: a technical exercise tied to your role (e.g. an ad account audit for a media buyer, an implementation plan for an operations engineer), you have 3 to 5 days to deliver it, and we pay for your time if the exercise takes more than 2 hours. Step 4: a final interview with the founder to talk alignment, compensation and next steps. From first contact to offer, we aim for under 3 weeks. We always give you written feedback, even if we don't move forward."
+        },
+        {
+          "question": "Do you offer internships?",
+          "answer": "Yes, we take two interns per cohort, twice a year (winter and summer sessions). The internship lasts 12 to 16 weeks, is paid, and is structured around a real client mandate, no photocopies or Google Drive tidying. Each intern is paired with a senior mentor who commits at least one hour of coaching per week. At the end of the internship, we run a formal review: roughly one intern in two gets offered a permanent position. Applications are open year-round through this form, just note in your cover that you're aiming for an internship and which session you're targeting."
+        },
+        {
+          "question": "What are the benefits and compensation?",
+          "answer": "Competitive salary indexed on Montréal tech market grids (we share the range on the first call, never after). Quarterly bonus indexed on your pole's performance, not on cosmetic KPIs. Group insurance (health, dental, paramedical) covered at 80%. 4 weeks of vacation from year one, plus the holiday week off. Annual training budget of $1,500 per person (conferences, certifications, online courses, your choice). Equipment provided: MacBook Pro or equivalent Windows, monitor, ergonomic chair if you regularly work from home. Team retreat once a year, usually outside Montréal."
+        },
+        {
+          "question": "Is remote work truly supported?",
+          "answer": "Yes, 100%. All our roles are open to full remote, regardless of position or pole. You pick where you work from, we don't require any office days. We invest in the tools that make remote viable: Slack for async, Loom for reviews without meetings, Notion for documentation, Google Meet for synchronous check-ins. New hires get a structured remote onboarding with a dedicated senior buddy for the first few weeks. That's where culture transfers, and it prevents you from having to guess how we work."
+        }
+      ]
+    }
+  },
+  "jobPages": {
+    "backToCareers": "Back to careers",
+    "hybrid": "100% remote",
+    "fullTime": "Full-time",
+    "openRole": "Open role",
+    "scope": "Scope",
+    "profile": "Profile",
+    "benefits": "Benefits",
+    "aboutRole": "About the role",
+    "keyResponsibilities": "What you own day to day",
+    "qualifications": "What we're looking for",
+    "whatWeOffer": "What we offer in return",
+    "form": {
+      "microLabel": "Apply",
+      "title": "Apply for this position",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 (514) 555-0123",
+      "portfolioLabel": "Portfolio or website (optional)",
+      "portfolioPlaceholder": "https://yourportfolio.com",
+      "linkedinLabel": "LinkedIn profile (optional)",
+      "linkedinPlaceholder": "linkedin.com/in/yourprofile",
+      "experienceLabel": "Years of experience",
+      "experiencePlaceholder": "3",
+      "cvLabel": "Your CV",
+      "cvHelp": "Accepted formats: PDF, DOC, DOCX (5 MB max)",
+      "submit": "Send my application",
+      "submitting": "Sending…",
+      "disclaimer": "By submitting this form, you agree to our privacy policy and terms of use."
+    },
+    "mediaBuyer": {
+      "title": "Media Buyer",
+      "team": "Acquisition Pole",
+      "imageAlt": "Campaign review at TDIA",
+      "description1": "We're hiring a Media Buyer to take ownership of the Meta and Google accounts of our e-commerce and local services clients. You are accountable for ROAS and cost per acquisition, not just weekly reporting. You propose the tests, you launch them, you defend your numbers in the client review.",
+      "description2": "This is not a role where you're handed a playbook to execute. Our clients (Atlas Énergie, O'Splash, Québec DTC brands) each have their own account structure, attribution model and margin constraints. You build your strategy with the Business Analyst and evolve it every week based on real data.",
+      "responsibilities": [
+        "Take ownership of a portfolio of 6 to 8 client accounts (Meta, Google, occasionally TikTok)",
+        "Design and launch creative and audience tests every week",
+        "Optimize on blended ROAS and real cost per acquisition, not platform ROAS",
+        "Defend your decisions in the weekly review with clients, numbers in hand",
+        "Coordinate with the creative team to refresh angles before fatigue kicks in",
+        "Feed the shared learnings base across all agency accounts"
+      ],
+      "qualifications": [
+        "2+ years actively managing Meta and Google Ads accounts with $20,000+/month budgets",
+        "Hands-on mastery of Meta Ads Manager, Google Ads Editor and GA4",
+        "Ability to read a client P&L and understand where the margin hides",
+        "Comfort in direct conversations with founders",
+        "Fluent French and English, our clients are mixed"
+      ]
+    },
+    "operationsEngineer": {
+      "title": "Operations Engineer",
+      "team": "Operations Pole",
+      "imageAlt": "Designing a TDIA client system",
+      "description1": "We're hiring an Operations Engineer to implement the systems that replace manual tasks at our clients: CRM automations, dashboards, IoT integrations, API connectors. You ship systems that run in production, not mockups or POCs sitting in a shared folder.",
+      "description2": "Our typical projects: real-time fleet tracking for a transport company, connector between ERP and Shopify, lead journey automation for an insulation company, unified dashboard for a multi-location franchisee. You take a project end to end: scoping with the client, technical choices, development, deployment, monitoring.",
+      "responsibilities": [
+        "Scope needs with clients, often non-tech founders",
+        "Design the integration architecture between existing tools",
+        "Develop the automations (Make, n8n, Zapier, custom code when needed)",
+        "Build the dashboards (Looker Studio, Metabase, Retool)",
+        "Document and train client teams on usage",
+        "Maintain systems in production and handle incidents"
+      ],
+      "qualifications": [
+        "2+ years in systems implementation or full-stack dev focused on back-office",
+        "Mastery of at least one automation tool (Make, n8n, Zapier) and JavaScript or Python for custom work",
+        "Comfort with REST APIs, webhooks and relational databases",
+        "Experience working directly with non-tech people, translating a business need into a system",
+        "Fluent French, functional English"
+      ]
+    },
+    "businessAnalyst": {
+      "title": "Business Analyst",
+      "team": "Strategy Pole",
+      "imageAlt": "TDIA client data analysis session",
+      "description1": "We're hiring a Business Analyst to turn client data into concrete decisions: where to cut, where to invest, what to test first. You work in tandem with Media Buyers and Operations Engineers to arbitrate the projects that unlock growth.",
+      "description2": "Your deliverable is not a 40-slide deck. It's a short note of 3 to 5 recommendations, each tied to a defensible number and a precise action. You are the person who stops the team from falling in love with an idea without evidence.",
+      "responsibilities": [
+        "Consolidate data from 4 to 8 client accounts (ads, CRM, sales, operations)",
+        "Build attribution and cohort models tailored to each business",
+        "Identify margin leaks and under-exploited growth levers",
+        "Produce the weekly or monthly recommendation notes",
+        "Present directly to client founders, often solo in review",
+        "Code the dashboards shared with clients"
+      ],
+      "qualifications": [
+        "2+ years in business analysis, data analytics or strategy consulting",
+        "Solid SQL, mastery of a BI tool (Looker, Metabase, Power BI)",
+        "Understanding of paid acquisition mechanics: CAC, LTV, ROAS, MER",
+        "Ability to write clearly, our deliverables are written, not just spoken",
+        "Fluent French and English"
+      ]
+    },
+    "executiveAssistant": {
+      "title": "Executive Assistant",
+      "team": "Internal Operations",
+      "imageAlt": "Coordinating TDIA internal operations",
+      "description1": "We're hiring an Executive Assistant to smooth out the leadership team's day-to-day: agenda, prioritization, coordination of internal and client teams, follow-up on commitments made in meetings. You are the point of contact that stops things from falling through the cracks.",
+      "description2": "This is not a classic assistant role. At TDIA, you are in direct contact with our clients' founders, you take part in strategy reviews, and you are often the person who unblocks a file that's been stuck for two weeks. As much impact as a project manager, with more autonomy.",
+      "responsibilities": [
+        "Manage the leadership team's agendas and priorities",
+        "Coordinate client meetings: preparation, facilitation, follow-up",
+        "Keep the list of commitments made in meetings up to date and chase until closed",
+        "Handle administrative and logistical requests (contracts, invoices, travel)",
+        "Ensure liaison between internal poles: Acquisition, Operations, Strategy",
+        "Drive internal processes (client onboarding, offboarding, quarterly reviews)"
+      ],
+      "qualifications": [
+        "2+ years in executive assistance, project management or team coordination",
+        "Mastery of Google Workspace, Notion and Slack, Notion is central for us",
+        "Extreme rigor in follow-up: no commitment should get lost",
+        "Excellent writing skills in French and English",
+        "Comfort in a fast-paced environment with shifting priorities"
+      ]
+    },
+    "sharedBenefits": [
+      "Competitive salary indexed on Montréal tech market grids, shared on the first call",
+      "Quarterly bonus indexed on your pole's performance, not cosmetic KPIs",
+      "Group insurance (health, dental, paramedical) covered at 80%",
+      "4 weeks of vacation from year one, plus the holiday week off",
+      "Annual training budget of $1,500 per person",
+      "Equipment provided: MacBook Pro or Windows equivalent, monitor, ergonomic chair",
+      "Team retreat once a year, usually outside Montréal"
+    ]
   }
 }
